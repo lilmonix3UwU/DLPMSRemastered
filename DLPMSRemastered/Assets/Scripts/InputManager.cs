@@ -21,4 +21,6 @@ public class InputManager : MonoBehaviour
     public float Horizontal() => _inputMaster.Player.Move.ReadValue<float>();
 
     public bool PressJump() => _inputMaster.Player.Jump.WasPressedThisFrame();
+
+    public bool PressEquip() => _inputMaster.Player.Equip.WasPressedThisFrame();
 }
