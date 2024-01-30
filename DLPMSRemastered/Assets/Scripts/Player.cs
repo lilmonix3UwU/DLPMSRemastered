@@ -20,6 +20,9 @@ public class Player : MonoBehaviour
     [SerializeField] private float groundRadius;
     [SerializeField] private LayerMask groundMask;
 
+    [Header("Effects")]
+    [SerializeField] private ParticleSystem impactEffect;
+
     private float _initialSpeed;
     private bool _grounded;
 
@@ -78,6 +81,11 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void ImpactEffect(string foot)
+    {
+        impactEffect.Play();
+    }
+
     public void SlowDown()
     {
         StartCoroutine(SlowDownCoroutine(slowDownSpeed, timeToRevertToNormalSpeed));
@@ -98,5 +106,5 @@ public class Player : MonoBehaviour
 
         this.speed = _initialSpeed;
         yield return null;
-    } 
+    }
 }
