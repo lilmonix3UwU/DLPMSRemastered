@@ -22,6 +22,8 @@ public class Player : MonoBehaviour
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
+    [SerializeField] private ParticleSystem landEffect;
+    [SerializeField] private ParticleSystem jumpEffect;
 
     private float _initialSpeed;
     private bool _grounded;
@@ -48,6 +50,7 @@ public class Player : MonoBehaviour
         if (_input.PressJump() && _grounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            jumpEffect.Play();
         }
 
         // Animation
@@ -81,9 +84,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void ImpactEffect(string foot)
+    public void ImpactEffect()
     {
         impactEffect.Play();
+    }
+
+    public void LandEffect()
+    {
+        landEffect.Play();
     }
 
     public void SlowDown()
