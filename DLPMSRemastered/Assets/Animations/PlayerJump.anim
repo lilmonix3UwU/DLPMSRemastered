@@ -34,7 +34,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: TorchLightEffect
+    path: Graphic/TorchLightEffect
     classID: 1
     script: {fileID: 0}
     flags: 0
@@ -62,7 +62,7 @@ AnimationClip:
     - time: 0.75
       value: {fileID: 1235562461, guid: 3064ad237201d445da5c1aad7a306f1d, type: 3}
     attribute: m_Sprite
-    path: Sprite
+    path: Graphic/Sprite
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -74,7 +74,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2726732008
+      path: 2394633728
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
@@ -83,7 +83,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 850496168
+      path: 3030395376
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -140,7 +140,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: TorchLightEffect
+    path: Graphic/TorchLightEffect
     classID: 1
     script: {fileID: 0}
     flags: 0

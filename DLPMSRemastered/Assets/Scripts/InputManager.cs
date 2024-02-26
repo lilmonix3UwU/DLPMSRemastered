@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    private static InputManager _instance;
-    public static InputManager Instance { get { return _instance; } }
+    public static InputManager Instance;
 
     private InputMaster _inputMaster;
 
     private void Awake()
     {
-        _instance = this;
+        Instance = this;
 
         _inputMaster = new InputMaster();
     }
@@ -22,7 +21,13 @@ public class InputManager : MonoBehaviour
 
     public bool PressJump() => _inputMaster.Player.Jump.WasPressedThisFrame();
 
+    public bool ReleaseJump() => _inputMaster.Player.Jump.WasReleasedThisFrame();
+
+    public bool HoldJump() => _inputMaster.Player.Jump.IsPressed();
+
     public bool PressEquip() => _inputMaster.Player.Equip.WasPressedThisFrame();
+
+    public bool PressAttack() => _inputMaster.Player.Attack.WasPressedThisFrame();
 
     public bool PressPause() => _inputMaster.Player.PauseGame.WasPressedThisFrame();
 }
