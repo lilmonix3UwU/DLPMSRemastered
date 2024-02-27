@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
             return;
 
         AudioSource src = gameObject.AddComponent<AudioSource>();
-        
+
         src.clip = s.clip;
         src.volume = s.volume;
         src.pitch = s.pitch;
@@ -38,5 +38,15 @@ public class AudioManager : MonoBehaviour
             Destroy(src, s.stopAfter);
     }
     
-    
+    public void Stop(string name)
+    {
+        AudioSource[] srces = gameObject.GetComponentsInChildren<AudioSource>();
+
+        AudioSource audioSource = Array.Find(srces, a => a.clip.ToString().Contains(name));
+
+        if (audioSource == null)
+            return;
+
+        Destroy(audioSource);
+    }
 }

@@ -142,9 +142,17 @@ public class Player : MonoBehaviour
         if (_input.PressEquip())
         {
             anim.runtimeAnimatorController = anim.runtimeAnimatorController == animCtrl ? torchAnimCtrl : animCtrl;
-            
+
             if (anim.runtimeAnimatorController == torchAnimCtrl)
+            {
                 _audio.Play("Ignite");
+                _audio.Play("Torch Burning");
+            }
+            else
+            {
+                _audio.Play("Blow");
+                _audio.Stop("Torch Burning");
+            }
         }
         
         // Attacking
@@ -160,29 +168,20 @@ public class Player : MonoBehaviour
     }
 
     private void Footstep()
-    {
-        string footstepSound = "";
-
-        switch (Random.Range(0, 3))
-        {
-            case 0:
-                footstepSound = "Footstep1";
-                break;
-            case 1:
-                footstepSound = "Footstep2";
-                break;
-            case 2:
-                footstepSound = "Footstep3";
-                break;
-        }
-        
-        _audio.Play(footstepSound);
+    {   
+        _audio.Play(RandomFootstepSound());
         impactEffect.Play();
     }
 
     private void LandEffect()
     {
+        _audio.Play(RandomLandSound());
         landEffect.Play();
+    }
+
+    private void LandSound()
+    {
+        _audio.Play(RandomLandSound());
     }
 
     private void SlowDown()
@@ -210,5 +209,45 @@ public class Player : MonoBehaviour
     private void ResetTimeInAir()
     {
         anim.SetFloat("TimeInAir", 0f);
+    }
+
+    private string RandomFootstepSound()
+    {
+        string footstepSound = "";
+
+        switch (Random.Range(0, 3))
+        {
+            case 0:
+                footstepSound = "Footstep1";
+                break;
+            case 1:
+                footstepSound = "Footstep2";
+                break;
+            case 2:
+                footstepSound = "Footstep3";
+                break;
+        }
+
+        return footstepSound;
+    }
+
+    private string RandomLandSound()
+    {
+        string landSound = "";
+
+        switch (Random.Range(0, 3))
+        {
+            case 0:
+                landSound = "Land1";
+                break;
+            case 1:
+                landSound = "Land2";
+                break;
+            case 2:
+                landSound = "Land3";
+                break;
+        }
+
+        return landSound;
     }
 }
