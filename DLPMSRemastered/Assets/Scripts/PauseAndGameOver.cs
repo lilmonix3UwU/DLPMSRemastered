@@ -29,7 +29,6 @@ public class PauseAndGameOver : MonoBehaviour
         {
             GameOver = true;
             Time.timeScale = 0;
-            GameOverMenu.SetActive(true);
         }
     }
 
