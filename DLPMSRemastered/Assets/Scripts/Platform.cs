@@ -5,18 +5,19 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private GameObject[] platforms;
-    private GameObject player;
-    // Start is called before the first frame update
+    private Collider[] platforms;
+    private Player player;
+    private float objectSize;
+    public GameObject closestToPlayer;
+
     void Start()
     {
-       // platforms = foreach (var item in collection)
-      //  {
-
-       // }
+        //platforms = Physics2D.OverlapCapsule(gameObject.transform.position, new Vector2(2.5f, 10), );
+        //player = FindObjectOfType<Player>();
+        //closestToPlayer = Vector3.
     }
 
-    // Update is called once per frame
+
     void Update()
     {
 
