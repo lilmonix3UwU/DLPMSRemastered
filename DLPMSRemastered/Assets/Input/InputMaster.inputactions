@@ -9,7 +9,7 @@
                     "name": "Move",
                     "type": "Value",
                     "id": "70fdb5d8-d89a-45a1-bb2b-0564cba028d0",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -55,7 +55,7 @@
                 {
                     "name": "A+D",
                     "id": "b67dc189-6497-40e6-89ed-e3dd4264c969",
-                    "path": "1DAxis",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -64,8 +64,30 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Up",
                     "id": "64d90005-42f3-4faf-ac86-fe6c65f1ddbf",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "7d7cb48c-fa1a-4475-8494-bd2791c4b750",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "06b8e898-0874-4f66-be3c-be769cfb52db",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -75,8 +97,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "7d7cb48c-fa1a-4475-8494-bd2791c4b750",
+                    "name": "Right",
+                    "id": "12f8fec8-1034-467e-8f1b-7b5b6ab7df6b",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -88,7 +110,7 @@
                 {
                     "name": "Arrow Keys",
                     "id": "dd0555cc-1cc8-4892-988d-301ea056ed6e",
-                    "path": "1DAxis",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -97,8 +119,30 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Up",
                     "id": "51cf1b02-b034-4992-9147-f1375e999046",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "cabcdd68-e965-4197-a3c9-123d26a251b3",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "cade0d7f-14e3-4874-84f1-61c96c03bdf0",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
@@ -108,8 +152,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "cabcdd68-e965-4197-a3c9-123d26a251b3",
+                    "name": "Right",
+                    "id": "4e89a804-4194-43bd-a533-a9cb2c2cc646",
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
@@ -121,7 +165,7 @@
                 {
                     "name": "Controller",
                     "id": "6cacb5dd-5e51-4d04-9790-a46f73200014",
-                    "path": "1DAxis",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -130,8 +174,30 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
+                    "name": "Up",
                     "id": "1fef4e6e-8ffe-455b-8063-211bfff16ce6",
+                    "path": "<Joystick>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "b0f2d3f0-4441-4280-b7f7-1eea159d5545",
+                    "path": "<Joystick>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Left",
+                    "id": "f187b322-213a-4844-a999-3cdda1cb19ee",
                     "path": "<Joystick>/stick/left",
                     "interactions": "",
                     "processors": "",
@@ -141,8 +207,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "b0f2d3f0-4441-4280-b7f7-1eea159d5545",
+                    "name": "Right",
+                    "id": "0348416e-cb4f-4498-b6dc-88550e1ae0bb",
                     "path": "<Joystick>/stick/right",
                     "interactions": "",
                     "processors": "",

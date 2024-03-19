@@ -13,7 +13,11 @@ TagManager:
   - Ground
   - Water
   - UI
+<<<<<<< Updated upstream
   - Platform
+=======
+  - Wall
+>>>>>>> Stashed changes
   - 
   - 
   - 

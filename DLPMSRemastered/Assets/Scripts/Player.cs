@@ -21,20 +21,38 @@ public class Player : MonoBehaviour
     [SerializeField] private float slowDownSpeed = 2f; 
     [SerializeField] private float revertTime = 0.3f;
 
-    [SerializeField] private float _curSpeed;
-    private float _move;
+    private float _curSpeed;
+    private float _xMove;
+    private float _yMove;
+    private int _facingDir;
 
     [Header("Jumping")]
     [SerializeField] private float jumpForce = 3f;
     [SerializeField] private float fallMultiplier = 2.5f;
     [SerializeField] private float coyoteTime = 0.2f;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundRadius;
-    [SerializeField] private LayerMask groundMask;
-    
+    [SerializeField] private float groundRadius = 0.4f;
+    [SerializeField] private LayerMask groundLayer;
+
     private bool _grounded;
+    private float _timeInAir;
     private float _coyouteTimeCounter;
-    
+
+    [Header("Wall Sliding/Jumping")]
+    [SerializeField] private float wallSlideSpeed = 4f;
+    [SerializeField] private float wallJumpDuration = 0.4f;
+    [SerializeField] private Vector2 wallJumpForce = new Vector2(8f, 16f);
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private float wallRadius = 0.4f;
+    [SerializeField] private LayerMask wallLayer;
+
+    private float _wallJumpTime;
+    private float _wallJumpCounter;
+    private int _wallJumpDir;
+    private bool _walled;
+    private bool _wallSliding;
+    private bool _wallJumping;
+
     [Header("Attacking")]
     [SerializeField] private float attackCooldown = 5f;
 
@@ -51,33 +69,53 @@ public class Player : MonoBehaviour
         _audio = AudioManager.Instance;
     }
 
-    private void FixedUpdate()
-    {
-        // Move
-        rb.velocity = new Vector2(_move * _curSpeed, rb.velocity.y);
-    }
-
     private void Update()
     {
         if (Time.timeScale == 0f)
             return;
-        
-        // Get Move Input
-        _move = _input.Horizontal();
-        
+
+        HandleMoveInput();
+        HandleJumping();
+        HandleWallJump();
+        HandleWallSlide();
+        HandleSpriteFlip();
+        HandleAnimation();
+        HandleEquipping();
+        HandleAttacking();
+    }
+
+    private void FixedUpdate()
+    {
+        HandleMovement();
+    }
+
+    private void HandleMovement()
+    {
+        if (_wallJumping)
+            return;
+
+        rb.velocity = new Vector2(_xMove * _curSpeed, rb.velocity.y);
+    }
+
+    private void HandleMoveInput()
+    {
+        _xMove = _input.Move().x;
+
         // Acceleration & Deceleration
-        if (_move != 0f && _curSpeed < maxSpeed)
+        if ((_xMove != 0f || _yMove != 0f) && _curSpeed < maxSpeed)
         {
             _curSpeed += accel;
         }
-        if (_move == 0f && _curSpeed > 0)
+        if ((_xMove == 0f || _yMove == 0f) && _curSpeed > 0)
         {
             _curSpeed -= decel;
         }
+    }
 
-        // Jump
-        _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundMask.value);
-        
+    private void HandleJumping()
+    {
+        _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer.value);
+
         if (_input.PressJump() && _coyouteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -95,7 +133,8 @@ public class Player : MonoBehaviour
             rb.velocity += Vector2.up * (Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime);
         }
 
-        if (!_grounded && rb.velocity.y > -2f && rb.velocity.y < 2f && _input.HoldJump())
+        // Slight boost forward in air when holding jump
+        if (!_grounded && !_walled && rb.velocity.y > -2f && rb.velocity.y < 2f && _input.HoldJump())
         {
             _curSpeed += accel * accelMult;
         }
@@ -105,40 +144,99 @@ public class Player : MonoBehaviour
             _curSpeed = _curSpeed < 0f ? 0f : _curSpeed;
         }
 
-        // Animation
-        if (_move == 0f)
-        {
-            anim.SetBool("Running", false);
-        }
-        else if (_move < 0f)
-        {
-            graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
-            anim.SetBool("Running", true);
-        }
-        else if (_move > 0f)
-        {
-            graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
-            anim.SetBool("Running", true);
-        }
-
+        // Coyote Time
         if (!_grounded)
         {
             _coyouteTimeCounter -= Time.deltaTime;
-            
-            anim.SetFloat("TimeInAir", anim.GetFloat("TimeInAir") + Time.deltaTime);
-            
-            anim.SetBool("InAir", true);
+
+            _timeInAir += Time.deltaTime;
         }
         else
         {
             _coyouteTimeCounter = coyoteTime;
-            
-            anim.SetBool("InAir", false);
+
             Invoke(nameof(ResetTimeInAir), 0.15f);
         }
+    }
 
-        
-        // Equipping
+    private void HandleWallSlide()
+    {
+        _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, wallLayer.value);
+
+        if (_walled && !_grounded && _xMove != 0f)
+        {
+            _wallSliding = true;
+            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlideSpeed, float.MaxValue));
+        }
+        else
+        {
+            _wallSliding = false;
+        }
+    }
+
+    private void HandleWallJump()
+    {
+        if (_wallSliding)
+        {
+            _wallJumping = false;
+            _wallJumpDir = -_facingDir;
+            _wallJumpCounter = _wallJumpTime;
+
+            CancelInvoke(nameof(StopWallJump));
+        }
+        else
+        {
+            _wallJumpTime -= Time.deltaTime;
+        }
+
+        if (_input.PressJump() && _walled)
+        {
+            _wallJumping = true;
+            rb.velocity = _wallJumpDir * wallJumpForce;
+            _wallJumpCounter = 0f;
+
+            if (_facingDir != _wallJumpDir)
+            {
+                graphic.rotation = _facingDir == -1 ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.Euler(0f, 0f, 0f);
+            }
+
+            Invoke(nameof(StopWallJump), wallJumpDuration);
+        }
+    }
+
+    private void StopWallJump()
+    {
+        _wallJumping = false;
+    }
+
+    private void HandleSpriteFlip()
+    {
+        if (_wallJumping)
+            return;
+
+        if (_xMove < 0f)
+        {
+            graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
+            _facingDir = -1;
+        }
+        else if (_xMove > 0f)
+        {
+            graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
+            _facingDir = 1;
+        }
+    }
+
+    private void HandleAnimation()
+    {
+        anim.SetFloat("xMove", _xMove);
+        anim.SetBool("Grounded", _grounded);
+        anim.SetBool("Attack", _input.PressEquip());
+        anim.SetFloat("TimeInAir", _timeInAir);
+        anim.SetBool("WallSliding", _wallSliding);
+    }
+
+    private void HandleEquipping()
+    {
         if (_input.PressEquip())
         {
             anim.runtimeAnimatorController = anim.runtimeAnimatorController == animCtrl ? torchAnimCtrl : animCtrl;
@@ -154,16 +252,17 @@ public class Player : MonoBehaviour
                 _audio.Stop("Torch Burning");
             }
         }
-        
-        // Attacking
+    }
+
+    private void HandleAttacking()
+    {
         if (_input.PressAttack() && cooldownTimer > attackCooldown)
         {
-            anim.SetTrigger("Attack");
             cooldownTimer = 0f;
         }
         else
         {
-            cooldownTimer += Time.deltaTime;   
+            cooldownTimer += Time.deltaTime;
         }
     }
 
@@ -208,7 +307,7 @@ public class Player : MonoBehaviour
 
     private void ResetTimeInAir()
     {
-        anim.SetFloat("TimeInAir", 0f);
+        _timeInAir = 0;
     }
 
     private string RandomFootstepSound()

@@ -17,7 +17,7 @@ public class InputManager : MonoBehaviour
 
     private void OnDisable() => _inputMaster.Disable();
 
-    public float Horizontal() => _inputMaster.Player.Move.ReadValue<float>();
+    public Vector2 Move() => _inputMaster.Player.Move.ReadValue<Vector2>();
 
     public bool PressJump() => _inputMaster.Player.Jump.WasPressedThisFrame();
 
