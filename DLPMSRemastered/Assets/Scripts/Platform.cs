@@ -5,21 +5,16 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private Collider[] platforms;
+    public Collider2D[] platforms;
     private Player player;
     private float objectSize;
-    public GameObject closestToPlayer;
+    [SerializeField] private Vector2 capsuleSize;
+    [SerializeField] private Vector2 actualCapsuleSize;
 
     void Start()
     {
-        //platforms = Physics2D.OverlapCapsule(gameObject.transform.position, new Vector2(2.5f, 10), );
-        //player = FindObjectOfType<Player>();
-        //closestToPlayer = Vector3.
-    }
-
-
-    void Update()
-    {
-
+        actualCapsuleSize = new Vector2(capsuleSize.x + transform.localScale.x - 1, capsuleSize.y + transform.localScale.y - 1);
+        platforms = Physics2D.OverlapCapsuleAll(transform.position, capsuleSize, CapsuleDirection2D.Horizontal, 0.0f);
+        player = FindObjectOfType<Player>();
     }
 }
