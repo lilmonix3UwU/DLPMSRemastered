@@ -5,20 +5,16 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    private GameObject[] platforms;
-    private GameObject player;
-    // Start is called before the first frame update
+    public Collider2D[] platforms;
+    private Player player;
+    private float objectSize;
+    [SerializeField] private Vector2 capsuleSize;
+    [SerializeField] private Vector2 actualCapsuleSize;
+
     void Start()
     {
-       // platforms = foreach (var item in collection)
-      //  {
-
-       // }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        actualCapsuleSize = new Vector2(capsuleSize.x + transform.localScale.x - 1, capsuleSize.y + transform.localScale.y - 1);
+        platforms = Physics2D.OverlapCapsuleAll(transform.position, capsuleSize, CapsuleDirection2D.Horizontal, 0.0f);
+        player = FindObjectOfType<Player>();
     }
 }
