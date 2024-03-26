@@ -54,14 +54,17 @@ public class Player : MonoBehaviour
     private bool _wallJumping;
 
     [Header("Attacking")]
+    [SerializeField] private Transform fireballSpawn;
     [SerializeField] private float attackCooldown = 5f;
+    [SerializeField] private float fireballSpeed = 50f;
 
-    private float cooldownTimer = Mathf.Infinity;
+    private float _cooldownTimer = Mathf.Infinity;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
     [SerializeField] private ParticleSystem landEffect;
     [SerializeField] private ParticleSystem jumpEffect;
+    [SerializeField] private GameObject fireball;
 
     private void Start()
     {
@@ -230,7 +233,7 @@ public class Player : MonoBehaviour
     {
         anim.SetFloat("xMove", _xMove);
         anim.SetBool("Grounded", _grounded);
-        anim.SetBool("Attack", _input.PressEquip());
+        anim.SetBool("Attack", _input.PressAttack());
         anim.SetFloat("TimeInAir", _timeInAir);
         anim.SetBool("WallSliding", _wallSliding);
     }
@@ -256,14 +259,45 @@ public class Player : MonoBehaviour
 
     private void HandleAttacking()
     {
-        if (_input.PressAttack() && cooldownTimer > attackCooldown)
+        if (_input.PressAttack() && _cooldownTimer > attackCooldown)
         {
-            cooldownTimer = 0f;
+            _cooldownTimer = 0f;
+
+            StartCoroutine(ShootFireball());
         }
         else
         {
-            cooldownTimer += Time.deltaTime;
+            _cooldownTimer += Time.deltaTime;
         }
+    }
+
+    private IEnumerator ShootFireball()
+    {
+        // Spawn fireball
+        GameObject fireballGO = Instantiate(fireball, fireballSpawn.position, Quaternion.identity);
+
+        // Get facing direction
+        Vector3 facingDir = -graphic.right;
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Play sound
+        _audio.Play("Ignite");
+
+        // Move fireball
+        float timeElapsed = 0f;
+
+        while (timeElapsed < 3f)
+        {
+            fireballGO.gameObject.transform.position += facingDir * fireballSpeed * Time.deltaTime;
+
+            timeElapsed += Time.deltaTime;
+
+            yield return null;
+        }
+
+        Destroy(fireballGO);
+        yield return null;
     }
 
     private void Footstep()
@@ -285,19 +319,21 @@ public class Player : MonoBehaviour
 
     private void SlowDown()
     {
-        StartCoroutine(SlowDownCoroutine(slowDownSpeed, revertTime));
+        StartCoroutine(SlowDownCoroutine());
     }
 
-    private IEnumerator SlowDownCoroutine(float speed, float revertTime)
+    private IEnumerator SlowDownCoroutine()
     {
-        _curSpeed = speed;
+        _curSpeed = slowDownSpeed;
 
         float timeElapsed = 0f;
+
         while (timeElapsed < revertTime)
         {
             _curSpeed = Mathf.Lerp(_curSpeed, maxSpeed, timeElapsed / revertTime);
 
             timeElapsed += Time.deltaTime;
+
             yield return null;
         }
 
