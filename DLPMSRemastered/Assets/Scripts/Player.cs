@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
 
     private bool _grounded;
     private float _timeInAir;
-    private float _coyouteTimeCounter;
+    private float _coyoteTimeCounter;
 
     [Header("Wall Sliding/Jumping")]
     [SerializeField] private float wallSlideSpeed = 4f;
@@ -59,11 +59,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float fireballSpeed = 50f;
 
     private float _cooldownTimer = Mathf.Infinity;
+    private bool _attacking;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
     [SerializeField] private ParticleSystem landEffect;
     [SerializeField] private ParticleSystem jumpEffect;
+    [SerializeField] private ParticleSystem wallpJumpEffect;
     [SerializeField] private GameObject fireball;
 
     private void Start()
@@ -74,7 +76,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale == 0f)
+        if (Time.timeScale == 0f || _attacking)
             return;
 
         HandleMoveInput();
@@ -89,6 +91,9 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (_attacking)
+            return;
+        
         HandleMovement();
     }
 
@@ -119,7 +124,7 @@ public class Player : MonoBehaviour
     {
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer.value);
 
-        if (_input.PressJump() && _coyouteTimeCounter > 0f)
+        if (_input.PressJump() && _coyoteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpEffect.Play();
@@ -128,7 +133,7 @@ public class Player : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
 
-            _coyouteTimeCounter = 0f;
+            _coyoteTimeCounter = 0f;
         }
 
         if (rb.velocity.y < 0f)
@@ -150,13 +155,13 @@ public class Player : MonoBehaviour
         // Coyote Time
         if (!_grounded)
         {
-            _coyouteTimeCounter -= Time.deltaTime;
+            _coyoteTimeCounter -= Time.deltaTime;
 
             _timeInAir += Time.deltaTime;
         }
         else
         {
-            _coyouteTimeCounter = coyoteTime;
+            _coyoteTimeCounter = coyoteTime;
 
             Invoke(nameof(ResetTimeInAir), 0.15f);
         }
@@ -166,7 +171,7 @@ public class Player : MonoBehaviour
     {
         _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, wallLayer.value);
 
-        if (_walled && !_grounded && _xMove != 0f)
+        if (_walled && !_grounded && _xMove == _facingDir)
         {
             _wallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlideSpeed, float.MaxValue));
@@ -184,7 +189,7 @@ public class Player : MonoBehaviour
             _wallJumping = false;
             _wallJumpDir = -_facingDir;
             _wallJumpCounter = _wallJumpTime;
-
+            
             CancelInvoke(nameof(StopWallJump));
         }
         else
@@ -192,15 +197,18 @@ public class Player : MonoBehaviour
             _wallJumpTime -= Time.deltaTime;
         }
 
-        if (_input.PressJump() && _walled)
+        if (_input.PressJump() && _wallSliding)
         {
+            wallpJumpEffect.Play();
+            
             _wallJumping = true;
-            rb.velocity = _wallJumpDir * wallJumpForce;
+            rb.velocity = new Vector2(_wallJumpDir * wallJumpForce.x, wallJumpForce.y);
             _wallJumpCounter = 0f;
 
             if (_facingDir != _wallJumpDir)
             {
                 graphic.rotation = _facingDir == -1 ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.Euler(0f, 0f, 0f);
+                _facingDir = -_facingDir;
             }
 
             Invoke(nameof(StopWallJump), wallJumpDuration);
@@ -233,7 +241,7 @@ public class Player : MonoBehaviour
     {
         anim.SetFloat("xMove", _xMove);
         anim.SetBool("Grounded", _grounded);
-        anim.SetBool("Attack", _input.PressAttack());
+        anim.SetBool("Attack", _input.PressAttack() && _cooldownTimer > attackCooldown);
         anim.SetFloat("TimeInAir", _timeInAir);
         anim.SetBool("WallSliding", _wallSliding);
     }
@@ -273,6 +281,11 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShootFireball()
     {
+        _attacking = true;
+        
+        rb.velocity = Vector3.zero;
+        rb.gravityScale = 0;
+        
         // Spawn fireball
         GameObject fireballGO = Instantiate(fireball, fireballSpawn.position, Quaternion.identity);
 
@@ -281,6 +294,10 @@ public class Player : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
+        rb.gravityScale = 4;
+        
+        _attacking = false;
+        
         // Play sound
         _audio.Play("Ignite");
 

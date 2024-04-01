@@ -30,4 +30,6 @@ public class InputManager : MonoBehaviour
     public bool PressAttack() => _inputMaster.Player.Attack.WasPressedThisFrame();
 
     public bool PressPause() => _inputMaster.Player.PauseGame.WasPressedThisFrame();
+
+    public bool PressInteract() => _inputMaster.Player.Interact.WasPressedThisFrame();
 }
