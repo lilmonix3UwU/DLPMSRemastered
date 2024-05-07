@@ -28325,7 +28325,7 @@ GameObject:
   - component: {fileID: 1241542962}
   - component: {fileID: 1241542966}
   m_Layer: 0
-  m_Name: w
+  m_Name: wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28485,6 +28485,14 @@ MonoBehaviour:
   target: {fileID: 0}
   activationDistance: 0
   pathUpdateSeconds: 0
+  speed: 200
+  nextWaypointDistance: 3
+  jumpNodeHeightRequirement: 0.8
+  jumpModifier: 0.3
+  jumpCheckOffset: 0.1
+  followEnabled: 1
+  jumpEnabled: 1
+  directionLookEnabled: 1
 --- !u!1 &1298675571
 GameObject:
   m_ObjectHideFlags: 0
