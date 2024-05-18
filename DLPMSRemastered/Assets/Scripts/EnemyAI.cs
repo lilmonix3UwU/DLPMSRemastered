@@ -19,6 +19,7 @@ public class EnemyAI : MonoBehaviour
     public float jumpModifier = 0.3f;
     public float jumpCheckOffset = 0.1f;
     public int jumpChance;
+    public LayerMask groundMask;
 
     [Header("Costum Behavior")]
     public bool followEnabled = true;
@@ -29,7 +30,7 @@ public class EnemyAI : MonoBehaviour
     private int currentWaypoint = 0;
     bool isGrounded = false;
     Seeker seeker;
-    Rigidbody2D rb;
+    [SerializeField] Rigidbody2D rb;
 
     private void Start()
     {
@@ -37,7 +38,6 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
-
     }
 
     private void FixedUpdate()
@@ -50,7 +50,7 @@ public class EnemyAI : MonoBehaviour
 
     private void UpdatePath()
     {
-        if (TargetInDistance() && followEnabled && seeker.IsDone())
+        if (TargetInDistance() && followEnabled)
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
         }
@@ -58,21 +58,21 @@ public class EnemyAI : MonoBehaviour
 
     private void PathFollow()
     {
-        Debug.Log("pp");
+        
         if (path == null)
         {
             return;
         }
-        Debug.Log("peepee");
+        
         if (currentWaypoint >= path.vectorPath.Count)
         {
             return;
         }
-        Debug.Log("poopoo");
-        isGrounded = Physics2D.Raycast(transform.position, -Vector3.up, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset);
+        
+        isGrounded = Physics2D.Raycast(transform.position, -Vector3.up, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset, groundMask);
        
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = direction * speed * Time.deltaTime;
+        Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime;
 
         if (jumpEnabled && isGrounded)
         {
@@ -83,8 +83,11 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-
-        rb.AddForce(force);
+        if (isGrounded)
+        {
+            rb.AddForce(force);
+        }
+        
 
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
@@ -97,13 +100,12 @@ public class EnemyAI : MonoBehaviour
         {
             if (rb.velocity.x > 0.05f)
             {
-                transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.z);
+                transform.GetComponent<SpriteRenderer>().flipX = true;
             }
             else if (rb.velocity.x > -0.05f)
             {
-                transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.z);
+                transform.GetComponent<SpriteRenderer>().flipX = false;
             }
-
         }
     }
 
@@ -114,11 +116,10 @@ public class EnemyAI : MonoBehaviour
 
     private void OnPathComplete(Path p)
     {
-        if (!path.error)
+        if (!p.error)    
         {
             path = p;
             currentWaypoint = 0;
         }
     }
 }
-
