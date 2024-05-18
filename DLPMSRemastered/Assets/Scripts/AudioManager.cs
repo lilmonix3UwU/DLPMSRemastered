@@ -15,6 +15,7 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         Play("Ambience");
+        Play("Torch Burning");
     }
 
     public void Play(string name)

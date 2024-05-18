@@ -41,12 +41,13 @@ public class Player : MonoBehaviour
     [Header("Wall Sliding/Jumping")]
     [SerializeField] private float wallSlideSpeed = 4f;
     [SerializeField] private float wallJumpDuration = 0.4f;
+    [SerializeField] private float _wallJumpTime = 0.2f;
     [SerializeField] private Vector2 wallJumpForce = new Vector2(8f, 16f);
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallRadius = 0.4f;
     [SerializeField] private LayerMask wallLayer;
 
-    private float _wallJumpTime;
+
     private float _wallJumpCounter;
     private int _wallJumpDir;
     private bool _walled;
@@ -65,8 +66,14 @@ public class Player : MonoBehaviour
     [SerializeField] private ParticleSystem impactEffect;
     [SerializeField] private ParticleSystem landEffect;
     [SerializeField] private ParticleSystem jumpEffect;
-    [SerializeField] private ParticleSystem wallpJumpEffect;
+    [SerializeField] private ParticleSystem wallJumpEffect;
     [SerializeField] private GameObject fireball;
+    [SerializeField] private GameObject fireEffectNormal;
+    [SerializeField] private GameObject fireEffectGreen;
+    [SerializeField] private GameObject fireEffectBlue;
+
+    [Header("UI")]
+    [SerializeField] private Animator torchAnim;
 
     private void Start()
     {
@@ -85,8 +92,8 @@ public class Player : MonoBehaviour
         HandleWallSlide();
         HandleSpriteFlip();
         HandleAnimation();
-        HandleEquipping();
         HandleAttacking();
+        HandleSwitching();
     }
 
     private void FixedUpdate()
@@ -184,22 +191,22 @@ public class Player : MonoBehaviour
 
     private void HandleWallJump()
     {
-        if (_wallSliding)
+        if (!_wallSliding)
+        {
+            _wallJumpCounter -= Time.deltaTime;
+        }
+        else
         {
             _wallJumping = false;
             _wallJumpDir = -_facingDir;
             _wallJumpCounter = _wallJumpTime;
-            
+
             CancelInvoke(nameof(StopWallJump));
         }
-        else
-        {
-            _wallJumpTime -= Time.deltaTime;
-        }
 
-        if (_input.PressJump() && _wallSliding)
+        if (_input.PressJump() && (_wallSliding || _wallJumpCounter > 0f))
         {
-            wallpJumpEffect.Play();
+            wallJumpEffect.Play();
             
             _wallJumping = true;
             rb.velocity = new Vector2(_wallJumpDir * wallJumpForce.x, wallJumpForce.y);
@@ -212,6 +219,10 @@ public class Player : MonoBehaviour
             }
 
             Invoke(nameof(StopWallJump), wallJumpDuration);
+        }
+        if (_input.ReleaseJump() && rb.velocity.y > 0f)
+        {
+            _wallJumpCounter = 0f;
         }
     }
 
@@ -246,7 +257,35 @@ public class Player : MonoBehaviour
         anim.SetBool("WallSliding", _wallSliding);
     }
 
-    private void HandleEquipping()
+    private void HandleSwitching()
+    {
+        if (_input.PressSlot1())
+        {
+            torchAnim.SetInteger("Torch", 1);
+
+            fireEffectNormal.SetActive(true);
+            fireEffectBlue.SetActive(false);
+            fireEffectGreen.SetActive(false);
+        }
+        if (_input.PressSlot2())
+        {
+            torchAnim.SetInteger("Torch", 2);
+
+            fireEffectNormal.SetActive(false);
+            fireEffectBlue.SetActive(true);
+            fireEffectGreen.SetActive(false);
+        }
+        if (_input.PressSlot3())
+        {
+            torchAnim.SetInteger("Torch", 3);
+
+            fireEffectNormal.SetActive(false);
+            fireEffectBlue.SetActive(false);
+            fireEffectGreen.SetActive(true);
+        }
+    }
+
+    /*private void HandleEquipping()
     {
         if (_input.PressEquip())
         {
@@ -263,7 +302,7 @@ public class Player : MonoBehaviour
                 _audio.Stop("Torch Burning");
             }
         }
-    }
+    }*/
 
     private void HandleAttacking()
     {

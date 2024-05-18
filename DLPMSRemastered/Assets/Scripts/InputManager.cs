@@ -25,11 +25,15 @@ public class InputManager : MonoBehaviour
 
     public bool HoldJump() => _inputMaster.Player.Jump.IsPressed();
 
-    public bool PressEquip() => _inputMaster.Player.Equip.WasPressedThisFrame();
-
     public bool PressAttack() => _inputMaster.Player.Attack.WasPressedThisFrame();
 
     public bool PressPause() => _inputMaster.Player.PauseGame.WasPressedThisFrame();
 
     public bool PressInteract() => _inputMaster.Player.Interact.WasPressedThisFrame();
+
+    public bool PressSlot1() => _inputMaster.Player.Slot1.WasPressedThisFrame();
+
+    public bool PressSlot2() => _inputMaster.Player.Slot2.WasPressedThisFrame();
+
+    public bool PressSlot3() => _inputMaster.Player.Slot3.WasPressedThisFrame();
 }

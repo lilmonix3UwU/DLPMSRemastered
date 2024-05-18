@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &364701109348184893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2791512370855983232}
+  - component: {fileID: 7665308092308953394}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2791512370855983232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364701109348184893}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7665308092308953394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364701109348184893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8db3ed7bd7112477dadb72808203196a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Ambience
+    clip: {fileID: 8300000, guid: f17d3e56887ad239ca717d03cb81bc88, type: 3}
+    volume: 0.3
+    pitch: 1
+    start: 0
+    stopAfter: 0
+    loop: 1
+  - name: Ignite
+    clip: {fileID: 8300000, guid: 21303de19e5ac172c92a6879f307fb86, type: 3}
+    volume: 0.2
+    pitch: 1
+    start: 0.2
+    stopAfter: 1
+    loop: 0
+  - name: Footstep1
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.2
+    pitch: 1
+    start: 0.1
+    stopAfter: 2
+    loop: 0
+  - name: Footstep2
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.2
+    pitch: 1
+    start: 2.4
+    stopAfter: 2
+    loop: 0
+  - name: Footstep3
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.2
+    pitch: 1
+    start: 4.5
+    stopAfter: 2
+    loop: 0
+  - name: Land1
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.4
+    pitch: 0.5
+    start: 0.1
+    stopAfter: 2
+    loop: 0
+  - name: Land2
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.4
+    pitch: 0.5
+    start: 2.4
+    stopAfter: 2
+    loop: 0
+  - name: Land3
+    clip: {fileID: 8300000, guid: 0e1a4a3ee8ab3a8dd8c5183726be2829, type: 3}
+    volume: 0.4
+    pitch: 0.5
+    start: 4.5
+    stopAfter: 2
+    loop: 0
+  - name: Torch Burning
+    clip: {fileID: 8300000, guid: 37c5aaef9789e49829ff83ea96fe5617, type: 3}
+    volume: 0.2
+    pitch: 1
+    start: 0
+    stopAfter: 0
+    loop: 1
+  - name: Blow
+    clip: {fileID: 8300000, guid: 37fb86d64b8434948a14330740927a87, type: 3}
+    volume: 0.15
+    pitch: 1
+    start: 3.5
+    stopAfter: 1
+    loop: 0

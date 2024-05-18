@@ -70,7 +70,7 @@ Material:
     - _FogSize: 5
     - _FogSpeed: 0.25
     - _FogSpeed2: 0.5
-    - _Transparency: 0.08
+    - _Transparency: 0.05
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}

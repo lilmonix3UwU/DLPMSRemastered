@@ -126,9 +126,9 @@ TextureImporter:
       name: DLPMS_hp_og_ui1_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 118
-        width: 16
+        x: 0
+        y: 135
+        width: 52
         height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -144,10 +144,31 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DLPMS_hp_og_ui1_1
+      name: DLPMS_hp_og_ui1_3
       rect:
         serializedVersion: 2
-        x: 48
+        x: 1
+        y: 120
+        width: 50
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48de0a17933926408d863b56f0b48d2
+      internalID: -45398312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DLPMS_hp_og_ui1_6
+      rect:
+        serializedVersion: 2
+        x: 64
         y: 102
         width: 32
         height: 32
@@ -158,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d327b0daf34c1b447bdb42a6e6e61ef3
-      internalID: -1245249813
+      spriteID: 52aec738d490949ce925aebcd2467423
+      internalID: -2033310953
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DLPMS_hp_og_ui1_2
+      name: DLPMS_hp_og_ui1_7
       rect:
         serializedVersion: 2
         x: 112
@@ -179,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0fb8814d6b64ae44a799899ec152640
-      internalID: -1369027832
+      spriteID: 2810d196dd9814570b48f04abfe23b7a
+      internalID: 2066392276
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DLPMS_hp_og_ui1_3
+      name: DLPMS_hp_og_ui1_8
       rect:
         serializedVersion: 2
         x: 16
@@ -200,8 +221,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d48de0a17933926408d863b56f0b48d2
-      internalID: -45398312
+      spriteID: 91a5417cc06c64c27bf9a9932da48f29
+      internalID: -1846388792
       vertices: []
       indices: 
       edges: []
@@ -221,6 +242,11 @@ TextureImporter:
       DLPMS_hp_og_ui1_1: -1245249813
       DLPMS_hp_og_ui1_2: -1369027832
       DLPMS_hp_og_ui1_3: -45398312
+      DLPMS_hp_og_ui1_4: 52031381
+      DLPMS_hp_og_ui1_5: 2050974424
+      DLPMS_hp_og_ui1_6: -2033310953
+      DLPMS_hp_og_ui1_7: 2066392276
+      DLPMS_hp_og_ui1_8: -1846388792
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
