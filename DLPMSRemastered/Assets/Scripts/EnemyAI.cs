@@ -3,17 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using System.Security.Cryptography;
+using Unity.VisualScripting;
 
 public class EnemyAI : MonoBehaviour
 {
     [Header("Pathfinding")]
-    public Transform target;
+    public Transform mainTarget;
     public float activationDistance;
     public float pathUpdateSeconds;
 
 
     [Header("Physics")]
     public float speed = 200f;
+    public float wanderSpeed;
     public float nextWaypointDistance = 3f;
     public float jumpNodeHeightRequirement = 0.8f;
     public float jumpModifier = 0.3f;
@@ -26,25 +28,74 @@ public class EnemyAI : MonoBehaviour
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
 
+    [SerializeField] private int wanderDirection;
+    [SerializeField] private bool directionRight;
+    [SerializeField] private Animator animator;
     private Path path;
     private int currentWaypoint = 0;
     bool isGrounded = false;
     Seeker seeker;
     [SerializeField] Rigidbody2D rb;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] float groundRadius = 0.5f;
 
     private void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        animator.SetBool("isGrounded", true);
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
+        wanderDirection = 1;
     }
 
     private void FixedUpdate()
     {
+        animator.SetFloat("wolfVelocity", rb.velocity.x);
+        if (rb.velocity.x > 0)
+        {
+            directionRight = true;
+        }
+        else if (rb.velocity.x < 0)
+        {
+            directionRight = false;
+        }
+
         if (TargetInDistance() && followEnabled)
         {
             PathFollow();
+        }
+        else
+        {
+            Wander();
+        }
+
+        animator.SetBool("isGrounded", isGrounded);
+    }
+
+    private void Wander()
+    {
+        if (rb.velocity.x == 0 && directionRight == true)
+        {
+            wanderDirection = 1;
+        }
+        else if (rb.velocity.x == 0 && directionRight == false)
+        {
+            wanderDirection = -1;
+        }
+        rb.AddForce(Vector2.left * wanderSpeed * wanderDirection);
+        if (TargetInDistance() && followEnabled)
+        {
+            return;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("WanderBarrier"))
+        {
+            wanderDirection = wanderDirection * -1;
         }
     }
 
@@ -52,7 +103,7 @@ public class EnemyAI : MonoBehaviour
     {
         if (TargetInDistance() && followEnabled)
         {
-            seeker.StartPath(rb.position, target.position, OnPathComplete);
+            seeker.StartPath(rb.position, mainTarget.position, OnPathComplete);
         }
     }
 
@@ -69,8 +120,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
         
-        isGrounded = Physics2D.Raycast(transform.position, -Vector3.up, GetComponent<Collider2D>().bounds.extents.y + jumpCheckOffset, groundMask);
-       
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundMask.value);
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime;
 
@@ -85,6 +135,7 @@ public class EnemyAI : MonoBehaviour
 
         if (isGrounded)
         {
+            Debug.Log(":(");
             rb.AddForce(force);
         }
         
@@ -111,7 +162,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInDistance()
     {
-        return Vector2.Distance(transform.position, target.transform.position) < activationDistance;
+        return Vector2.Distance(transform.position, mainTarget.transform.position) < activationDistance;
     }
 
     private void OnPathComplete(Path p)
