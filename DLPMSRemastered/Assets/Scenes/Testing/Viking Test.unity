@@ -14750,10 +14750,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1076308294325249437, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-      propertyPath: m_UpdateMode
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 1824274504406856168, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -62.1
@@ -14798,41 +14794,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7285317869491165336, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-      propertyPath: health
-      value: 
-      objectReference: {fileID: 1315886151}
-    - target: {fileID: 7285317869491165336, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-      propertyPath: torchAnim
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285317869491165336, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-      propertyPath: wallJumpForce.y
-      value: 20
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4134483811760698077, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 1315886151}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
---- !u!1 &1315886146 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4134483811760698077, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-  m_PrefabInstance: {fileID: 1315886145}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1315886147 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1076308294325249437, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-  m_PrefabInstance: {fileID: 1315886145}
-  m_PrefabAsset: {fileID: 0}
---- !u!212 &1315886148 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 7836922898815815447, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
-  m_PrefabInstance: {fileID: 1315886145}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1315886149 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7700532283770418523, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
@@ -14843,25 +14809,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1824274504406856168, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
   m_PrefabInstance: {fileID: 1315886145}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1315886151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1315886146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f55daf6fcdb0a9842b7e8619faee436c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sr: {fileID: 1315886148}
-  anim: {fileID: 1315886147}
-  maxHealth: 100
-  iFramesAmount: 3
-  colorChangeTime: 0.5
-  dead: 0
-  healthSlider: {fileID: 0}
 --- !u!1 &1329198141
 GameObject:
   m_ObjectHideFlags: 0

@@ -154,7 +154,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_Sprite: {fileID: -2130253816, guid: 3064ad237201d445da5c1aad7a306f1d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -9964,7 +9964,7 @@ GameObject:
   - component: {fileID: 3728086948907663459}
   - component: {fileID: 8671140495116328197}
   - component: {fileID: 7285317869491165336}
-  - component: {fileID: 7690621139650883157}
+  - component: {fileID: 6831851025990256074}
   - component: {fileID: 1076308294325249437}
   m_Layer: 8
   m_Name: Player
@@ -10067,7 +10067,7 @@ MonoBehaviour:
   rb: {fileID: 3728086948907663459}
   anim: {fileID: 1076308294325249437}
   graphic: {fileID: 3440838635482550988}
-  health: {fileID: 7690621139650883157}
+  health: {fileID: 6831851025990256074}
   animCtrl: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
   torchAnimCtrl: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
   maxSpeed: 8
@@ -10105,7 +10105,7 @@ MonoBehaviour:
   fireEffectGreen: {fileID: 6729841014101634333}
   fireEffectBlue: {fileID: 4921032698995644115}
   torchAnim: {fileID: 0}
---- !u!114 &7690621139650883157
+--- !u!114 &6831851025990256074
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
