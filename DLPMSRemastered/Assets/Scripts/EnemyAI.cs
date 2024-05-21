@@ -15,6 +15,7 @@ public class EnemyAI : MonoBehaviour
 
     [Header("Physics")]
     public float speed = 200f;
+    public float animationSpeed;
     public float wanderSpeed;
     public float nextWaypointDistance = 3f;
     public float jumpNodeHeightRequirement = 0.8f;
@@ -52,6 +53,19 @@ public class EnemyAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (directionLookEnabled)
+        {
+            if (rb.velocity.x > 0.05f)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else if (rb.velocity.x < -0.05f)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
+        }
+
+        animator.speed = rb.velocity.x * animationSpeed;
         animator.SetFloat("wolfVelocity", rb.velocity.x);
         if (rb.velocity.x > 0)
         {
@@ -147,17 +161,6 @@ public class EnemyAI : MonoBehaviour
             currentWaypoint++;
         }
 
-        if (directionLookEnabled)
-        {
-            if (rb.velocity.x > 0.05f)
-            {
-                transform.GetComponent<SpriteRenderer>().flipX = true;
-            }
-            else if (rb.velocity.x > -0.05f)
-            {
-                transform.GetComponent<SpriteRenderer>().flipX = false;
-            }
-        }
     }
 
     private bool TargetInDistance()
