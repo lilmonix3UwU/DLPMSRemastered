@@ -122,23 +122,20 @@ public class Health : MonoBehaviour
     }
 
     //Collision med enemies
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy") && _iFrames <= 0)
         {
-            if (_iFrames <= 0)
-            {
-                _currentHealth -= 50f;
-                UpdateUI();
+            _currentHealth -= 20f;
+            UpdateUI();
 
-                _iFrames = iFramesAmount;
-            }
-           
+            _iFrames = iFramesAmount;
         }
     }
 
     private void UpdateUI()
     {
-        healthSlider.fillAmount = _currentHealth / maxHealth;
+        if (healthSlider != null)
+            healthSlider.fillAmount = _currentHealth / maxHealth;
     }
 }
