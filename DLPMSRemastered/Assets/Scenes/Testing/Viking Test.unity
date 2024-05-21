@@ -14625,7 +14625,7 @@ MonoBehaviour:
   activationDistance: 20
   pathUpdateSeconds: 0.1
   speed: 14000
-  animationSpeed: 0
+  animationSpeed: 1
   wanderSpeed: 20
   nextWaypointDistance: 1
   jumpNodeHeightRequirement: 0.9
@@ -14636,7 +14636,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   followEnabled: 1
-  jumpEnabled: 1
+  jumpEnabled: 0
   directionLookEnabled: 1
   wanderDirection: 0
   directionRight: 0
@@ -14752,7 +14752,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1824274504406856168, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -62.1
+      value: -11.02
       objectReference: {fileID: 0}
     - target: {fileID: 1824274504406856168, guid: c2d4077a64d6644b69e84f3896da310e, type: 3}
       propertyPath: m_LocalPosition.y

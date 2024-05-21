@@ -55,17 +55,17 @@ public class EnemyAI : MonoBehaviour
     {
         if (directionLookEnabled)
         {
-            if (rb.velocity.x > 0.05f)
+            if (rb.velocity.x > 0.1f)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-            else if (rb.velocity.x < -0.05f)
+            else if (rb.velocity.x < -0.1f)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
         }
 
-        animator.speed = rb.velocity.x * animationSpeed;
+        animator.speed = Mathf.Abs(rb.velocity.x * animationSpeed);
         animator.SetFloat("wolfVelocity", rb.velocity.x);
         if (rb.velocity.x > 0)
         {
@@ -149,7 +149,6 @@ public class EnemyAI : MonoBehaviour
 
         if (isGrounded)
         {
-            Debug.Log(":(");
             rb.AddForce(force);
         }
         
