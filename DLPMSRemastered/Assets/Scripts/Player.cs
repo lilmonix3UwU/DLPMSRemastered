@@ -7,11 +7,13 @@ public class Player : MonoBehaviour
     [SerializeField] private Rigidbody2D rb; 
     [SerializeField] private Animator anim;
     [SerializeField] private Transform graphic;
+    [SerializeField] private Health health;
     [SerializeField] private RuntimeAnimatorController animCtrl; 
     [SerializeField] private RuntimeAnimatorController torchAnimCtrl;
     
     private InputManager _input;
     private AudioManager _audio;
+    private GameOverManager _gameOver;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 8f;
@@ -79,10 +81,25 @@ public class Player : MonoBehaviour
     {
         _input = InputManager.Instance;
         _audio = AudioManager.Instance;
+        _gameOver = GameOverManager.Instance;
     }
 
     private void Update()
     {
+        if (health.dead)
+        {
+            _xMove = 0;
+            _grounded = true;
+            _cooldownTimer = 0;
+            _timeInAir = 0;
+            _wallSliding = false;
+            HandleAnimation();
+
+            _gameOver.GameOver();
+
+            return;
+        }
+
         if (Time.timeScale == 0f || _attacking)
             return;
 
@@ -98,7 +115,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_attacking)
+        if (_attacking || health.dead)
             return;
         
         HandleMovement();
