@@ -9964,6 +9964,7 @@ GameObject:
   - component: {fileID: 3728086948907663459}
   - component: {fileID: 8671140495116328197}
   - component: {fileID: 7285317869491165336}
+  - component: {fileID: 7690621139650883157}
   - component: {fileID: 1076308294325249437}
   m_Layer: 8
   m_Name: Player
@@ -10066,6 +10067,7 @@ MonoBehaviour:
   rb: {fileID: 3728086948907663459}
   anim: {fileID: 1076308294325249437}
   graphic: {fileID: 3440838635482550988}
+  health: {fileID: 7690621139650883157}
   animCtrl: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
   torchAnimCtrl: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
   maxSpeed: 8
@@ -10085,7 +10087,7 @@ MonoBehaviour:
   wallSlideSpeed: 3
   wallJumpDuration: 0.4
   _wallJumpTime: 0.2
-  wallJumpForce: {x: 16, y: 16}
+  wallJumpForce: {x: 16, y: 20}
   wallCheck: {fileID: 838647245441356139}
   wallRadius: 0.3
   wallLayer:
@@ -10103,6 +10105,25 @@ MonoBehaviour:
   fireEffectGreen: {fileID: 6729841014101634333}
   fireEffectBlue: {fileID: 4921032698995644115}
   torchAnim: {fileID: 0}
+--- !u!114 &7690621139650883157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4134483811760698077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55daf6fcdb0a9842b7e8619faee436c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 7836922898815815447}
+  anim: {fileID: 1076308294325249437}
+  maxHealth: 100
+  iFramesAmount: 3
+  colorChangeTime: 0.5
+  dead: 0
+  healthSlider: {fileID: 0}
 --- !u!95 &1076308294325249437
 Animator:
   serializedVersion: 5
@@ -10115,7 +10136,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
