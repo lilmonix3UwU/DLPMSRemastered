@@ -55,11 +55,11 @@ public class EnemyAI : MonoBehaviour
     {
         if (directionLookEnabled)
         {
-            if (rb.velocity.x > 0.1f)
+            if (rb.velocity.x > 1)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-            else if (rb.velocity.x < -0.1f)
+            else if (rb.velocity.x < 1)
             {
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
