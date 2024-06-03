@@ -1,12 +1,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Health : MonoBehaviour
 {
+    [Header("Components")]
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Animator anim;
 
+    [Header("Configuration")]
     [SerializeField] private int maxHealth;
     [SerializeField] private float iFramesAmount = 3f;
     [SerializeField] private float colorChangeTime = 1f;
@@ -19,8 +22,12 @@ public class Health : MonoBehaviour
     private bool _initialColorChanging = false;
     private bool _initialHasChanged = false;
 
-    [Header("UI")]
+    [Header("Effects")]
+    [SerializeField] private GameObject hitEffect;
+
+    [Header("UI (Optional)")]
     [SerializeField] private Image healthSlider;
+    [SerializeField] private TMP_Text dmgText;
 
     private void Start()
     {
@@ -126,16 +133,32 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy") && _iFrames <= 0)
         {
-            _curHealth -= 20;
+            int dmg = 20;
+
+            dmgText.text = dmg.ToString();
+
+            _curHealth -= dmg;
             UpdateUI();
 
             _iFrames = iFramesAmount;
+
+            // Hit effect
+            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectGO, 1);
         }
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
-            _curHealth -= 20;
+            int dmg = 100;
+
+            dmgText.text = dmg.ToString();
+
+            _curHealth -= dmg;
 
             _iFrames = iFramesAmount;
+
+            // Hit effect
+            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectGO, 1);
         }
     }
 
