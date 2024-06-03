@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     private GameOverManager _gameOver;
 
     [HideInInspector] public bool onlyAnimate;
+    [HideInInspector] public bool gettingPushed;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 8f;
@@ -147,7 +148,7 @@ public class Player : MonoBehaviour
 
     private void HandleMovement()
     {
-        if (_wallJumping)
+        if (_wallJumping || gettingPushed)
             return;
 
         rb.velocity = new Vector2(_xMove * _curSpeed, rb.velocity.y);

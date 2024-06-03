@@ -61,7 +61,7 @@ public class Health : MonoBehaviour
         if (_iFrames <= 0)
         {
             StopCoroutine(ColorChange());
-            sr.color = Color.white;
+            sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
 
             _initialHasChanged = false;
         }
@@ -79,14 +79,21 @@ public class Health : MonoBehaviour
             timeElapsed += Time.deltaTime;
 
             tmp1.a = Mathf.Lerp(0.25f, 1f, timeElapsed / colorChangeTime);
-            tmp1.g = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
-            tmp1.b = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
+            if (TryGetComponent(out EnemyAI enemyComp))
+            {
+                tmp1.r = enemyComp.frozen ? Mathf.Lerp(1f, 0f, timeElapsed / colorChangeTime) : 1f;
+                tmp1.g = enemyComp.frozen ? Mathf.Lerp(0f, 0.75f, timeElapsed / colorChangeTime) : Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
+                tmp1.b = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
+            }
 
             sr.color = tmp1;
             yield return null;
         }
 
-        sr.color = Color.white;
+        if (TryGetComponent(out EnemyAI enemyComp2))
+            sr.color = enemyComp2.frozen ? new Color(0f, 0.75f, 1f) : Color.white;
+        else
+            sr.color = Color.white;
 
         _initialColorChanging = false;
         _initialHasChanged = true;
@@ -129,10 +136,24 @@ public class Health : MonoBehaviour
     }
 
     //Collision med enemies
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy") && _iFrames <= 0)
+        if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy"))
         {
+            int forceDir;
+            forceDir = collision.gameObject.GetComponent<SpriteRenderer>().flipX ? 1 : -1;
+
+            Player plr = GetComponent<Player>();
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+            plr.gettingPushed = true;
+            Invoke("ResetPushBool", 0.5f);
+
+            rb.velocity += new Vector2(forceDir * 10, 10);
+
+            if (_iFrames > 0)
+                return;
+
             int dmg = 20;
 
             dmgText.text = dmg.ToString();
@@ -146,6 +167,10 @@ public class Health : MonoBehaviour
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
         }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
             int dmg = 100;
@@ -160,6 +185,11 @@ public class Health : MonoBehaviour
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
         }
+    }
+
+    private void ResetPushBool()
+    {
+        FindObjectOfType<Player>().gettingPushed = false;
     }
 
     private void UpdateUI()
