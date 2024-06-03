@@ -14641,6 +14641,7 @@ MonoBehaviour:
   freezeTime: 3
   freezeMovementPenalty: 0.2
   frozen: 0
+  colorChangeTime: 0.5
   freezed: 0
   wanderDirection: 0
   directionRight: 0
@@ -16063,7 +16064,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 78
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 1, b: 1, a: 0.27450982}
+  m_Color: {r: 0, g: 0.5686275, b: 1, a: 0.27450982}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -33,10 +33,12 @@ public class EnemyAI : MonoBehaviour
     public bool frozen;
 
     
+    [SerializeField] private float colorChangeTime = 0.5f;
     [SerializeField] private float freezed;
     [SerializeField] private int wanderDirection;
     [SerializeField] private bool directionRight;
     [SerializeField] private Animator animator;
+    private SpriteRenderer sr;
     private Path path;
     private int currentWaypoint = 0;
     bool isGrounded = false;
@@ -47,6 +49,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Start()
     {
+        sr = gameObject.GetComponent<SpriteRenderer>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -122,13 +125,44 @@ public class EnemyAI : MonoBehaviour
         {
             StartCoroutine(Freeze());
             frozen = true;
+            
         }
     }
 
     private IEnumerator Freeze()
     {
         freezed = freezeMovementPenalty;
+        float timeElapsed = 0;
+        Color tmp1 = sr.color;
+
+        while (timeElapsed < colorChangeTime)
+        {
+            timeElapsed += Time.deltaTime;
+
+            tmp1.r = Mathf.Lerp(1f, 0, timeElapsed / colorChangeTime);
+            tmp1.g = Mathf.Lerp(1f, 0.75f, timeElapsed / colorChangeTime);
+
+            sr.color = tmp1;
+            yield return null;
+        }
+
+        sr.color = new Color(0, 0.75f, 1f, 1f);
         yield return new WaitForSeconds(freezeTime);
+        timeElapsed = 0;
+
+        while (timeElapsed < colorChangeTime)
+        {
+            timeElapsed += Time.deltaTime;
+
+            tmp1.r = Mathf.Lerp(0, 1f, timeElapsed / colorChangeTime);
+            tmp1.g = Mathf.Lerp(0.75f, 1f, timeElapsed / colorChangeTime);
+
+            sr.color = tmp1;
+            yield return null;
+        }
+
+        sr.color = Color.white;
+        
         freezed = 1;
         frozen = false;
     }

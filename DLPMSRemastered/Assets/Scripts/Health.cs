@@ -109,7 +109,7 @@ public class Health : MonoBehaviour
             yield return null;
         }
 
-        sr.color = new Color(1f, 1f, 1f, 0.25f);
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 0.25f);
 
         timeElapsed = 0;
 
@@ -123,7 +123,7 @@ public class Health : MonoBehaviour
             yield return null;
         }
 
-        sr.color = Color.white;
+        sr.color = new Color(sr.color.r, sr.color.g, sr.color.b, 1f);
 
         _colorChanging = false;
     }
