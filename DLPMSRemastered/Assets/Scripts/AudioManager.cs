@@ -12,12 +12,6 @@ public class AudioManager : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        Play("Ambience");
-        Play("Torch Burning");
-    }
-
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);

@@ -61,7 +61,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffect/Light 2D (1)
+    path: Graphic/TorchEffects/FireTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0
@@ -109,7 +109,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffectGreen/Light 2D (1)
+    path: Graphic/TorchEffects/IceTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0
@@ -157,7 +157,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffectBlue/Light 2D (1)
+    path: Graphic/TorchEffects/PoisonTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0
@@ -195,7 +195,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 726607390
+      path: 1653071487
       attribute: 898800009
       script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
       typeID: 114
@@ -204,7 +204,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 2723329351
+      path: 2228730107
       attribute: 898800009
       script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
       typeID: 114
@@ -213,7 +213,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3012725606
+      path: 246510512
       attribute: 898800009
       script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
       typeID: 114
@@ -305,7 +305,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffect/Light 2D (1)
+    path: Graphic/TorchEffects/FireTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0
@@ -353,7 +353,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffectGreen/Light 2D (1)
+    path: Graphic/TorchEffects/IceTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0
@@ -401,7 +401,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_Intensity
-    path: Graphic/TorchEffects/TorchLightEffectBlue/Light 2D (1)
+    path: Graphic/TorchEffects/PoisonTorchEffect/Light 2D (1)
     classID: 114
     script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
     flags: 0

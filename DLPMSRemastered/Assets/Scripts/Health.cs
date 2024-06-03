@@ -7,11 +7,11 @@ public class Health : MonoBehaviour
     [SerializeField] private SpriteRenderer sr;
     [SerializeField] private Animator anim;
 
-    [SerializeField] private float maxHealth;
+    [SerializeField] private int maxHealth;
     [SerializeField] private float iFramesAmount = 3f;
     [SerializeField] private float colorChangeTime = 1f;
 
-    private float _currentHealth;
+    private int _curHealth;
     private float _iFrames = 0f;
     private bool _colorChanging = false;
 
@@ -24,13 +24,13 @@ public class Health : MonoBehaviour
 
     private void Start()
     {
-        _currentHealth = maxHealth;
+        _curHealth = maxHealth;
         UpdateUI();
     }
 
     private void Update()
     {
-        if (_currentHealth <= 0)
+        if (_curHealth <= 0)
         {
             dead = true;
             anim.SetTrigger("Die");
@@ -122,12 +122,18 @@ public class Health : MonoBehaviour
     }
 
     //Collision med enemies
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy") && _iFrames <= 0)
         {
-            _currentHealth -= 20f;
+            _curHealth -= 20;
             UpdateUI();
+
+            _iFrames = iFramesAmount;
+        }
+        if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
+        {
+            _curHealth -= 20;
 
             _iFrames = iFramesAmount;
         }
@@ -135,7 +141,9 @@ public class Health : MonoBehaviour
 
     private void UpdateUI()
     {
-        if (healthSlider != null)
-            healthSlider.fillAmount = _currentHealth / maxHealth;
+        if (healthSlider == null)
+            return;
+
+        healthSlider.fillAmount = (float)_curHealth / maxHealth;
     }
 }

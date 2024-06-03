@@ -11,6 +11,8 @@ public class GameOverManager : MonoBehaviour
 
     [SerializeField] private float fadeInTime = 1f;
 
+    [HideInInspector] public bool gameIsOver;
+
     private bool _fading = false;
     private bool _canDissolve = false;
 

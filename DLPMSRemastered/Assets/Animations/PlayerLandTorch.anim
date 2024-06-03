@@ -154,7 +154,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffect
+    path: Graphic/TorchEffects/FireTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -175,7 +175,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffect
+    path: Graphic/TorchEffects/FireTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -196,7 +196,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffectBlue
+    path: Graphic/TorchEffects/IceTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -217,7 +217,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffectBlue
+    path: Graphic/TorchEffects/IceTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -238,7 +238,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffectGreen
+    path: Graphic/TorchEffects/PoisonTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -259,7 +259,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffectGreen
+    path: Graphic/TorchEffects/PoisonTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -323,7 +323,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1383975263
+      path: 1394046963
       attribute: 447094032
       script: {fileID: 0}
       typeID: 198
@@ -332,7 +332,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1383975263
+      path: 1394046963
       attribute: 3063797154
       script: {fileID: 0}
       typeID: 198
@@ -341,7 +341,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 752935122
+      path: 3275200349
       attribute: 447094032
       script: {fileID: 0}
       typeID: 198
@@ -350,7 +350,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 752935122
+      path: 3275200349
       attribute: 3063797154
       script: {fileID: 0}
       typeID: 198
@@ -359,7 +359,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1962540134
+      path: 4226401301
       attribute: 447094032
       script: {fileID: 0}
       typeID: 198
@@ -368,7 +368,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1962540134
+      path: 4226401301
       attribute: 3063797154
       script: {fileID: 0}
       typeID: 198
@@ -824,7 +824,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffect
+    path: Graphic/TorchEffects/FireTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -845,7 +845,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffect
+    path: Graphic/TorchEffects/FireTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -866,7 +866,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffectBlue
+    path: Graphic/TorchEffects/IceTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -887,7 +887,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffectBlue
+    path: Graphic/TorchEffects/IceTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -908,7 +908,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.minScalar
-    path: Graphic/TorchEffects/TorchLightEffectGreen
+    path: Graphic/TorchEffects/PoisonTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0
@@ -929,7 +929,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: InitialModule.startLifetime.scalar
-    path: Graphic/TorchEffects/TorchLightEffectGreen
+    path: Graphic/TorchEffects/PoisonTorchEffect
     classID: 198
     script: {fileID: 0}
     flags: 0

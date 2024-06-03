@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.Serialization;
 
 public class InteractionManager : MonoBehaviour
 {
@@ -22,6 +21,8 @@ public class InteractionManager : MonoBehaviour
     private float _interactTimer;
 
     private IEnumerator _typingCoroutine;
+
+    private AudioManager _audio;
     
     public static InteractionManager Instance;
 
@@ -33,6 +34,7 @@ public class InteractionManager : MonoBehaviour
     private void Start()
     {
         _sentences = new Queue<Sentence>();
+        _audio = AudioManager.Instance;
     }
 
     private void Update()
@@ -102,6 +104,8 @@ public class InteractionManager : MonoBehaviour
         text.text = ""; // Clear the text
         foreach (char letter in sentence.text)
         {
+            _audio.Play("Dialogue");
+
             text.text += letter;
 
             if (letter == '!' || letter == ',' || letter == '.' || letter == '?') 
@@ -124,6 +128,9 @@ public class InteractionManager : MonoBehaviour
     public void EndInteraction()
     {
         StopCoroutine(_typingCoroutine);
+        _typing = false;
+
+        _sentences.Clear();
 
         interactionBoxAnimator.SetBool("IsOpen", false);
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour
 {
@@ -8,12 +9,12 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private Transform graphic;
     [SerializeField] private Health health;
-    [SerializeField] private RuntimeAnimatorController animCtrl; 
-    [SerializeField] private RuntimeAnimatorController torchAnimCtrl;
     
     private InputManager _input;
     private AudioManager _audio;
     private GameOverManager _gameOver;
+
+    [HideInInspector] public bool onlyAnimate;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 8f;
@@ -57,31 +58,47 @@ public class Player : MonoBehaviour
     private bool _wallJumping;
 
     [Header("Attacking")]
+    [SerializeField] private GameObject fireball;
+    [SerializeField] private GameObject ice;
     [SerializeField] private Transform fireballSpawn;
+    [SerializeField] private Transform iceSpawn;
     [SerializeField] private float attackCooldown = 5f;
     [SerializeField] private float fireballSpeed = 50f;
 
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;
 
+    private int fireTorchAmount = 3;
+    private int iceTorchAmount = 3;
+    private int poisonTorchAmount = 3;
+
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
     [SerializeField] private ParticleSystem landEffect;
     [SerializeField] private ParticleSystem jumpEffect;
     [SerializeField] private ParticleSystem wallJumpEffect;
-    [SerializeField] private GameObject fireball;
-    [SerializeField] private GameObject fireEffectNormal;
-    [SerializeField] private GameObject fireEffectGreen;
-    [SerializeField] private GameObject fireEffectBlue;
+    [SerializeField] private GameObject fireEffect;
+    [SerializeField] private GameObject poisonEffect;
+    [SerializeField] private GameObject iceEffect;
 
     [Header("UI")]
     [SerializeField] private Animator torchAnim;
+    [SerializeField] private TMP_Text fireTorchText;
+    [SerializeField] private TMP_Text iceTorchText;
+    [SerializeField] private TMP_Text posionTorchText;
 
     private void Start()
     {
         _input = InputManager.Instance;
         _audio = AudioManager.Instance;
         _gameOver = GameOverManager.Instance;
+
+        _audio.Play("Ambience");
+        _audio.Play("Torch Burning");
+
+        fireTorchText.text = fireTorchAmount.ToString();
+        iceTorchText.text = iceTorchAmount.ToString();
+        posionTorchText.text = poisonTorchAmount.ToString();
     }
 
     private void Update()
@@ -100,7 +117,14 @@ public class Player : MonoBehaviour
             return;
         }
 
-        if (Time.timeScale == 0f || _attacking)
+        if (Time.timeScale == 0)
+        {
+            anim.speed = 0;
+            return;
+        }
+        else anim.speed = 1;
+
+        if (_attacking)
             return;
 
         HandleMoveInput();
@@ -131,6 +155,9 @@ public class Player : MonoBehaviour
 
     private void HandleMoveInput()
     {
+        if (onlyAnimate)
+            return;
+
         _xMove = _input.Move().x;
 
         // Acceleration & Deceleration
@@ -148,6 +175,14 @@ public class Player : MonoBehaviour
     {
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer.value);
 
+        if (rb.velocity.y < 0f)
+        {
+            rb.velocity += Vector2.up * (Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime);
+        }
+
+        if (onlyAnimate)
+            return;
+
         if (_input.PressJump() && _coyoteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
@@ -158,11 +193,6 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
 
             _coyoteTimeCounter = 0f;
-        }
-
-        if (rb.velocity.y < 0f)
-        {
-            rb.velocity += Vector2.up * (Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime);
         }
 
         // Slight boost forward in air when holding jump
@@ -276,58 +306,54 @@ public class Player : MonoBehaviour
 
     private void HandleSwitching()
     {
-        if (_input.PressSlot1())
+        if (_input.PressSlot1() && fireTorchAmount > 0)
         {
             torchAnim.SetInteger("Torch", 1);
 
-            fireEffectNormal.SetActive(true);
-            fireEffectBlue.SetActive(false);
-            fireEffectGreen.SetActive(false);
+            fireEffect.SetActive(true);
+            iceEffect.SetActive(false);
+            poisonEffect.SetActive(false);
         }
-        if (_input.PressSlot2())
+        if (_input.PressSlot2() && iceTorchAmount > 0)
         {
             torchAnim.SetInteger("Torch", 2);
 
-            fireEffectNormal.SetActive(false);
-            fireEffectBlue.SetActive(true);
-            fireEffectGreen.SetActive(false);
+            fireEffect.SetActive(false);
+            iceEffect.SetActive(true);
+            poisonEffect.SetActive(false);
         }
-        if (_input.PressSlot3())
+        if (_input.PressSlot3() && poisonTorchAmount > 0)
         {
             torchAnim.SetInteger("Torch", 3);
 
-            fireEffectNormal.SetActive(false);
-            fireEffectBlue.SetActive(false);
-            fireEffectGreen.SetActive(true);
+            fireEffect.SetActive(false);
+            iceEffect.SetActive(false);
+            poisonEffect.SetActive(true);
         }
     }
 
-    /*private void HandleEquipping()
-    {
-        if (_input.PressEquip())
-        {
-            anim.runtimeAnimatorController = anim.runtimeAnimatorController == animCtrl ? torchAnimCtrl : animCtrl;
-
-            if (anim.runtimeAnimatorController == torchAnimCtrl)
-            {
-                _audio.Play("Ignite");
-                _audio.Play("Torch Burning");
-            }
-            else
-            {
-                _audio.Play("Blow");
-                _audio.Stop("Torch Burning");
-            }
-        }
-    }*/
-
     private void HandleAttacking()
     {
+        if (onlyAnimate)
+            return;
+
         if (_input.PressAttack() && _cooldownTimer > attackCooldown)
         {
-            _cooldownTimer = 0f;
+            switch (torchAnim.GetInteger("Torch"))
+            {
+                case 1:
+                    if (fireTorchAmount <= 0) return;
+                    _cooldownTimer = 0f;
 
-            StartCoroutine(ShootFireball());
+                    StartCoroutine(ShootFireball());
+                    break;
+                case 2:
+                    if (iceTorchAmount <= 0) return;
+                    _cooldownTimer = 0f;
+
+                    StartCoroutine(ShootIce());
+                    break;
+            }
         }
         else
         {
@@ -340,18 +366,20 @@ public class Player : MonoBehaviour
         _attacking = true;
         
         rb.velocity = Vector3.zero;
-        rb.gravityScale = 0;
         
         // Spawn fireball
         GameObject fireballGO = Instantiate(fireball, fireballSpawn.position, Quaternion.identity);
 
-        // Get facing direction
-        Vector3 facingDir = -graphic.right;
-
         yield return new WaitForSeconds(0.5f);
 
-        rb.gravityScale = 4;
-        
+        int curFacingDir = _facingDir;
+
+        fireTorchAmount--;
+        fireTorchText.text = fireTorchAmount.ToString();
+
+        if (fireTorchAmount <= 0)
+            fireEffect.SetActive(false);
+
         _attacking = false;
         
         // Play sound
@@ -362,7 +390,7 @@ public class Player : MonoBehaviour
 
         while (timeElapsed < 3f)
         {
-            fireballGO.gameObject.transform.position += facingDir * fireballSpeed * Time.deltaTime;
+            fireballGO.gameObject.transform.position += new Vector3(curFacingDir, 0, 0) * fireballSpeed * Time.deltaTime;
 
             timeElapsed += Time.deltaTime;
 
@@ -370,6 +398,34 @@ public class Player : MonoBehaviour
         }
 
         Destroy(fireballGO);
+        yield return null;
+    }
+
+    private IEnumerator ShootIce()
+    {
+        _attacking = true;
+
+        rb.velocity = Vector3.zero;
+
+        yield return new WaitForSeconds(0.5f);
+
+        // Spawn ice
+        GameObject iceGO = Instantiate(ice, iceSpawn.position, graphic.rotation);
+
+        iceTorchAmount--;
+        iceTorchText.text = iceTorchAmount.ToString();
+
+        if (iceTorchAmount <= 0)
+            iceEffect.SetActive(false);
+
+        _attacking = false;
+
+        // Play sound
+        _audio.Play("Ignite");
+
+        yield return new WaitForSeconds(2);
+
+        Destroy(iceGO);
         yield return null;
     }
 

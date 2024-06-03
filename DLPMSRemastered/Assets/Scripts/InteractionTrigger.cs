@@ -14,6 +14,8 @@ public class InteractionTrigger : MonoBehaviour
     [SerializeField] private float minDist;
     [SerializeField] private Vector2 boxOffset;
 
+    private bool _interacting;
+
     private void Start()
     {
         _interaction = InteractionManager.Instance;
@@ -24,13 +26,15 @@ public class InteractionTrigger : MonoBehaviour
     {
         interactionBox.transform.position = (Vector2)transform.position + boxOffset;
 
-        if (Vector2.Distance(transform.position, plr.position) < minDist && _input.PressInteract())
+        if (Vector2.Distance(transform.position, plr.position) < minDist && (!_interacting || _input.PressInteract()))
         {
+            _interacting = true;
             _interaction.Interact(sentences);
         }
         else if (Vector2.Distance(transform.position, plr.position) > minDist && _interaction.interactionActive)
         {
             _interaction.EndInteraction();
+            _interacting = false;
         }
     }
 }
