@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7670416598271647184}
   - component: {fileID: 387482482832024731}
   - component: {fileID: 1450661684812928568}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice
   m_TagString: Attack
   m_Icon: {fileID: 0}
@@ -4975,7 +4975,7 @@ GameObject:
   - component: {fileID: 7902807616643628254}
   - component: {fileID: 4916255965070346700}
   - component: {fileID: 4072968822082908626}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9891,7 +9891,7 @@ GameObject:
   - component: {fileID: 6461217254474349070}
   - component: {fileID: 186947637757297809}
   - component: {fileID: 6623696592316881037}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Ice
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14807,7 +14807,7 @@ GameObject:
   - component: {fileID: 7595355330692960207}
   - component: {fileID: 827821087530059409}
   - component: {fileID: 789377785740293327}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Snowflakes (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19635,7 +19635,7 @@ GameObject:
   - component: {fileID: 2522819705256421626}
   - component: {fileID: 5184201247564146949}
   - component: {fileID: 8709003351421616766}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19739,7 +19739,7 @@ GameObject:
   - component: {fileID: 4911486496360156406}
   - component: {fileID: 3735936789405368020}
   - component: {fileID: 6855464714528373944}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Snowflakes (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24567,7 +24567,7 @@ GameObject:
   - component: {fileID: 8247910187525912721}
   - component: {fileID: 543815229648508380}
   - component: {fileID: 3685870337127086926}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Snowflakes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29395,7 +29395,7 @@ GameObject:
   - component: {fileID: 7941578992319306886}
   - component: {fileID: 4871243924928483545}
   - component: {fileID: 3498491112136935450}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29499,7 +29499,7 @@ GameObject:
   - component: {fileID: 674362195709497472}
   - component: {fileID: 6894489255761069449}
   - component: {fileID: 4821115418082156960}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Light 2D (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

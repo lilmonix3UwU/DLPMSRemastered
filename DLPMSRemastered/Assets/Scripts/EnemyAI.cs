@@ -28,7 +28,12 @@ public class EnemyAI : MonoBehaviour
     public bool followEnabled = true;
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
+    public float freezeTime;
+    public float freezeMovementPenalty;
+    public bool frozen;
 
+    
+    [SerializeField] private float freezed;
     [SerializeField] private int wanderDirection;
     [SerializeField] private bool directionRight;
     [SerializeField] private Animator animator;
@@ -49,6 +54,7 @@ public class EnemyAI : MonoBehaviour
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
         wanderDirection = 1;
+        freezed = 1;
     }
 
     private void FixedUpdate()
@@ -111,6 +117,20 @@ public class EnemyAI : MonoBehaviour
         {
             wanderDirection = wanderDirection * -1;
         }
+
+        if (collision.gameObject.layer == 10 && !frozen)
+        {
+            StartCoroutine(Freeze());
+            frozen = true;
+        }
+    }
+
+    private IEnumerator Freeze()
+    {
+        freezed = freezeMovementPenalty;
+        yield return new WaitForSeconds(freezeTime);
+        freezed = 1;
+        frozen = false;
     }
 
     private void UpdatePath()
@@ -136,7 +156,7 @@ public class EnemyAI : MonoBehaviour
         
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundMask.value);
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
-        Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime;
+        Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime * freezed;
 
         if (jumpEnabled && isGrounded)
         {
