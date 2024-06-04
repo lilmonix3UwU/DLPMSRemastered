@@ -21,11 +21,12 @@ public class EnemyAI : MonoBehaviour
     public float jumpNodeHeightRequirement = 0.8f;
     public float jumpModifier = 0.3f;
     public float jumpCheckOffset = 0.1f;
-    public int jumpChance;
+    public int jumpChanceMax;
     public LayerMask groundMask;
 
     [Header("Costum Behavior")]
     public bool followEnabled = true;
+    public bool wanderEnabled = true;
     public bool jumpEnabled = true;
     public bool directionLookEnabled = true;
     public float freezeTime;
@@ -38,6 +39,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private int wanderDirection;
     [SerializeField] private bool directionRight;
     [SerializeField] private Animator animator;
+    private int jumpChance;
     private SpriteRenderer sr;
     private Path path;
     private int currentWaypoint = 0;
@@ -62,6 +64,16 @@ public class EnemyAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GetComponent<Health>().dead)
+        {
+            followEnabled = false;
+            wanderEnabled = false;
+            jumpEnabled = false;
+            directionLookEnabled = false;
+            sr.color = new Color(0.2f, 0.2f, 0.2f, 1);
+            
+        }
+
         if (directionLookEnabled)
         {
             if (rb.velocity.x > 1)
@@ -89,7 +101,7 @@ public class EnemyAI : MonoBehaviour
         {
             PathFollow();
         }
-        else
+        else if (wanderEnabled)
         {
             Wander();
         }
@@ -146,7 +158,7 @@ public class EnemyAI : MonoBehaviour
             yield return null;
         }
 
-        sr.color = new Color(0, 0.75f, 1f, 1f);
+        sr.color = new Color(0, 0.75f, sr.color.g, sr.color.a);
         yield return new WaitForSeconds(freezeTime);
         timeElapsed = 0;
 
@@ -161,7 +173,7 @@ public class EnemyAI : MonoBehaviour
             yield return null;
         }
 
-        sr.color = Color.white;
+        sr.color = new Color(1f, 1f, sr.color.g, sr.color.a);
         
         freezed = 1;
         frozen = false;
@@ -194,7 +206,7 @@ public class EnemyAI : MonoBehaviour
 
         if (jumpEnabled && isGrounded)
         {
-            jumpChance = Random.Range(1, 4);
+            jumpChance = Random.Range(1, jumpChanceMax);
             if (direction.y > jumpNodeHeightRequirement && jumpChance == 1)
             {
                 rb.AddForce(Vector2.up * speed * jumpModifier);

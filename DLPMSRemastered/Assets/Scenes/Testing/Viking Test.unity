@@ -14462,6 +14462,7 @@ GameObject:
   - component: {fileID: 1241542966}
   - component: {fileID: 1241542967}
   - component: {fileID: 1241542968}
+  - component: {fileID: 1241542969}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Enemy
@@ -14631,11 +14632,12 @@ MonoBehaviour:
   jumpNodeHeightRequirement: 0.9
   jumpModifier: 0.5
   jumpCheckOffset: 0.2
-  jumpChance: 1
+  jumpChanceMax: 8
   groundMask:
     serializedVersion: 2
     m_Bits: 8
   followEnabled: 1
+  wanderEnabled: 1
   jumpEnabled: 0
   directionLookEnabled: 1
   freezeTime: 3
@@ -14648,7 +14650,7 @@ MonoBehaviour:
   animator: {fileID: 1241542968}
   rb: {fileID: 1241542963}
   groundCheck: {fileID: 832667255}
-  groundRadius: 0.5
+  groundBox: {x: 0, y: 0}
 --- !u!114 &1241542967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14698,6 +14700,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1241542969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241542961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55daf6fcdb0a9842b7e8619faee436c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sr: {fileID: 1241542964}
+  anim: {fileID: 0}
+  maxHealth: 1
+  iFramesAmount: 3
+  colorChangeTime: 1
+  dead: 0
+  hitEffect: {fileID: 0}
+  healthSlider: {fileID: 0}
+  dmgText: {fileID: 0}
 --- !u!1 &1298675571
 GameObject:
   m_ObjectHideFlags: 0
@@ -15972,7 +15995,7 @@ GameObject:
   - component: {fileID: 2087069947}
   m_Layer: 10
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
