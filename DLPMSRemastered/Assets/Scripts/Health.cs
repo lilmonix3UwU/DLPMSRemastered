@@ -131,7 +131,7 @@ public class Health : MonoBehaviour
     //Collision med enemies
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy"))
+        if (CompareTag("Player") && collision.gameObject.CompareTag("Enemy") && !collision.gameObject.GetComponent<Health>().dead)
         {
             int forceDir;
             forceDir = collision.gameObject.GetComponent<SpriteRenderer>().flipX ? 1 : -1;
@@ -142,7 +142,7 @@ public class Health : MonoBehaviour
             plr.gettingPushed = true;
             Invoke("ResetPushBool", 0.5f);
 
-            rb.velocity += new Vector2(forceDir * 10, 10);
+            rb.velocity += new Vector2(forceDir * 5, 5);
 
             if (_iFrames > 0)
                 return;
