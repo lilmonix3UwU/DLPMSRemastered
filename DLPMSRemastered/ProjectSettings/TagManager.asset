@@ -8,7 +8,6 @@ TagManager:
   - Enemy
   - WanderBarrier
   - Attack
-  - Fireball
   layers:
   - Default
   - TransparentFX

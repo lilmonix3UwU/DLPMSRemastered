@@ -49,11 +49,11 @@ public class Health : MonoBehaviour
         }
         if (_iFrames > 0 && !_colorChanging && !_initialColorChanging)
         {
-            if (!_initialHasChanged)
+            if (!_initialHasChanged && !CompareTag("Enemy"))
             {
                 StartCoroutine(InitialColorChange());
             }
-            else if (_initialHasChanged && !dead)
+            else if ((_initialHasChanged || CompareTag("Enemy")) && !dead)
             {
                 StartCoroutine(ColorChange());
             }
@@ -79,21 +79,14 @@ public class Health : MonoBehaviour
             timeElapsed += Time.deltaTime;
 
             tmp1.a = Mathf.Lerp(0.25f, 1f, timeElapsed / colorChangeTime);
-            if (TryGetComponent(out EnemyAI enemyComp))
-            {
-                tmp1.r = enemyComp.frozen ? Mathf.Lerp(1f, 0f, timeElapsed / colorChangeTime) : 1f;
-                tmp1.g = enemyComp.frozen ? Mathf.Lerp(0f, 0.75f, timeElapsed / colorChangeTime) : Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
-                tmp1.b = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
-            }
+            tmp1.g = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
+            tmp1.b = Mathf.Lerp(0f, 1f, timeElapsed / colorChangeTime);
 
             sr.color = tmp1;
             yield return null;
         }
 
-        if (TryGetComponent(out EnemyAI enemyComp2))
-            sr.color = enemyComp2.frozen ? new Color(0f, 0.75f, 1f) : Color.white;
-        else
-            sr.color = Color.white;
+        sr.color = Color.white;
 
         _initialColorChanging = false;
         _initialHasChanged = true;
@@ -173,7 +166,7 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
-            int dmg = 100;
+            int dmg = 25;
 
             dmgText.text = dmg.ToString();
 

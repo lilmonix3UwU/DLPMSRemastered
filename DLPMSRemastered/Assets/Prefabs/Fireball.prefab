@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8567629117011924560}
   - component: {fileID: 3574919446430361637}
   - component: {fileID: 9013513003967487798}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spinny bois
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4990,7 +4990,7 @@ GameObject:
   - component: {fileID: 5344352260588100766}
   - component: {fileID: 3623534462358777289}
   - component: {fileID: 3589393254558478509}
-  m_Layer: 8
+  m_Layer: 11
   m_Name: Light 2D (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5094,7 +5094,7 @@ GameObject:
   - component: {fileID: 4193188552589671826}
   - component: {fileID: 2463559538611977680}
   - component: {fileID: 4533226726985039890}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9979,9 +9979,9 @@ GameObject:
   - component: {fileID: 525661870099146301}
   - component: {fileID: 7226664875446819942}
   - component: {fileID: -4317134944488872362}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball
-  m_TagString: Fireball
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9995,7 +9995,7 @@ Transform:
   m_GameObject: {fileID: 6526726301224819122}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -63.85, y: -1.78, z: -5.7302084}
+  m_LocalPosition: {x: -63.85, y: -1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14961,7 +14961,7 @@ GameObject:
   - component: {fileID: 959442799908506611}
   - component: {fileID: 5252855971426355248}
   - component: {fileID: 5868615488937971391}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Fireball2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -45,7 +45,7 @@ public class EnemyAI : MonoBehaviour
     Seeker seeker;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundCheck;
-    [SerializeField] float groundRadius = 0.5f;
+    [SerializeField] Vector2 groundBox;
 
     private void Start()
     {
@@ -188,7 +188,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
         
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundMask.value);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBox, groundMask.value);
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime * freezed;
 
