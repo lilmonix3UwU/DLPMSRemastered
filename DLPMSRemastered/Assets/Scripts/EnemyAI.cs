@@ -20,7 +20,6 @@ public class EnemyAI : MonoBehaviour
     public float nextWaypointDistance = 3f;
     public float jumpNodeHeightRequirement = 0.8f;
     public float jumpModifier = 0.3f;
-    public float jumpCheckOffset = 0.1f;
     public int jumpChanceMax;
     public LayerMask groundMask;
 
@@ -71,18 +70,18 @@ public class EnemyAI : MonoBehaviour
             jumpEnabled = false;
             directionLookEnabled = false;
             sr.color = new Color(0.2f, 0.2f, 0.2f, 1);
-            
+            animationSpeed = 0;
         }
 
         if (directionLookEnabled)
         {
             if (rb.velocity.x > 1)
             {
-                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+                transform.rotation = Quaternion.Euler(0, 180, 0);
             }
             else if (rb.velocity.x < 1)
             {
-                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
             }
         }
 
@@ -200,7 +199,7 @@ public class EnemyAI : MonoBehaviour
             return;
         }
         
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBox, groundMask.value);
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBox, 0, groundMask.value);
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime * freezed;
 
@@ -209,7 +208,7 @@ public class EnemyAI : MonoBehaviour
             jumpChance = Random.Range(1, jumpChanceMax);
             if (direction.y > jumpNodeHeightRequirement && jumpChance == 1)
             {
-                rb.AddForce(Vector2.up * speed * jumpModifier);
+                rb.AddForce(Vector2.up * jumpModifier);
             }
         }
 

@@ -48,7 +48,7 @@ public class IntroManager : MonoBehaviour
         introUI.alpha = 0;
         introUI.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(5);
 
         _input.enabled = true;
     }

@@ -323,19 +323,19 @@ public class Player : MonoBehaviour
             iceEffect.SetActive(true);
             poisonEffect.SetActive(false);
         }
-        if (_input.PressSlot3() && poisonTorchAmount > 0)
+        /*if (_input.PressSlot3() && poisonTorchAmount > 0)
         {
             torchAnim.SetInteger("Torch", 3);
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(false);
             poisonEffect.SetActive(true);
-        }
+        }*/
     }
 
     private void HandleAttacking()
     {
-        if (onlyAnimate)
+        if (onlyAnimate || !_grounded)
             return;
 
         if (_input.PressAttack() && _cooldownTimer > attackCooldown)
