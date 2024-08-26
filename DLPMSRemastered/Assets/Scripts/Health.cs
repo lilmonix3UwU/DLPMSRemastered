@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Tilemaps;
 
 public class Health : MonoBehaviour
 {
@@ -160,6 +161,42 @@ public class Health : MonoBehaviour
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
         }
+        if (CompareTag("Player") && collision.gameObject.layer == 12)
+        {
+            int forceDir = 0;
+            if (collision.gameObject.TryGetComponent(out SpriteRenderer sr))
+            {
+                forceDir = collision.gameObject.GetComponent<SpriteRenderer>().flipX ? 1 : -1;
+            }
+            else if (collision.gameObject.TryGetComponent(out TilemapRenderer tr))
+            {
+                forceDir = 0;
+            }
+
+            Player plr = GetComponent<Player>();
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+
+            plr.gettingPushed = true;
+            Invoke("ResetPushBool", 0.5f);
+
+            rb.velocity += new Vector2(forceDir * 5, 5);
+
+            if (_iFrames > 0)
+                return;
+
+            int dmg = 1000;
+
+            dmgText.text = dmg.ToString();
+
+            _curHealth -= dmg;
+            UpdateUI();
+
+            _iFrames = iFramesAmount;
+
+            // Hit effect
+            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectGO, 1);
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -167,6 +204,20 @@ public class Health : MonoBehaviour
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
             int dmg = 25;
+
+            dmgText.text = dmg.ToString();
+
+            _curHealth -= dmg;
+
+            _iFrames = iFramesAmount;
+
+            // Hit effect
+            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
+            Destroy(hitEffectGO, 1);
+        }
+        if (CompareTag("Enemy") && collision.gameObject.layer == 12)
+        {
+            int dmg = 1000;
 
             dmgText.text = dmg.ToString();
 
