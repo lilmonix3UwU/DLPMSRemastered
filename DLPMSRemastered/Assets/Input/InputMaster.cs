@@ -64,15 +64,6 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
-                    ""name"": ""Slot3"",
-                    ""type"": ""Button"",
-                    ""id"": ""15f6996b-e74d-4a6c-856e-fa2d7b83e2ce"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
-                },
-                {
                     ""name"": ""PauseGame"",
                     ""type"": ""Button"",
                     ""id"": ""5a05234e-3192-44c7-9df7-004b0496f8e8"",
@@ -357,7 +348,7 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""38113d62-a1ec-44b1-902d-28a0828b0036"",
-                    ""path"": ""<Keyboard>/e"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",
@@ -397,26 +388,32 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
                     ""action"": ""Slot2"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
-                },
+                }
+            ]
+        },
+        {
+            ""name"": ""Cutscene"",
+            ""id"": ""2ed483e0-c732-4acd-8d19-2d38d7e5ee83"",
+            ""actions"": [
+                {
+                    ""name"": ""Skip"",
+                    ""type"": ""Button"",
+                    ""id"": ""de7b69b1-d874-4336-b15c-019e59d6e3df"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                }
+            ],
+            ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""c81ec94f-b7c9-45c2-a159-78d63eaf70aa"",
-                    ""path"": ""<Keyboard>/3"",
+                    ""id"": ""5346f7c9-e1a5-4dcb-8e7a-2dee4571df98"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard&Mouse"",
-                    ""action"": ""Slot3"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9a13581b-bdfb-4d24-946f-36a789352eb4"",
-                    ""path"": ""<Gamepad>/buttonNorth"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Gamepad"",
-                    ""action"": ""Slot3"",
+                    ""groups"": """",
+                    ""action"": ""Skip"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -459,10 +456,12 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Slot1 = m_Player.FindAction("Slot1", throwIfNotFound: true);
         m_Player_Slot2 = m_Player.FindAction("Slot2", throwIfNotFound: true);
-        m_Player_Slot3 = m_Player.FindAction("Slot3", throwIfNotFound: true);
         m_Player_PauseGame = m_Player.FindAction("PauseGame", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Interact = m_Player.FindAction("Interact", throwIfNotFound: true);
+        // Cutscene
+        m_Cutscene = asset.FindActionMap("Cutscene", throwIfNotFound: true);
+        m_Cutscene_Skip = m_Cutscene.FindAction("Skip", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -528,7 +527,6 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Slot1;
     private readonly InputAction m_Player_Slot2;
-    private readonly InputAction m_Player_Slot3;
     private readonly InputAction m_Player_PauseGame;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Interact;
@@ -540,7 +538,6 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Slot1 => m_Wrapper.m_Player_Slot1;
         public InputAction @Slot2 => m_Wrapper.m_Player_Slot2;
-        public InputAction @Slot3 => m_Wrapper.m_Player_Slot3;
         public InputAction @PauseGame => m_Wrapper.m_Player_PauseGame;
         public InputAction @Attack => m_Wrapper.m_Player_Attack;
         public InputAction @Interact => m_Wrapper.m_Player_Interact;
@@ -565,9 +562,6 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Slot2.started += instance.OnSlot2;
             @Slot2.performed += instance.OnSlot2;
             @Slot2.canceled += instance.OnSlot2;
-            @Slot3.started += instance.OnSlot3;
-            @Slot3.performed += instance.OnSlot3;
-            @Slot3.canceled += instance.OnSlot3;
             @PauseGame.started += instance.OnPauseGame;
             @PauseGame.performed += instance.OnPauseGame;
             @PauseGame.canceled += instance.OnPauseGame;
@@ -593,9 +587,6 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
             @Slot2.started -= instance.OnSlot2;
             @Slot2.performed -= instance.OnSlot2;
             @Slot2.canceled -= instance.OnSlot2;
-            @Slot3.started -= instance.OnSlot3;
-            @Slot3.performed -= instance.OnSlot3;
-            @Slot3.canceled -= instance.OnSlot3;
             @PauseGame.started -= instance.OnPauseGame;
             @PauseGame.performed -= instance.OnPauseGame;
             @PauseGame.canceled -= instance.OnPauseGame;
@@ -622,6 +613,52 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         }
     }
     public PlayerActions @Player => new PlayerActions(this);
+
+    // Cutscene
+    private readonly InputActionMap m_Cutscene;
+    private List<ICutsceneActions> m_CutsceneActionsCallbackInterfaces = new List<ICutsceneActions>();
+    private readonly InputAction m_Cutscene_Skip;
+    public struct CutsceneActions
+    {
+        private @InputMaster m_Wrapper;
+        public CutsceneActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Skip => m_Wrapper.m_Cutscene_Skip;
+        public InputActionMap Get() { return m_Wrapper.m_Cutscene; }
+        public void Enable() { Get().Enable(); }
+        public void Disable() { Get().Disable(); }
+        public bool enabled => Get().enabled;
+        public static implicit operator InputActionMap(CutsceneActions set) { return set.Get(); }
+        public void AddCallbacks(ICutsceneActions instance)
+        {
+            if (instance == null || m_Wrapper.m_CutsceneActionsCallbackInterfaces.Contains(instance)) return;
+            m_Wrapper.m_CutsceneActionsCallbackInterfaces.Add(instance);
+            @Skip.started += instance.OnSkip;
+            @Skip.performed += instance.OnSkip;
+            @Skip.canceled += instance.OnSkip;
+        }
+
+        private void UnregisterCallbacks(ICutsceneActions instance)
+        {
+            @Skip.started -= instance.OnSkip;
+            @Skip.performed -= instance.OnSkip;
+            @Skip.canceled -= instance.OnSkip;
+        }
+
+        public void RemoveCallbacks(ICutsceneActions instance)
+        {
+            if (m_Wrapper.m_CutsceneActionsCallbackInterfaces.Remove(instance))
+                UnregisterCallbacks(instance);
+        }
+
+        public void SetCallbacks(ICutsceneActions instance)
+        {
+            foreach (var item in m_Wrapper.m_CutsceneActionsCallbackInterfaces)
+                UnregisterCallbacks(item);
+            m_Wrapper.m_CutsceneActionsCallbackInterfaces.Clear();
+            AddCallbacks(instance);
+        }
+    }
+    public CutsceneActions @Cutscene => new CutsceneActions(this);
     private int m_GamepadSchemeIndex = -1;
     public InputControlScheme GamepadScheme
     {
@@ -646,9 +683,12 @@ public partial class @InputMaster: IInputActionCollection2, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSlot1(InputAction.CallbackContext context);
         void OnSlot2(InputAction.CallbackContext context);
-        void OnSlot3(InputAction.CallbackContext context);
         void OnPauseGame(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
         void OnInteract(InputAction.CallbackContext context);
+    }
+    public interface ICutsceneActions
+    {
+        void OnSkip(InputAction.CallbackContext context);
     }
 }

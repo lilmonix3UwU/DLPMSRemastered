@@ -2,7 +2,6 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.Tilemaps;
 
 public class Health : MonoBehaviour
 {
@@ -30,8 +29,12 @@ public class Health : MonoBehaviour
     [SerializeField] private Image healthSlider;
     [SerializeField] private TMP_Text dmgText;
 
+    private AudioManager _audio;
+
     private void Start()
     {
+        _audio = AudioManager.Instance;
+
         _curHealth = maxHealth;
         UpdateUI();
     }
@@ -160,42 +163,8 @@ public class Health : MonoBehaviour
             // Hit effect
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
-        }
-        if (CompareTag("Player") && collision.gameObject.layer == 12)
-        {
-            int forceDir = 0;
-            if (collision.gameObject.TryGetComponent(out SpriteRenderer sr))
-            {
-                forceDir = collision.gameObject.GetComponent<SpriteRenderer>().flipX ? 1 : -1;
-            }
-            else if (collision.gameObject.TryGetComponent(out TilemapRenderer tr))
-            {
-                forceDir = 0;
-            }
 
-            Player plr = GetComponent<Player>();
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-
-            plr.gettingPushed = true;
-            Invoke("ResetPushBool", 0.5f);
-
-            rb.velocity += new Vector2(forceDir * 5, 5);
-
-            if (_iFrames > 0)
-                return;
-
-            int dmg = 1000;
-
-            dmgText.text = dmg.ToString();
-
-            _curHealth -= dmg;
-            UpdateUI();
-
-            _iFrames = iFramesAmount;
-
-            // Hit effect
-            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(hitEffectGO, 1);
+            _audio.Play("Hit");
         }
     }
 
@@ -214,8 +183,10 @@ public class Health : MonoBehaviour
             // Hit effect
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
+
+            _audio.Play("Hit");
         }
-        if (CompareTag("Enemy") && collision.gameObject.layer == 12)
+        /*if (CompareTag("Enemy") && collision.gameObject.layer == 12)
         {
             int dmg = 1000;
 
@@ -228,6 +199,21 @@ public class Health : MonoBehaviour
             // Hit effect
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
+        }*/
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (CompareTag("Player") && collision.gameObject.layer == 12)
+        {
+            int dmg = 1000;
+
+            _curHealth -= dmg;
+            UpdateUI();
+
+            _iFrames = iFramesAmount;
+
+            Destroy(Camera.main.GetComponent<CameraFollow>());
         }
     }
 

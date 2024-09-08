@@ -1,14 +1,27 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class IntroManager : MonoBehaviour
 {
     [SerializeField] private Player plr;
     [SerializeField] private Rigidbody2D plrRb;
+    [SerializeField] private Transform grandma;
+    [SerializeField] private Animator grandmaAnim;
     [SerializeField] private CanvasGroup introUI;
+    [SerializeField] private GameObject interactionBox;
+    [SerializeField] private VideoClip cutscene;
+
+    [SerializeField] private Transform startPos;
+    [SerializeField] private Transform endPos;
+    [SerializeField] private float grandmaWalkTime = 3f;
+
+    private bool _doneWalking;
+    private bool _hasSkipped;
 
     private AudioManager _audio;
     private InputManager _input;
+    private InteractionManager _interaction;
 
     private void Start()
     {
@@ -18,21 +31,41 @@ public class IntroManager : MonoBehaviour
         plrRb.gravityScale = 0;
 
         _input = InputManager.Instance;
-        _input.enabled = false;
 
         _audio = AudioManager.Instance;
         _audio.Play("Music");
 
-        Invoke("HideIntro", 22.5f);
+        _interaction = InteractionManager.Instance;
+
+        StartCutscene();
     }
 
-    private void HideIntro()
+    private void Update()
+    {
+        if (_input.SkipCutscene() && !_hasSkipped)
+        {
+            StopAllCoroutines();
+            _hasSkipped = true;
+            StartCutscene();
+        }
+
+        if (!_interaction.interactionActive && _doneWalking)
+        {
+            StartCoroutine(GrandmaWalk(endPos.position, startPos.position));
+        }
+    }
+
+    private void StartCutscene()
     {
         StartCoroutine(FadeIntro());
+        StartCoroutine(GrandmaWalk(startPos.position, endPos.position));
     }
 
     private IEnumerator FadeIntro()
     {
+        if (!_hasSkipped)
+            yield return new WaitForSeconds((float)cutscene.length);
+
         plr.enabled = true;
         plrRb.gravityScale = 4;
 
@@ -49,7 +82,42 @@ public class IntroManager : MonoBehaviour
         introUI.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(5);
+    }
 
-        _input.enabled = true;
+    private IEnumerator GrandmaWalk(Vector3 from, Vector3 to)
+    {
+        if (!_hasSkipped)
+            yield return new WaitForSeconds((float)cutscene.length + 0.5f);
+        else
+            yield return new WaitForSeconds(0.5f);
+
+        _doneWalking = false;
+
+        plr.onlyAnimate = true;
+
+        grandmaAnim.SetBool("Walking", true);
+        grandma.rotation = from.x - to.x < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.Euler(0, 0, 0);
+
+        float elapsedTime = 0;
+
+        while (elapsedTime < grandmaWalkTime)
+        {
+            elapsedTime += Time.deltaTime;
+            grandma.position = Vector3.Lerp(from, to, elapsedTime / grandmaWalkTime);
+            yield return null;
+        }
+
+        grandma.position = to;
+
+        grandmaAnim.SetBool("Walking", false);
+
+        if (grandma.position != startPos.position)
+            _doneWalking = true;
+        else
+        {
+            grandma.gameObject.SetActive(false);
+            interactionBox.SetActive(false);
+            plr.onlyAnimate = false;
+        }
     }
 }

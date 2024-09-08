@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - WanderBarrier
   - Attack
+  - FireTorch
+  - IceTorch
   layers:
   - Default
   - TransparentFX

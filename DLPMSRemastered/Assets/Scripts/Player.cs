@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Vector2 wallJumpForce = new Vector2(8f, 16f);
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallRadius = 0.4f;
-    [SerializeField] private LayerMask wallLayer;
 
 
     private float _wallJumpCounter;
@@ -69,9 +68,8 @@ public class Player : MonoBehaviour
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;
 
-    private int fireTorchAmount = 3;
-    private int iceTorchAmount = 3;
-    private int poisonTorchAmount = 3;
+    [HideInInspector] public int fireTorchAmount = 3;
+    [HideInInspector] public int iceTorchAmount = 3;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
@@ -79,14 +77,12 @@ public class Player : MonoBehaviour
     [SerializeField] private ParticleSystem jumpEffect;
     [SerializeField] private ParticleSystem wallJumpEffect;
     [SerializeField] private GameObject fireEffect;
-    [SerializeField] private GameObject poisonEffect;
     [SerializeField] private GameObject iceEffect;
 
     [Header("UI")]
     [SerializeField] private Animator torchAnim;
     [SerializeField] private TMP_Text fireTorchText;
     [SerializeField] private TMP_Text iceTorchText;
-    [SerializeField] private TMP_Text posionTorchText;
 
     private void Start()
     {
@@ -99,7 +95,6 @@ public class Player : MonoBehaviour
 
         fireTorchText.text = fireTorchAmount.ToString();
         iceTorchText.text = iceTorchAmount.ToString();
-        posionTorchText.text = poisonTorchAmount.ToString();
     }
 
     private void Update()
@@ -224,7 +219,7 @@ public class Player : MonoBehaviour
 
     private void HandleWallSlide()
     {
-        _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, wallLayer.value);
+        _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, groundLayer.value);
 
         if (_walled && !_grounded && _xMove == _facingDir)
         {
@@ -313,7 +308,6 @@ public class Player : MonoBehaviour
 
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
-            poisonEffect.SetActive(false);
         }
         if (_input.PressSlot2() && iceTorchAmount > 0)
         {
@@ -321,7 +315,6 @@ public class Player : MonoBehaviour
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
-            poisonEffect.SetActive(false);
         }
         /*if (_input.PressSlot3() && poisonTorchAmount > 0)
         {
@@ -421,10 +414,12 @@ public class Player : MonoBehaviour
 
         _attacking = false;
 
-        // Play sound
-        _audio.Play("Ignite");
+        // Play sounds
+        _audio.Play("Ice");
+        yield return new WaitForSeconds(0.1f);
+        _audio.Play("Ice");
 
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1.9f);
 
         Destroy(iceGO);
         yield return null;

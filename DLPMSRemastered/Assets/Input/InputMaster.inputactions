@@ -42,15 +42,6 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Slot3",
-                    "type": "Button",
-                    "id": "15f6996b-e74d-4a6c-856e-fa2d7b83e2ce",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "PauseGame",
                     "type": "Button",
                     "id": "5a05234e-3192-44c7-9df7-004b0496f8e8",
@@ -335,7 +326,7 @@
                 {
                     "name": "",
                     "id": "38113d62-a1ec-44b1-902d-28a0828b0036",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
@@ -375,26 +366,32 @@
                     "action": "Slot2",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
+                }
+            ]
+        },
+        {
+            "name": "Cutscene",
+            "id": "2ed483e0-c732-4acd-8d19-2d38d7e5ee83",
+            "actions": [
+                {
+                    "name": "Skip",
+                    "type": "Button",
+                    "id": "de7b69b1-d874-4336-b15c-019e59d6e3df",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
                 {
                     "name": "",
-                    "id": "c81ec94f-b7c9-45c2-a159-78d63eaf70aa",
-                    "path": "<Keyboard>/3",
+                    "id": "5346f7c9-e1a5-4dcb-8e7a-2dee4571df98",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
-                    "action": "Slot3",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "9a13581b-bdfb-4d24-946f-36a789352eb4",
-                    "path": "<Gamepad>/buttonNorth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Slot3",
+                    "groups": "",
+                    "action": "Skip",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

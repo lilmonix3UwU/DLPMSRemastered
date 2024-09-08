@@ -35,5 +35,5 @@ public class InputManager : MonoBehaviour
 
     public bool PressSlot2() => _inputMaster.Player.Slot2.WasPressedThisFrame();
 
-    public bool PressSlot3() => _inputMaster.Player.Slot3.WasPressedThisFrame();
+    public bool SkipCutscene() => _inputMaster.Cutscene.Skip.WasPressedThisFrame();
 }
