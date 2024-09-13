@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Rigidbody2D rb; 
     [SerializeField] private Animator anim;
+    [SerializeField] private RuntimeAnimatorController plrTorchAnim;
+    [SerializeField] private RuntimeAnimatorController plrAnim;
     [SerializeField] private Transform graphic;
     [SerializeField] private Health health;
     
@@ -68,8 +70,8 @@ public class Player : MonoBehaviour
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;
 
-    [HideInInspector] public int fireTorchAmount = 3;
-    [HideInInspector] public int iceTorchAmount = 3;
+    [HideInInspector] public int fireTorchAmount = 0;
+    [HideInInspector] public int iceTorchAmount = 0;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
@@ -95,6 +97,8 @@ public class Player : MonoBehaviour
 
         fireTorchText.text = fireTorchAmount.ToString();
         iceTorchText.text = iceTorchAmount.ToString();
+
+        HandleEffects();
     }
 
     private void Update()
@@ -304,26 +308,20 @@ public class Player : MonoBehaviour
     {
         if (_input.PressSlot1() && fireTorchAmount > 0)
         {
-            torchAnim.SetInteger("Torch", 1);
+            anim.runtimeAnimatorController = plrTorchAnim;
+            torchAnim.SetInteger("CurrentTorch", 1);
 
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
         }
         if (_input.PressSlot2() && iceTorchAmount > 0)
         {
-            torchAnim.SetInteger("Torch", 2);
+            anim.runtimeAnimatorController = plrTorchAnim;
+            torchAnim.SetInteger("CurrentTorch", 2);
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
         }
-        /*if (_input.PressSlot3() && poisonTorchAmount > 0)
-        {
-            torchAnim.SetInteger("Torch", 3);
-
-            fireEffect.SetActive(false);
-            iceEffect.SetActive(false);
-            poisonEffect.SetActive(true);
-        }*/
     }
 
     private void HandleAttacking()
@@ -333,7 +331,7 @@ public class Player : MonoBehaviour
 
         if (_input.PressAttack() && _cooldownTimer > attackCooldown)
         {
-            switch (torchAnim.GetInteger("Torch"))
+            switch (torchAnim.GetInteger("CurrentTorch"))
             {
                 case 1:
                     if (fireTorchAmount <= 0) return;
@@ -371,8 +369,7 @@ public class Player : MonoBehaviour
         fireTorchAmount--;
         fireTorchText.text = fireTorchAmount.ToString();
 
-        if (fireTorchAmount <= 0)
-            fireEffect.SetActive(false);
+        HandleEffects();
 
         _attacking = false;
         
@@ -409,8 +406,7 @@ public class Player : MonoBehaviour
         iceTorchAmount--;
         iceTorchText.text = iceTorchAmount.ToString();
 
-        if (iceTorchAmount <= 0)
-            iceEffect.SetActive(false);
+        HandleEffects();
 
         _attacking = false;
 
@@ -509,5 +505,64 @@ public class Player : MonoBehaviour
         }
 
         return landSound;
+    }
+
+    private void HandleEffects()
+    {
+        if (fireTorchAmount <= 0 && iceTorchAmount <= 0)
+        {
+            anim.runtimeAnimatorController = plrAnim;
+            fireEffect.SetActive(false);
+            iceEffect.SetActive(false);
+            torchAnim.SetInteger("CurrentTorch", 0);
+        }
+        else if (fireTorchAmount <= 0 && iceTorchAmount > 0 && torchAnim.GetInteger("Torch") != 2)
+        {
+            fireEffect.SetActive(false);
+            iceEffect.SetActive(true);
+            torchAnim.SetInteger("CurrentTorch", 2);
+        }
+        else if (fireTorchAmount > 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 1)
+        {
+            fireEffect.SetActive(true);
+            iceEffect.SetActive(false);
+            torchAnim.SetInteger("CurrentTorch", 1);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "FireTorch")
+        {
+            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 1)
+            {
+                anim.runtimeAnimatorController = plrTorchAnim;
+                fireEffect.SetActive(true);
+                torchAnim.SetInteger("Torch", 1);
+            }
+
+            fireTorchAmount++;
+            fireTorchText.text = fireTorchAmount.ToString();
+
+        torchAnim.SetInteger("TorchAmount", fireTorchAmount);
+
+            _audio.Play("Pick Up");
+            Destroy(collision.gameObject);
+        }
+        if (collision.tag == "IceTorch")
+        {
+            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 2)
+            {
+                anim.runtimeAnimatorController = plrTorchAnim;
+                iceEffect.SetActive(true);
+                torchAnim.SetInteger("CurrentTorch", 2);
+            }
+
+            iceTorchAmount++;
+            iceTorchText.text = iceTorchAmount.ToString();
+
+            _audio.Play("Pick Up");
+            Destroy(collision.gameObject);
+        }
     }
 }

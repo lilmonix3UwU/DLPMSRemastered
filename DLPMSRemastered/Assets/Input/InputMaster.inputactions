@@ -325,6 +325,17 @@
                 },
                 {
                     "name": "",
+                    "id": "4989214c-7ebd-490b-87f2-b156fd857b52",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "38113d62-a1ec-44b1-902d-28a0828b0036",
                     "path": "<Keyboard>/space",
                     "interactions": "",
