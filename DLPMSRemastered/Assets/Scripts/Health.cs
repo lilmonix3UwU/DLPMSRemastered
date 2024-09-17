@@ -168,8 +168,19 @@ public class Health : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (CompareTag("Player") && collision.gameObject.layer == 12)
+        {
+            int dmg = 1000;
+
+            _curHealth -= dmg;
+            UpdateUI();
+
+            _iFrames = iFramesAmount;
+
+            Destroy(Camera.main.GetComponent<CameraFollow>());
+        }
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
             int dmg = 25;
@@ -186,7 +197,7 @@ public class Health : MonoBehaviour
 
             _audio.Play("Hit");
         }
-        /*if (CompareTag("Enemy") && collision.gameObject.layer == 12)
+        if (CompareTag("Enemy") && collision.gameObject.layer == 12)
         {
             int dmg = 1000;
 
@@ -199,21 +210,6 @@ public class Health : MonoBehaviour
             // Hit effect
             GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(hitEffectGO, 1);
-        }*/
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (CompareTag("Player") && collision.gameObject.layer == 12)
-        {
-            int dmg = 1000;
-
-            _curHealth -= dmg;
-            UpdateUI();
-
-            _iFrames = iFramesAmount;
-
-            Destroy(Camera.main.GetComponent<CameraFollow>());
         }
     }
 

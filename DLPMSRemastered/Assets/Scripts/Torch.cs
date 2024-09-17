@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 public class Torch : MonoBehaviour
@@ -7,7 +6,7 @@ public class Torch : MonoBehaviour
     [SerializeField] private float smoothing = 0.2f;
     [SerializeField] private float scaleSpeed = 0.01f;
     [SerializeField] private float accel = 0.01f;
-    [SerializeField] private Player plr;
+    [SerializeField] private Transform plr;
 
     private Vector2 _vel;
 
@@ -20,11 +19,11 @@ public class Torch : MonoBehaviour
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, plr.transform.position) < minDist)
+        if (Vector2.Distance(transform.position, plr.position) < minDist)
         {
             smoothing -= accel;
 
-            transform.position = Vector2.SmoothDamp(transform.position, plr.transform.position, ref _vel, smoothing);
+            transform.position = Vector2.SmoothDamp(transform.position, plr.position, ref _vel, smoothing);
 
             if (transform.localScale.x >= 0.5f)
                 transform.localScale -= Vector3.one * scaleSpeed;

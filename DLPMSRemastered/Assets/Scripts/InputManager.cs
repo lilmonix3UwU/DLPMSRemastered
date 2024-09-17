@@ -17,7 +17,7 @@ public class InputManager : MonoBehaviour
 
     private void OnDisable() => _inputMaster.Disable();
 
-    public Vector2 Move() => _inputMaster.Player.Move.ReadValue<Vector2>();
+    public float Move() => _inputMaster.Player.Move.ReadValue<float>();
 
     public bool PressJump() => _inputMaster.Player.Jump.WasPressedThisFrame();
 
@@ -30,6 +30,8 @@ public class InputManager : MonoBehaviour
     public bool PressPause() => _inputMaster.Player.PauseGame.WasPressedThisFrame();
 
     public bool PressInteract() => _inputMaster.Player.Interact.WasPressedThisFrame();
+
+    public bool PressFocus() => _inputMaster.Player.Focus.WasPressedThisFrame();
 
     public bool PressSlot1() => _inputMaster.Player.Slot1.WasPressedThisFrame();
 

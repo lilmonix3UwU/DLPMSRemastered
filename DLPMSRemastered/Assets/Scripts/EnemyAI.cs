@@ -4,6 +4,7 @@ using UnityEngine;
 using Pathfinding;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
+using Unity.VisualScripting.ReorderableList;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -32,7 +33,8 @@ public class EnemyAI : MonoBehaviour
     public float freezeMovementPenalty;
     public bool frozen;
 
-    
+
+    [SerializeField] private float deathFadeTime = 5f;    
     [SerializeField] private float colorChangeTime = 0.5f;
     [SerializeField] private float freezed;
     [SerializeField] private int wanderDirection;
@@ -42,7 +44,7 @@ public class EnemyAI : MonoBehaviour
     private SpriteRenderer sr;
     private Path path;
     private int currentWaypoint = 0;
-    bool isGrounded = false;
+    public bool isGrounded = false;
     Seeker seeker;
     [SerializeField] Rigidbody2D rb;
     [SerializeField] Transform groundCheck;
@@ -69,8 +71,10 @@ public class EnemyAI : MonoBehaviour
             wanderEnabled = false;
             jumpEnabled = false;
             directionLookEnabled = false;
-            sr.color = new Color(0.2f, 0.2f, 0.2f, 1);
             animationSpeed = 0;
+            gameObject.layer = 7;
+            StopCoroutine(Freeze());
+            StartCoroutine(DeathFade());
         }
 
         if (directionLookEnabled)
@@ -105,6 +109,7 @@ public class EnemyAI : MonoBehaviour
             Wander();
         }
 
+        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBox, 0, groundMask.value);
         animator.SetBool("isGrounded", isGrounded);
     }
 
@@ -178,6 +183,28 @@ public class EnemyAI : MonoBehaviour
         frozen = false;
     }
 
+    private IEnumerator DeathFade() 
+    {
+        sr.color = new Color(0.2f, 0.2f, 0.2f, 1f);
+
+        float timeElapsed = 0;
+        Color tmp1 = sr.color;
+
+        while (timeElapsed < deathFadeTime) 
+        {
+            timeElapsed += Time.deltaTime;
+
+            tmp1.a = Mathf.Lerp(1f, 0f, timeElapsed / deathFadeTime);
+
+            sr.color = tmp1;
+            yield return null;
+        }
+
+        sr.color = new Color(0.2f, 0.2f, 0.2f, 0f);
+
+        Destroy(gameObject);
+    }
+
     private void UpdatePath()
     {
         if (TargetInDistance() && followEnabled)
@@ -199,7 +226,6 @@ public class EnemyAI : MonoBehaviour
             return;
         }
         
-        isGrounded = Physics2D.OverlapBox(groundCheck.position, groundBox, 0, groundMask.value);
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = new Vector2(direction[0], 0.0f) * speed * Time.deltaTime * freezed;
 

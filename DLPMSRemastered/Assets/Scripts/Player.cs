@@ -28,9 +28,10 @@ public class Player : MonoBehaviour
     [SerializeField] private float revertTime = 0.3f;
 
     private float _curSpeed;
-    private float _xMove;
-    private float _yMove;
+    private float _move;
     private int _facingDir;
+
+    [HideInInspector] public bool faceEnemy;
 
     [Header("Jumping")]
     [SerializeField] private float jumpForce = 3f;
@@ -66,12 +67,15 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform iceSpawn;
     [SerializeField] private float attackCooldown = 5f;
     [SerializeField] private float fireballSpeed = 50f;
+    [SerializeField] private float minDistForFocus = 10f;
 
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;
 
-    [HideInInspector] public int fireTorchAmount = 0;
-    [HideInInspector] public int iceTorchAmount = 0;
+    private int _fireTorchAmount = 0;
+    private int _iceTorchAmount = 0;
+    private int _uniqueTorches = 0;
+    private int _curTorch = 0;
 
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
@@ -92,11 +96,8 @@ public class Player : MonoBehaviour
         _audio = AudioManager.Instance;
         _gameOver = GameOverManager.Instance;
 
-        _audio.Play("Ambience");
-        _audio.Play("Torch Burning");
-
-        fireTorchText.text = fireTorchAmount.ToString();
-        iceTorchText.text = iceTorchAmount.ToString();
+        fireTorchText.text = _fireTorchAmount.ToString();
+        iceTorchText.text = _iceTorchAmount.ToString();
 
         HandleEffects();
     }
@@ -105,7 +106,7 @@ public class Player : MonoBehaviour
     {
         if (health.dead)
         {
-            _xMove = 0;
+            _move = 0;
             _grounded = true;
             _cooldownTimer = 0;
             _timeInAir = 0;
@@ -122,7 +123,8 @@ public class Player : MonoBehaviour
             anim.speed = 0;
             return;
         }
-        else anim.speed = 1;
+        else 
+            anim.speed = 1;
 
         if (_attacking)
             return;
@@ -135,6 +137,7 @@ public class Player : MonoBehaviour
         HandleAnimation();
         HandleAttacking();
         HandleSwitching();
+        HandleTorchSounds();
     }
 
     private void FixedUpdate()
@@ -150,7 +153,7 @@ public class Player : MonoBehaviour
         if (_wallJumping || gettingPushed)
             return;
 
-        rb.velocity = new Vector2(_xMove * _curSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(_move * _curSpeed, rb.velocity.y);
     }
 
     private void HandleMoveInput()
@@ -158,17 +161,13 @@ public class Player : MonoBehaviour
         if (onlyAnimate)
             return;
 
-        _xMove = _input.Move().x;
+        _move = _input.Move();
 
         // Acceleration & Deceleration
-        if ((_xMove != 0f || _yMove != 0f) && _curSpeed < maxSpeed)
-        {
+        if (_move != 0f && _curSpeed < maxSpeed)
             _curSpeed += accel;
-        }
-        if ((_xMove == 0f || _yMove == 0f) && _curSpeed > 0)
-        {
+        if (_move == 0f && _curSpeed > 0)
             _curSpeed -= decel;
-        }
     }
 
     private void HandleJumping()
@@ -176,9 +175,7 @@ public class Player : MonoBehaviour
         _grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer.value);
 
         if (rb.velocity.y < 0f)
-        {
             rb.velocity += Vector2.up * (Physics2D.gravity.y * (fallMultiplier - 1f) * Time.deltaTime);
-        }
 
         if (onlyAnimate)
             return;
@@ -197,9 +194,7 @@ public class Player : MonoBehaviour
 
         // Slight boost forward in air when holding jump
         if (!_grounded && !_walled && rb.velocity.y > -2f && rb.velocity.y < 2f && _input.HoldJump())
-        {
             _curSpeed += accel * accelMult;
-        }
         else
         {
             _curSpeed = _curSpeed > maxSpeed ? maxSpeed : _curSpeed;
@@ -225,15 +220,13 @@ public class Player : MonoBehaviour
     {
         _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, groundLayer.value);
 
-        if (_walled && !_grounded && _xMove == _facingDir)
+        if (_walled && !_grounded && _move == _facingDir)
         {
             _wallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlideSpeed, float.MaxValue));
         }
         else
-        {
             _wallSliding = false;
-        }
     }
 
     private void HandleWallJump()
@@ -268,27 +261,53 @@ public class Player : MonoBehaviour
             Invoke(nameof(StopWallJump), wallJumpDuration);
         }
         if (_input.ReleaseJump() && rb.velocity.y > 0f)
-        {
             _wallJumpCounter = 0f;
-        }
     }
 
-    private void StopWallJump()
-    {
-        _wallJumping = false;
-    }
+    private void StopWallJump() => _wallJumping = false;
 
     private void HandleSpriteFlip()
     {
         if (_wallJumping)
             return;
+        
+        bool closeEnoughToEnemy;
 
-        if (_xMove < 0f)
+        if (ClosestEnemy() != null)
+            closeEnoughToEnemy = Vector2.Distance(transform.position, ClosestEnemy().transform.position) < minDistForFocus;
+        else
+            closeEnoughToEnemy = false;
+
+        if (_input.PressFocus() && closeEnoughToEnemy)
+            faceEnemy = !faceEnemy;
+
+        if (!closeEnoughToEnemy && faceEnemy) 
+            faceEnemy = false;
+
+        if (faceEnemy) 
+        {
+            Vector2 dir = (ClosestEnemy().transform.position - transform.position).normalized;
+            
+            if (dir.x < 0f) 
+            {
+                graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
+                _facingDir = -1;
+            }
+            else if (dir.x > 0f) 
+            {
+                graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
+                _facingDir = 1;
+            }
+
+            return;
+        }
+
+        if (_move < 0f) // Left
         {
             graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
             _facingDir = -1;
         }
-        else if (_xMove > 0f)
+        else if (_move > 0f) // Right
         {
             graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
             _facingDir = 1;
@@ -297,27 +316,32 @@ public class Player : MonoBehaviour
 
     private void HandleAnimation()
     {
-        anim.SetFloat("xMove", _xMove);
+        // Player
+        anim.SetFloat("xMove", _move);
         anim.SetBool("Grounded", _grounded);
-        anim.SetBool("Attack", _input.PressAttack() && _cooldownTimer > attackCooldown);
         anim.SetFloat("TimeInAir", _timeInAir);
         anim.SetBool("WallSliding", _wallSliding);
+        if (anim.runtimeAnimatorController == plrTorchAnim) 
+            anim.SetBool("Attack", _input.PressAttack() && _cooldownTimer > attackCooldown && _grounded);
+
+        // UI
+        torchAnim.SetInteger("CurrentTorch", _curTorch);
     }
 
     private void HandleSwitching()
     {
-        if (_input.PressSlot1() && fireTorchAmount > 0)
+        if (_input.PressSlot1() && _fireTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
-            torchAnim.SetInteger("CurrentTorch", 1);
+            _curTorch = 1;
 
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
         }
-        if (_input.PressSlot2() && iceTorchAmount > 0)
+        if (_input.PressSlot2() && _iceTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
-            torchAnim.SetInteger("CurrentTorch", 2);
+            _curTorch = 2;
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
@@ -331,16 +355,16 @@ public class Player : MonoBehaviour
 
         if (_input.PressAttack() && _cooldownTimer > attackCooldown)
         {
-            switch (torchAnim.GetInteger("CurrentTorch"))
+            switch (_curTorch)
             {
                 case 1:
-                    if (fireTorchAmount <= 0) return;
+                    if (_fireTorchAmount <= 0) return;
                     _cooldownTimer = 0f;
 
                     StartCoroutine(ShootFireball());
                     break;
                 case 2:
-                    if (iceTorchAmount <= 0) return;
+                    if (_iceTorchAmount <= 0) return;
                     _cooldownTimer = 0f;
 
                     StartCoroutine(ShootIce());
@@ -348,9 +372,19 @@ public class Player : MonoBehaviour
             }
         }
         else
-        {
             _cooldownTimer += Time.deltaTime;
-        }
+    }
+
+    private void HandleTorchSounds() 
+    {
+        string fireTorchSound = "Torch Burning";
+
+        if (_curTorch == 0 && _audio.IsPlaying(fireTorchSound))
+            _audio.Stop(fireTorchSound);
+        if (_curTorch == 1 && !_audio.IsPlaying(fireTorchSound))
+            _audio.Play(fireTorchSound);
+        if (_curTorch == 2 && _audio.IsPlaying(fireTorchSound))
+            _audio.Stop(fireTorchSound);
     }
 
     private IEnumerator ShootFireball()
@@ -366,10 +400,15 @@ public class Player : MonoBehaviour
 
         int curFacingDir = _facingDir;
 
-        fireTorchAmount--;
-        fireTorchText.text = fireTorchAmount.ToString();
+        _fireTorchAmount--;
+        fireTorchText.text = _fireTorchAmount.ToString();
 
         HandleEffects();
+
+        if (_fireTorchAmount <= 0) 
+            _uniqueTorches--;
+
+        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
 
         _attacking = false;
         
@@ -403,10 +442,15 @@ public class Player : MonoBehaviour
         // Spawn ice
         GameObject iceGO = Instantiate(ice, iceSpawn.position, graphic.rotation);
 
-        iceTorchAmount--;
-        iceTorchText.text = iceTorchAmount.ToString();
+        _iceTorchAmount--;
+        iceTorchText.text = _iceTorchAmount.ToString();
 
         HandleEffects();
+
+        if (_iceTorchAmount <= 0) 
+            _uniqueTorches--;
+
+        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
 
         _attacking = false;
 
@@ -433,15 +477,9 @@ public class Player : MonoBehaviour
         landEffect.Play();
     }
 
-    private void LandSound()
-    {
-        _audio.Play(RandomLandSound());
-    }
+    private void LandSound() => _audio.Play(RandomLandSound());
 
-    private void SlowDown()
-    {
-        StartCoroutine(SlowDownCoroutine());
-    }
+    private void SlowDown() => StartCoroutine(SlowDownCoroutine());
 
     private IEnumerator SlowDownCoroutine()
     {
@@ -462,10 +500,7 @@ public class Player : MonoBehaviour
         yield return null;
     }
 
-    private void ResetTimeInAir()
-    {
-        _timeInAir = 0;
-    }
+    private void ResetTimeInAir() => _timeInAir = 0;
 
     private string RandomFootstepSound()
     {
@@ -509,24 +544,24 @@ public class Player : MonoBehaviour
 
     private void HandleEffects()
     {
-        if (fireTorchAmount <= 0 && iceTorchAmount <= 0)
+        if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0)
         {
             anim.runtimeAnimatorController = plrAnim;
             fireEffect.SetActive(false);
             iceEffect.SetActive(false);
-            torchAnim.SetInteger("CurrentTorch", 0);
+            _curTorch = 0;
         }
-        else if (fireTorchAmount <= 0 && iceTorchAmount > 0 && torchAnim.GetInteger("Torch") != 2)
+        else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && _curTorch != 2)
         {
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
-            torchAnim.SetInteger("CurrentTorch", 2);
+            _curTorch = 2;
         }
-        else if (fireTorchAmount > 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 1)
+        else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _curTorch != 1)
         {
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
-            torchAnim.SetInteger("CurrentTorch", 1);
+            _curTorch = 1;
         }
     }
 
@@ -534,35 +569,67 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "FireTorch")
         {
-            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 1)
+            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && _curTorch != 1)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 fireEffect.SetActive(true);
-                torchAnim.SetInteger("Torch", 1);
+                _curTorch = 1;
+
+                _audio.Play("Ignite");
             }
 
-            fireTorchAmount++;
-            fireTorchText.text = fireTorchAmount.ToString();
+            if (_fireTorchAmount <= 0) 
+                _uniqueTorches++;
 
-        torchAnim.SetInteger("TorchAmount", fireTorchAmount);
+            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+
+            _fireTorchAmount++;
+            fireTorchText.text = _fireTorchAmount.ToString();
 
             _audio.Play("Pick Up");
             Destroy(collision.gameObject);
         }
         if (collision.tag == "IceTorch")
         {
-            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && torchAnim.GetInteger("CurrentTorch") != 2)
+            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && _curTorch != 2)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 iceEffect.SetActive(true);
-                torchAnim.SetInteger("CurrentTorch", 2);
+                _curTorch = 2;
+
+                 _audio.Play("Ignite");
             }
 
-            iceTorchAmount++;
-            iceTorchText.text = iceTorchAmount.ToString();
+            if (_iceTorchAmount <= 0) 
+                _uniqueTorches++;
+
+            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+
+            _iceTorchAmount++;
+            iceTorchText.text = _iceTorchAmount.ToString();
 
             _audio.Play("Pick Up");
             Destroy(collision.gameObject);
         }
+    }
+
+    public GameObject ClosestEnemy() 
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject closestEnemy = null;
+        float closestDist = Mathf.Infinity;
+
+        foreach (GameObject enemy in enemies) 
+        {
+            float distToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+
+            if (distToEnemy < closestDist) 
+            {
+                closestDist = distToEnemy;
+                closestEnemy = enemy;
+            }
+        }
+
+        return closestEnemy;
     }
 }

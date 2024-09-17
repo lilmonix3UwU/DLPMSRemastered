@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 1439934572901455382}
   - component: {fileID: 8831353920542084632}
   m_Layer: 8
-  m_Name: TorchLightEffect
+  m_Name: FireTorchEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4965,7 +4965,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -5020,7 +5020,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060169380187573217}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5028,13 +5028,14 @@ Transform:
   - {fileID: 1327135044555110457}
   - {fileID: 4219123103958842550}
   - {fileID: 6661481772164500586}
+  - {fileID: 8950773449021294436}
   - {fileID: 5064271994596066738}
   - {fileID: 477590069954139717}
   - {fileID: 4301016177636107691}
   - {fileID: 4877079932685273567}
   - {fileID: 838647245441356139}
   m_Father: {fileID: 1824274504406856168}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1498584134682761045
 GameObject:
   m_ObjectHideFlags: 0
@@ -5061,6 +5062,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.63, y: -0.12, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3440838635482550988}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!1 &2213863640217698602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8950773449021294436}
+  m_Layer: 8
+  m_Name: IceSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8950773449021294436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2213863640217698602}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: -0.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10066,17 +10098,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 3728086948907663459}
   anim: {fileID: 1076308294325249437}
+  plrTorchAnim: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
+  plrAnim: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
   graphic: {fileID: 3440838635482550988}
   health: {fileID: 6831851025990256074}
-  animCtrl: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
-  torchAnimCtrl: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
+  onlyAnimate: 0
+  gettingPushed: 0
   maxSpeed: 8
   accel: 0.35
   accelMult: 1.2
   decel: 0.1
   slowDownSpeed: 1
   revertTime: 0.5
-  jumpForce: 21
+  faceEnemy: 0
+  jumpForce: 22
   fallMultiplier: 6
   coyoteTime: 0.2
   groundCheck: {fileID: 7700532283770418523}
@@ -10085,26 +10120,27 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   wallSlideSpeed: 3
-  wallJumpDuration: 0.4
+  wallJumpDuration: 0.25
   _wallJumpTime: 0.2
   wallJumpForce: {x: 16, y: 20}
   wallCheck: {fileID: 838647245441356139}
   wallRadius: 0.3
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 128
+  fireball: {fileID: 6526726301224819122, guid: 7f950c5ccb59c4ff2b65fb38bed323e6, type: 3}
+  ice: {fileID: 1258182134802208218, guid: a6e3fb97b449c44af96fe0711ca143fa, type: 3}
   fireballSpawn: {fileID: 6661481772164500586}
-  attackCooldown: 1
+  iceSpawn: {fileID: 8950773449021294436}
+  attackCooldown: 2
   fireballSpeed: 8
+  minDistForFocus: 12
   impactEffect: {fileID: 7177841670370232270}
   landEffect: {fileID: 8339004466973745262}
   jumpEffect: {fileID: 5457722582870378597}
   wallJumpEffect: {fileID: 5343969036871986857}
-  fireball: {fileID: 6526726301224819122, guid: 7f950c5ccb59c4ff2b65fb38bed323e6, type: 3}
-  fireEffectNormal: {fileID: 709088667112009041}
-  fireEffectGreen: {fileID: 6729841014101634333}
-  fireEffectBlue: {fileID: 4921032698995644115}
+  fireEffect: {fileID: 709088667112009041}
+  iceEffect: {fileID: 4921032698995644115}
   torchAnim: {fileID: 0}
+  fireTorchText: {fileID: 0}
+  iceTorchText: {fileID: 0}
 --- !u!114 &6831851025990256074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10123,7 +10159,9 @@ MonoBehaviour:
   iFramesAmount: 3
   colorChangeTime: 0.5
   dead: 0
+  hitEffect: {fileID: 3208816561791472192, guid: 949fd90355a754c5298f0dd57fe26a66, type: 3}
   healthSlider: {fileID: 0}
+  dmgText: {fileID: 0}
 --- !u!95 &1076308294325249437
 Animator:
   serializedVersion: 5
@@ -10134,7 +10172,7 @@ Animator:
   m_GameObject: {fileID: 4134483811760698077}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -10188,7 +10226,7 @@ GameObject:
   - component: {fileID: 8403544910419813084}
   - component: {fileID: 2603942832707173137}
   m_Layer: 8
-  m_Name: TorchLightEffectBlue
+  m_Name: IceTorchEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14975,7 +15013,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -29627,7 +29665,7 @@ GameObject:
   - component: {fileID: 3918997636671412546}
   - component: {fileID: 841918681167342087}
   m_Layer: 8
-  m_Name: TorchLightEffectGreen
+  m_Name: PoisonTorchEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34414,7 +34452,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 100
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -49146,7 +49184,7 @@ Transform:
   m_GameObject: {fileID: 8422458460320643275}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.388, y: -0.371, z: 0}
+  m_LocalPosition: {x: -0.388, y: 0.399, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

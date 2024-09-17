@@ -11,6 +11,7 @@ public class IntroManager : MonoBehaviour
     [SerializeField] private CanvasGroup introUI;
     [SerializeField] private GameObject interactionBox;
     [SerializeField] private VideoClip cutscene;
+    [SerializeField] private GameObject chapterUI;
 
     [SerializeField] private Transform startPos;
     [SerializeField] private Transform endPos;
@@ -25,6 +26,7 @@ public class IntroManager : MonoBehaviour
 
     private void Start()
     {
+        chapterUI.SetActive(false);
         introUI.gameObject.SetActive(true);
 
         plr.enabled = false;
@@ -34,6 +36,7 @@ public class IntroManager : MonoBehaviour
 
         _audio = AudioManager.Instance;
         _audio.Play("Music");
+        _audio.Play("Ambience");
 
         _interaction = InteractionManager.Instance;
 
@@ -44,6 +47,7 @@ public class IntroManager : MonoBehaviour
     {
         if (_input.SkipCutscene() && !_hasSkipped)
         {
+            _input.enabled = false;
             StopAllCoroutines();
             _hasSkipped = true;
             StartCutscene();
@@ -111,13 +115,22 @@ public class IntroManager : MonoBehaviour
 
         grandmaAnim.SetBool("Walking", false);
 
-        if (grandma.position != startPos.position)
+        if (grandma.position != startPos.position) 
+        {
             _doneWalking = true;
+            _input.enabled = true;
+        }
         else
         {
             grandma.gameObject.SetActive(false);
             interactionBox.SetActive(false);
             plr.onlyAnimate = false;
+
+            chapterUI.SetActive(true);
+
+            yield return new WaitForSeconds(4);
+
+            chapterUI.SetActive(false);
         }
     }
 }

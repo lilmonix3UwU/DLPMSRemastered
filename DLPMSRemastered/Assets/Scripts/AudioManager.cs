@@ -35,13 +35,22 @@ public class AudioManager : MonoBehaviour
     
     public void Stop(string name)
     {
+        if (!IsPlaying(name)) return;
+
+        Destroy(GetAudioSource(name));
+    }
+
+    public bool IsPlaying(string name) 
+    {
+        return GetAudioSource(name) != null;
+    }
+
+    private AudioSource GetAudioSource(string name) 
+    {
         AudioSource[] srces = gameObject.GetComponentsInChildren<AudioSource>();
 
-        AudioSource audioSource = Array.Find(srces, a => a.clip.ToString().Contains(name));
+        AudioSource src = Array.Find(srces, a => a.clip.ToString().Contains(name));
 
-        if (audioSource == null)
-            return;
-
-        Destroy(audioSource);
+        return src;
     }
 }
