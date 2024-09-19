@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -41,7 +42,7 @@ public class FireManager : MonoBehaviour
         }
 
 
-        void TryToBurnTile(Vector3Int tilePosition)
+         void TryToBurnTile(Vector3Int tilePosition)
         {
             if (activeFires.Contains(tilePosition)) return;
 
@@ -57,7 +58,7 @@ public class FireManager : MonoBehaviour
 
     }
 
-    private void SetTileOnFire(Vector3Int tilePosition, TileData data)
+     public void SetTileOnFire(Vector3Int tilePosition, TileData data)
     {
         Fire newFire = Instantiate(firePrefab);
         newFire.transform.position = map.GetCellCenterWorld(tilePosition);
@@ -80,7 +81,7 @@ public class FireManager : MonoBehaviour
             TileData data = mapManager.GetTileData(gridPosition);
 
             SetTileOnFire(gridPosition, data);
-
+            
 
         }
     }

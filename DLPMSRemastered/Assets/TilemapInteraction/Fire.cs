@@ -23,7 +23,7 @@ public class Fire : MonoBehaviour
         this.data = data;
         fireManager = fm;
 
-        burnTimeCounter = data.burnTime + 1;
+        burnTimeCounter = data.burnTime;
         spreadIntervallCounter = data.spreadIntervall;
     }
 
@@ -32,7 +32,7 @@ public class Fire : MonoBehaviour
     private void Update()
     {
         burnTimeCounter -= Time.deltaTime;
-        if(burnTimeCounter <= 0)
+        if(burnTimeCounter <= -1)
         {
             fireManager.FinishedBurning(position);
             Destroy(gameObject);
