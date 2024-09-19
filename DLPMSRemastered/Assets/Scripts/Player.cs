@@ -53,7 +53,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform wallCheck;
     [SerializeField] private float wallRadius = 0.4f;
 
-
     private float _wallJumpCounter;
     private int _wallJumpDir;
     private bool _walled;
@@ -77,6 +76,9 @@ public class Player : MonoBehaviour
     private int _uniqueTorches = 0;
     private int _curTorch = 0;
 
+    private bool _firstFireTorch = true;
+    private bool _firstIceTorch = true;
+
     [Header("Effects")]
     [SerializeField] private ParticleSystem impactEffect;
     [SerializeField] private ParticleSystem landEffect;
@@ -89,6 +91,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Animator torchAnim;
     [SerializeField] private TMP_Text fireTorchText;
     [SerializeField] private TMP_Text iceTorchText;
+    [SerializeField] private GameObject fireTorchUI;
+    [SerializeField] private GameObject iceTorchUI;
 
     private void Start()
     {
@@ -98,6 +102,9 @@ public class Player : MonoBehaviour
 
         fireTorchText.text = _fireTorchAmount.ToString();
         iceTorchText.text = _iceTorchAmount.ToString();
+
+        fireTorchUI.SetActive(false);
+        iceTorchUI.SetActive(false);
 
         HandleTorchEffects();
     }
@@ -282,6 +289,8 @@ public class Player : MonoBehaviour
 
         if (!closeEnoughToEnemy && faceEnemy) 
             faceEnemy = false;
+        else if (closeEnoughToEnemy && !faceEnemy)
+            faceEnemy = true;
 
         if (faceEnemy) 
         {
@@ -322,9 +331,6 @@ public class Player : MonoBehaviour
         anim.SetBool("WallSliding", _wallSliding);
         if (anim.runtimeAnimatorController == plrTorchAnim) 
             anim.SetBool("Attack", _input.PressAttack() && _cooldownTimer > attackCooldown && _grounded);
-
-        // UI
-        torchAnim.SetInteger("CurrentTorch", _curTorch);
     }
 
     private void HandleSwitching()
@@ -345,6 +351,8 @@ public class Player : MonoBehaviour
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
         }
+
+        torchAnim.SetInteger("CurrentTorch", _curTorch);
     }
 
     private void HandleAttacking()
@@ -390,12 +398,6 @@ public class Player : MonoBehaviour
         _fireTorchAmount--;
         fireTorchText.text = _fireTorchAmount.ToString();
 
-        if (_fireTorchAmount <= 0)
-        {
-            _uniqueTorches--;
-            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
-        }
-
         HandleTorchEffects();
 
         _attacking = false;
@@ -432,12 +434,6 @@ public class Player : MonoBehaviour
 
         _iceTorchAmount--;
         iceTorchText.text = _iceTorchAmount.ToString();
-
-        if (_iceTorchAmount <= 0)
-        {
-            _uniqueTorches--;
-            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
-        }
 
         HandleTorchEffects();
 
@@ -559,6 +555,8 @@ public class Player : MonoBehaviour
 
             _audio.Play("Torch Burning");
         }
+
+        torchAnim.SetInteger("CurrentTorch", _curTorch);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -570,15 +568,13 @@ public class Player : MonoBehaviour
                 anim.runtimeAnimatorController = plrTorchAnim;
                 fireEffect.SetActive(true);
                 _curTorch = 1;
+                torchAnim.SetInteger("CurrentTorch", _curTorch);
 
                 _audio.Play("Ignite");
                 _audio.Play("Torch Burning");
+
+                StartCoroutine(ShowFireTorchUI());
             }
-
-            if (_fireTorchAmount <= 0) 
-                _uniqueTorches++;
-
-            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
 
             _fireTorchAmount++;
             fireTorchText.text = _fireTorchAmount.ToString();
@@ -593,14 +589,12 @@ public class Player : MonoBehaviour
                 anim.runtimeAnimatorController = plrTorchAnim;
                 iceEffect.SetActive(true);
                 _curTorch = 2;
+                torchAnim.SetInteger("CurrentTorch", _curTorch);
 
                 _audio.Play("Ignite");
+
+                StartCoroutine(ShowIceTorchUI());
             }
-
-            if (_iceTorchAmount <= 0) 
-                _uniqueTorches++;
-
-            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
 
             _iceTorchAmount++;
             iceTorchText.text = _iceTorchAmount.ToString();
@@ -628,5 +622,40 @@ public class Player : MonoBehaviour
         }
 
         return closestEnemy;
+    }
+
+    private IEnumerator ShowFireTorchUI() 
+    {
+        _firstFireTorch = false;
+        onlyAnimate = true;
+
+        fireTorchUI.SetActive(true);
+        
+        yield return new WaitForSeconds(6.5f);
+
+        _uniqueTorches++;
+        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+
+        Destroy(fireTorchUI);
+        onlyAnimate = false;
+
+    }
+
+    private IEnumerator ShowIceTorchUI() 
+    {
+        _firstFireTorch = false;
+        onlyAnimate = true;
+
+        iceTorchUI.SetActive(true);
+
+        yield return new WaitForSeconds(6.25f);
+
+        _uniqueTorches++;
+        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+
+        yield return new WaitForSeconds(0.25f);
+
+        Destroy(iceTorchUI);
+        onlyAnimate = false;
     }
 }
