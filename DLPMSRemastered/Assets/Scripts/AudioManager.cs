@@ -7,10 +7,7 @@ public class AudioManager : MonoBehaviour
 
     public static AudioManager Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private void Awake() => Instance = this;
 
     public void Play(string name)
     {
@@ -35,22 +32,13 @@ public class AudioManager : MonoBehaviour
     
     public void Stop(string name)
     {
-        if (!IsPlaying(name)) return;
-
-        Destroy(GetAudioSource(name));
-    }
-
-    public bool IsPlaying(string name) 
-    {
-        return GetAudioSource(name) != null;
-    }
-
-    private AudioSource GetAudioSource(string name) 
-    {
         AudioSource[] srces = gameObject.GetComponentsInChildren<AudioSource>();
 
         AudioSource src = Array.Find(srces, a => a.clip.ToString().Contains(name));
 
-        return src;
+        if (src == null)
+            return;
+
+        Destroy(src);
     }
 }

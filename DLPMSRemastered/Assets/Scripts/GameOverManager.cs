@@ -18,26 +18,16 @@ public class GameOverManager : MonoBehaviour
 
     public static GameOverManager Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private void Awake() => Instance = this;
 
-    private void Start()
-    {
-        gameOverMenu.gameObject.SetActive(false);
-    }
+    private void Start() => gameOverMenu.gameObject.SetActive(false);
 
     public void GameOver()
     {
         if (!_fading)
-        {
             StartCoroutine(FadeIn());
-        }
         if (_canDissolve)
-        {
             StartCoroutine(TextDissolve());
-        }
     }
 
     private IEnumerator FadeIn()

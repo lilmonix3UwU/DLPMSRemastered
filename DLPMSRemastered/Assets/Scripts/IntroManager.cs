@@ -12,6 +12,7 @@ public class IntroManager : MonoBehaviour
     [SerializeField] private GameObject interactionBox;
     [SerializeField] private VideoClip cutscene;
     [SerializeField] private GameObject chapterUI;
+    [SerializeField] private CameraFollow camScript;
 
     [SerializeField] private Transform startPos;
     [SerializeField] private Transform endPos;
@@ -33,12 +34,13 @@ public class IntroManager : MonoBehaviour
         plrRb.gravityScale = 0;
 
         _input = InputManager.Instance;
+        _interaction = InteractionManager.Instance;
 
         _audio = AudioManager.Instance;
         _audio.Play("Music");
         _audio.Play("Ambience");
 
-        _interaction = InteractionManager.Instance;
+        camScript.enabled = false;
 
         StartCutscene();
     }
@@ -85,7 +87,9 @@ public class IntroManager : MonoBehaviour
         introUI.alpha = 0;
         introUI.gameObject.SetActive(false);
 
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(0.5f);
+
+        camScript.enabled = true;
     }
 
     private IEnumerator GrandmaWalk(Vector3 from, Vector3 to)

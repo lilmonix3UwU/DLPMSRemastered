@@ -26,10 +26,7 @@ public class InteractionManager : MonoBehaviour
     
     public static InteractionManager Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private void Awake() => Instance = this;
 
     private void Start()
     {
@@ -40,21 +37,15 @@ public class InteractionManager : MonoBehaviour
     private void Update()
     {
         if (!interactionActive)
-        {
             _interactTimer += Time.deltaTime;
-        }
     }
 
     public void Interact(Sentence[] interaction)
     {
         if (!interactionActive && _interactTimer >= nextTimeToInteract)
-        {
            StartCoroutine(StartInteraction(interaction));
-        }
         else if (interactionActive)
-        {
             NextSentence();
-        }
     }
 
     private IEnumerator StartInteraction(Sentence[] interaction)
@@ -71,9 +62,7 @@ public class InteractionManager : MonoBehaviour
         _sentences.Clear();
 
         foreach (Sentence sentence in interaction)
-        {
             _sentences.Enqueue(sentence);
-        }
 
         NextSentence();
     }
@@ -81,13 +70,9 @@ public class InteractionManager : MonoBehaviour
     private void NextSentence()
     {
         if (_sentences.Count == 0 && !_typing)
-        {
             EndInteraction();
-        }
         else if (_typing)
-        {
             SkipTyping();
-        }
         else if (!_typing)
         {
             _curSentence = _sentences.Dequeue();

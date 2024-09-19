@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
         fireTorchText.text = _fireTorchAmount.ToString();
         iceTorchText.text = _iceTorchAmount.ToString();
 
-        HandleEffects();
+        HandleTorchEffects();
     }
 
     private void Update()
@@ -137,7 +137,6 @@ public class Player : MonoBehaviour
         HandleAnimation();
         HandleAttacking();
         HandleSwitching();
-        HandleTorchSounds();
     }
 
     private void FixedUpdate()
@@ -375,18 +374,6 @@ public class Player : MonoBehaviour
             _cooldownTimer += Time.deltaTime;
     }
 
-    private void HandleTorchSounds() 
-    {
-        string fireTorchSound = "Torch Burning";
-
-        if (_curTorch == 0 && _audio.IsPlaying(fireTorchSound))
-            _audio.Stop(fireTorchSound);
-        if (_curTorch == 1 && !_audio.IsPlaying(fireTorchSound))
-            _audio.Play(fireTorchSound);
-        if (_curTorch == 2 && _audio.IsPlaying(fireTorchSound))
-            _audio.Stop(fireTorchSound);
-    }
-
     private IEnumerator ShootFireball()
     {
         _attacking = true;
@@ -403,16 +390,17 @@ public class Player : MonoBehaviour
         _fireTorchAmount--;
         fireTorchText.text = _fireTorchAmount.ToString();
 
-        HandleEffects();
-
-        if (_fireTorchAmount <= 0) 
+        if (_fireTorchAmount <= 0)
+        {
             _uniqueTorches--;
+            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+        }
 
-        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+        HandleTorchEffects();
 
         _attacking = false;
         
-        // Play sound
+        // Play sounds
         _audio.Play("Ignite");
 
         // Move fireball
@@ -445,12 +433,13 @@ public class Player : MonoBehaviour
         _iceTorchAmount--;
         iceTorchText.text = _iceTorchAmount.ToString();
 
-        HandleEffects();
-
-        if (_iceTorchAmount <= 0) 
+        if (_iceTorchAmount <= 0)
+        {
             _uniqueTorches--;
+            torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+        }
 
-        torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
+        HandleTorchEffects();
 
         _attacking = false;
 
@@ -542,26 +531,33 @@ public class Player : MonoBehaviour
         return landSound;
     }
 
-    private void HandleEffects()
+    private void HandleTorchEffects()
     {
         if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0)
         {
             anim.runtimeAnimatorController = plrAnim;
+
             fireEffect.SetActive(false);
             iceEffect.SetActive(false);
             _curTorch = 0;
+
+            _audio.Stop("Torch Burning");
         }
         else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && _curTorch != 2)
         {
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
             _curTorch = 2;
+
+            _audio.Stop("Torch Burning");
         }
         else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _curTorch != 1)
         {
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
             _curTorch = 1;
+
+            _audio.Play("Torch Burning");
         }
     }
 
@@ -576,6 +572,7 @@ public class Player : MonoBehaviour
                 _curTorch = 1;
 
                 _audio.Play("Ignite");
+                _audio.Play("Torch Burning");
             }
 
             if (_fireTorchAmount <= 0) 
@@ -597,7 +594,7 @@ public class Player : MonoBehaviour
                 iceEffect.SetActive(true);
                 _curTorch = 2;
 
-                 _audio.Play("Ignite");
+                _audio.Play("Ignite");
             }
 
             if (_iceTorchAmount <= 0) 
