@@ -570,11 +570,11 @@ public class Player : MonoBehaviour
                 _curTorch = 1;
                 torchAnim.SetInteger("CurrentTorch", _curTorch);
 
-                _audio.Play("Ignite");
-                _audio.Play("Torch Burning");
-
-                StartCoroutine(ShowFireTorchUI());
+                if (_firstFireTorch)
+                    StartCoroutine(ShowFireTorchUI());
             }
+
+            _audio.Play("Torch Burning");
 
             _fireTorchAmount++;
             fireTorchText.text = _fireTorchAmount.ToString();
@@ -591,7 +591,16 @@ public class Player : MonoBehaviour
                 _curTorch = 2;
                 torchAnim.SetInteger("CurrentTorch", _curTorch);
 
-                _audio.Play("Ignite");
+                if (_firstIceTorch)
+                    StartCoroutine(ShowIceTorchUI());
+            }
+            else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _firstIceTorch) 
+            {
+                fireEffect.SetActive(false);
+                iceEffect.SetActive(true);
+
+                _curTorch = 2;
+                torchAnim.SetInteger("CurrentTorch", _curTorch);
 
                 StartCoroutine(ShowIceTorchUI());
             }
@@ -626,6 +635,7 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShowFireTorchUI() 
     {
+        _input.enabled = false;
         _firstFireTorch = false;
         onlyAnimate = true;
 
@@ -638,11 +648,13 @@ public class Player : MonoBehaviour
 
         Destroy(fireTorchUI);
         onlyAnimate = false;
+        _input.enabled = true;
 
     }
 
     private IEnumerator ShowIceTorchUI() 
     {
+        _input.enabled = true;
         _firstFireTorch = false;
         onlyAnimate = true;
 
@@ -657,5 +669,6 @@ public class Player : MonoBehaviour
 
         Destroy(iceTorchUI);
         onlyAnimate = false;
+        _input.enabled = true;
     }
 }
