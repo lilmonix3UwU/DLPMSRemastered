@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43714cc0cef7e346a77cdd55f941d49, type: 3}
+  m_Name: GrassTileData
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 11400000, guid: eb28292c01a5e8f41b52baa14ec078e3, type: 2}
+  - {fileID: 11400000, guid: 8a2c8e815b8195b4ea1d44fb9d6f56c7, type: 2}
+  - {fileID: 11400000, guid: 605a22c2d22699a4583efa21027c4b63, type: 2}
+  - {fileID: 11400000, guid: 7c73d45ecde6e4b4994952df6d81fc6f, type: 2}
+  - {fileID: 11400000, guid: d5f7086b95e0e6648869612e8a6bb7ba, type: 2}
+  - {fileID: 11400000, guid: 387fd8c533322014e9a0aa61080d6098, type: 2}
+  - {fileID: 11400000, guid: 0da502080fa18574b945c3f2a8428e8d, type: 2}
+  - {fileID: 11400000, guid: 4d696c69274c23a439112c809e8be150, type: 2}
+  - {fileID: 11400000, guid: 038e32c220b254a40ac1930b5bd333ea, type: 2}
+  - {fileID: 11400000, guid: 07039f5178595c94884ae23e9511c362, type: 2}
+  - {fileID: 11400000, guid: f554b575d29ae2c449d88bf2caebfa5e, type: 2}
+  - {fileID: 11400000, guid: 9d6b0ba4f034b1646bef6f7574c041cb, type: 2}
+  - {fileID: 11400000, guid: e13a255a1563b5e4197061bccc54d4c7, type: 2}
+  - {fileID: 11400000, guid: ef6a90a41be9e024eb50069f732f4922, type: 2}
+  canBurn: 1
+  spreadIntervall: 0.1
+  burnTime: 2
