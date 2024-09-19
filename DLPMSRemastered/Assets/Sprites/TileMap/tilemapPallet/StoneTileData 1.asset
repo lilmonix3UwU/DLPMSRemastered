@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43714cc0cef7e346a77cdd55f941d49, type: 3}
+  m_Name: StoneTileData 1
+  m_EditorClassIdentifier: 
+  tiles:
+  - {fileID: 11400000, guid: 2a80e7ab18c87014cb009853c1e5af82, type: 2}
+  - {fileID: 11400000, guid: 379b4cca67a4fee439201a6c00686168, type: 2}
+  - {fileID: 11400000, guid: 325d8512f316192489de4e61a97fe530, type: 2}
+  - {fileID: 11400000, guid: f59bc75022b56a24794905cea1eba3cd, type: 2}
+  - {fileID: 11400000, guid: 039a41dd3e5eb344fa2284c30aa8e761, type: 2}
+  walkingSpeed: 3
+  poisonous: 0
+  canBurn: 0
+  spreadChance: 0
+  spreadIntervall: 0
+  burnTime: 0
