@@ -10,6 +10,8 @@ TagManager:
   - Attack
   - FireTorch
   - IceTorch
+  - Fireball
+  - Vine
   layers:
   - Default
   - TransparentFX
