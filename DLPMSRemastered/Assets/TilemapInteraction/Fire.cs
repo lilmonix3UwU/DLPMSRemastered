@@ -31,6 +31,9 @@ public class Fire : MonoBehaviour
 
     private void Update()
     {
+        if (data == null)
+            return;
+
         burnTimeCounter -= Time.deltaTime;
         if(burnTimeCounter <= -1)
         {

@@ -165,7 +165,10 @@ public class Player : MonoBehaviour
     private void HandleMoveInput()
     {
         if (onlyAnimate)
+        {
+            _move = 0;
             return;
+        }
 
         _move = _input.Move();
 
@@ -635,7 +638,6 @@ public class Player : MonoBehaviour
 
     private IEnumerator ShowFireTorchUI() 
     {
-        _input.enabled = false;
         _firstFireTorch = false;
         onlyAnimate = true;
 
@@ -669,6 +671,5 @@ public class Player : MonoBehaviour
 
         Destroy(iceTorchUI);
         onlyAnimate = false;
-        _input.enabled = true;
     }
 }

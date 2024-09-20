@@ -50,8 +50,7 @@ public class FireManager : MonoBehaviour
 
             if(data != null && data.canBurn)
             {
-                    SetTileOnFire(tilePosition, data);
-
+                SetTileOnFire(tilePosition, data);
             }
 
         }
@@ -80,9 +79,10 @@ public class FireManager : MonoBehaviour
 
             TileData data = mapManager.GetTileData(gridPosition);
 
-            SetTileOnFire(gridPosition, data);
-            
-
+            if(data != null && data.canBurn)
+            {
+                SetTileOnFire(gridPosition, data);
+            }
         }
     }
 
