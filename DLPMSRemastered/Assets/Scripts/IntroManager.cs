@@ -57,14 +57,15 @@ public class IntroManager : MonoBehaviour
 
         if (!_interaction.interactionActive && _doneWalking)
         {
-            StartCoroutine(GrandmaWalk(endPos.position, startPos.position));
+            //StartCoroutine(GrandmaWalk(endPos.position, startPos.position));
         }
     }
 
     private void StartCutscene()
     {
         StartCoroutine(FadeIntro());
-        StartCoroutine(GrandmaWalk(startPos.position, endPos.position));
+        StartCoroutine(E());
+        //StartCoroutine(GrandmaWalk(startPos.position, endPos.position));
     }
 
     private IEnumerator FadeIntro()
@@ -90,6 +91,23 @@ public class IntroManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
 
         camScript.enabled = true;
+    }
+
+    private IEnumerator E()
+    {
+        if (!_hasSkipped)
+            yield return new WaitForSeconds((float)cutscene.length + 0.5f);
+        else
+            yield return new WaitForSeconds(0.5f);
+
+        _input.enabled = true;
+        plr.onlyAnimate = false;
+
+        chapterUI.SetActive(true);
+
+        yield return new WaitForSeconds(4);
+
+        chapterUI.SetActive(false);
     }
 
     private IEnumerator GrandmaWalk(Vector3 from, Vector3 to)
