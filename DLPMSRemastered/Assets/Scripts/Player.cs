@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 8f;
     [SerializeField] private float accel = 0.2f;
-    [SerializeField] private float accelMult = 5f;
     [SerializeField] private float decel = 0.1f;
     [SerializeField] private float slowDownSpeed = 2f; 
     [SerializeField] private float revertTime = 0.3f;
@@ -174,9 +173,9 @@ public class Player : MonoBehaviour
 
         // Acceleration & Deceleration
         if (_move != 0f && _curSpeed < maxSpeed)
-            _curSpeed += accel;
+            _curSpeed += accel * Time.deltaTime;
         if (_move == 0f && _curSpeed > 0)
-            _curSpeed -= decel;
+            _curSpeed -= decel * Time.deltaTime;
     }
 
     private void HandleJumping()
@@ -203,7 +202,7 @@ public class Player : MonoBehaviour
 
         // Slight boost forward in air when holding jump
         if (!_grounded && !_walled && rb.velocity.y > -2f && rb.velocity.y < 2f && _input.HoldJump())
-            _curSpeed += accel * accelMult;
+            _curSpeed += accel * Time.deltaTime;
         else
         {
             _curSpeed = _curSpeed > maxSpeed ? maxSpeed : _curSpeed;
