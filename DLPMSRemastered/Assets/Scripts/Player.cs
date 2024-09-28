@@ -29,8 +29,8 @@ public class Player : MonoBehaviour
 
     private float _curSpeed;
     private float _move;
-    private int _facingDir;
 
+    [HideInInspector] public int facingDir;
     [HideInInspector] public bool faceEnemy;
 
     [Header("Jumping")]
@@ -229,7 +229,7 @@ public class Player : MonoBehaviour
     {
         _walled = Physics2D.OverlapCircle(wallCheck.position, wallRadius, groundLayer.value);
 
-        if (_walled && !_grounded && _move == _facingDir)
+        if (_walled && !_grounded && _move == facingDir)
         {
             _wallSliding = true;
             rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlideSpeed, float.MaxValue));
@@ -247,7 +247,7 @@ public class Player : MonoBehaviour
         else
         {
             _wallJumping = false;
-            _wallJumpDir = -_facingDir;
+            _wallJumpDir = -facingDir;
             _wallJumpCounter = _wallJumpTime;
 
             CancelInvoke(nameof(StopWallJump));
@@ -261,10 +261,10 @@ public class Player : MonoBehaviour
             rb.velocity = new Vector2(_wallJumpDir * wallJumpForce.x, wallJumpForce.y);
             _wallJumpCounter = 0f;
 
-            if (_facingDir != _wallJumpDir)
+            if (facingDir != _wallJumpDir)
             {
-                graphic.rotation = _facingDir == -1 ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.Euler(0f, 0f, 0f);
-                _facingDir = -_facingDir;
+                graphic.rotation = facingDir == -1 ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.Euler(0f, 0f, 0f);
+                facingDir = -facingDir;
             }
 
             Invoke(nameof(StopWallJump), wallJumpDuration);
@@ -302,12 +302,12 @@ public class Player : MonoBehaviour
             if (dir.x < 0f) 
             {
                 graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
-                _facingDir = -1;
+                facingDir = -1;
             }
             else if (dir.x > 0f) 
             {
                 graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
-                _facingDir = 1;
+                facingDir = 1;
             }
 
             return;
@@ -316,12 +316,12 @@ public class Player : MonoBehaviour
         if (_move < 0f) // Left
         {
             graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
-            _facingDir = -1;
+            facingDir = -1;
         }
         else if (_move > 0f) // Right
         {
             graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
-            _facingDir = 1;
+            facingDir = 1;
         }
     }
 
@@ -399,7 +399,7 @@ public class Player : MonoBehaviour
 
         yield return new WaitForSeconds(0.5f);
 
-        int curFacingDir = _facingDir;
+        int curFacingDir = facingDir;
 
         _fireTorchAmount--;
         fireTorchText.text = _fireTorchAmount.ToString();
