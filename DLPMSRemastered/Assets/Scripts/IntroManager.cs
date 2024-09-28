@@ -30,7 +30,6 @@ public class IntroManager : MonoBehaviour
         _interaction = InteractionManager.Instance;
 
         _audio = AudioManager.Instance;
-        _audio.Play("Music");
         _audio.Play("Ambience");
 
         camScript.enabled = false;

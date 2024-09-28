@@ -24,6 +24,7 @@ public class Health : MonoBehaviour
 
     [Header("Effects")]
     [SerializeField] private GameObject hitEffect;
+    [SerializeField] private GameObject burningEffect;
 
     [Header("UI (Optional)")]
     [SerializeField] private Image healthSlider;
@@ -151,20 +152,10 @@ public class Health : MonoBehaviour
             if (_iFrames > 0)
                 return;
 
-            int dmg = 20;
-
-            dmgText.text = dmg.ToString();
-
-            _curHealth -= dmg;
+            TakeDamage(20);
             UpdateUI();
 
             _iFrames = iFramesAmount;
-
-            // Hit effect
-            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(hitEffectGO, 1);
-
-            _audio.Play("Hit");
         }
     }
 
@@ -183,34 +174,52 @@ public class Health : MonoBehaviour
         }
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
-            int dmg = 25;
-
-            dmgText.text = dmg.ToString();
-
-            _curHealth -= dmg;
+            TakeDamage(25);
 
             _iFrames = iFramesAmount;
 
-            // Hit effect
-            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(hitEffectGO, 1);
-
-            _audio.Play("Hit");
+            // Burning effect
+            if (collision.gameObject.layer == 11)
+            {
+                print("AA");
+                GameObject burningEffectGO = Instantiate(burningEffect, transform.position, transform.rotation, transform);
+                Destroy(burningEffectGO, 5);
+                StartCoroutine(BurningDamage());
+            }
         }
         if (CompareTag("Enemy") && collision.gameObject.layer == 12)
         {
-            int dmg = 1000;
-
-            dmgText.text = dmg.ToString();
-
-            _curHealth -= dmg;
+            TakeDamage(1000);
 
             _iFrames = iFramesAmount;
-
-            // Hit effect
-            GameObject hitEffectGO = Instantiate(hitEffect, transform.position, Quaternion.identity);
-            Destroy(hitEffectGO, 1);
         }
+    }
+
+    private IEnumerator BurningDamage()
+    {
+        yield return new WaitForSeconds(1);
+        TakeDamage(2);
+        yield return new WaitForSeconds(1);
+        TakeDamage(2);
+        yield return new WaitForSeconds(1);
+        TakeDamage(2);
+        yield return new WaitForSeconds(1);
+        TakeDamage(2);
+        yield return new WaitForSeconds(1);
+        TakeDamage(2);
+    }
+
+    private void TakeDamage(int dmg)
+    {
+        dmgText.text = dmg.ToString();
+
+        _curHealth -= dmg;
+
+        // Hit effect
+        GameObject hitEffectGO = Instantiate(hitEffect, transform.position, transform.rotation);
+        Destroy(hitEffectGO, 1);
+
+        _audio.Play("Hit");
     }
 
     private void ResetPushBool()

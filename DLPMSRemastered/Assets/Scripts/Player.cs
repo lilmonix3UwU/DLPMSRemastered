@@ -394,6 +394,9 @@ public class Player : MonoBehaviour
         // Spawn fireball
         GameObject fireballGO = Instantiate(fireball, fireballSpawn.position, Quaternion.identity);
 
+        // Play sounds
+        _audio.Play("Shoot");
+
         yield return new WaitForSeconds(0.5f);
 
         int curFacingDir = _facingDir;
@@ -404,9 +407,6 @@ public class Player : MonoBehaviour
         HandleTorchEffects();
 
         _attacking = false;
-        
-        // Play sounds
-        _audio.Play("Ignite");
 
         // Move fireball
         float timeElapsed = 0f;
@@ -539,24 +539,18 @@ public class Player : MonoBehaviour
             fireEffect.SetActive(false);
             iceEffect.SetActive(false);
             _curTorch = 0;
-
-            _audio.Stop("Torch Burning");
         }
         else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && _curTorch != 2)
         {
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
             _curTorch = 2;
-
-            _audio.Stop("Torch Burning");
         }
         else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _curTorch != 1)
         {
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
             _curTorch = 1;
-
-            _audio.Play("Torch Burning");
         }
 
         torchAnim.SetInteger("CurrentTorch", _curTorch);
@@ -576,8 +570,6 @@ public class Player : MonoBehaviour
                 if (_firstFireTorch)
                     StartCoroutine(ShowFireTorchUI());
             }
-
-            _audio.Play("Torch Burning");
 
             _fireTorchAmount++;
             fireTorchText.text = _fireTorchAmount.ToString();
