@@ -79,18 +79,6 @@ public class FireManager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3Int gridPosition = map.WorldToCell(mousePosition);
-
-            TileData data = mapManager.GetTileData(gridPosition);
-
-            if(data != null && data.canBurn)
-            {
-                SetTileOnFire(gridPosition, data);
-            }
-        }
         Vector2 playerDirection = transform.right;
         Vector3 forward = player.transform.TransformDirection(Vector3.right) * 10;
         Debug.DrawRay(player.transform.position, forward, Color.red);
@@ -110,7 +98,6 @@ public class FireManager : MonoBehaviour
         if (hit)
         {
             Vector3Int vinePos = map.WorldToCell(hit.point);
-            Debug.Log(hit.point);
             TileData data = mapManager.GetTileData(vinePos);
 
             if (inputManager.PressInteract())
