@@ -35,10 +35,10 @@ public class Fire : MonoBehaviour
             return;
 
         burnTimeCounter -= Time.deltaTime;
-        if(burnTimeCounter <= -1)
+        if(burnTimeCounter <= 0)
         {
             fireManager.FinishedBurning(position);
-            Destroy(gameObject);
+            Destroy(gameObject, 1.0f);
         }
 
         spreadIntervallCounter -= Time.deltaTime;
