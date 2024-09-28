@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 4320516246704475388}
   - component: {fileID: 1439934572901455382}
   - component: {fileID: 8831353920542084632}
+  - component: {fileID: 4382610583179539697}
   m_Layer: 8
   m_Name: FireTorchEffect
   m_TagString: Untagged
@@ -4996,6 +4997,102 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!82 &4382610583179539697
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709088667112009041}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 5de8a1ea8f9624044919143bfbfb8c34, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.2
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1060169380187573217
 GameObject:
   m_ObjectHideFlags: 0
@@ -9998,6 +10095,7 @@ GameObject:
   - component: {fileID: 7285317869491165336}
   - component: {fileID: 6831851025990256074}
   - component: {fileID: 1076308294325249437}
+  - component: {fileID: 5439148887101985983}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -10105,11 +10203,12 @@ MonoBehaviour:
   onlyAnimate: 0
   gettingPushed: 0
   maxSpeed: 8
-  accel: 0.35
+  accel: 0.5
   accelMult: 1.2
   decel: 0.1
   slowDownSpeed: 1
   revertTime: 0.5
+  facingDir: 0
   faceEnemy: 0
   jumpForce: 22
   fallMultiplier: 6
@@ -10120,7 +10219,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   wallSlideSpeed: 3
-  wallJumpDuration: 0.25
+  wallJumpDuration: 0.3
   _wallJumpTime: 0.2
   wallJumpForce: {x: 16, y: 20}
   wallCheck: {fileID: 838647245441356139}
@@ -10141,6 +10240,8 @@ MonoBehaviour:
   torchAnim: {fileID: 0}
   fireTorchText: {fileID: 0}
   iceTorchText: {fileID: 0}
+  fireTorchUI: {fileID: 0}
+  iceTorchUI: {fileID: 0}
 --- !u!114 &6831851025990256074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10160,6 +10261,7 @@ MonoBehaviour:
   colorChangeTime: 0.5
   dead: 0
   hitEffect: {fileID: 3208816561791472192, guid: 949fd90355a754c5298f0dd57fe26a66, type: 3}
+  burningEffect: {fileID: 993562308326942366, guid: 2756e1ec48f5b46008412cd7d08068e9, type: 3}
   healthSlider: {fileID: 0}
   dmgText: {fileID: 0}
 --- !u!95 &1076308294325249437
@@ -10172,7 +10274,7 @@ Animator:
   m_GameObject: {fileID: 4134483811760698077}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9929a1422bd134a51a7568102308a655, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 2
   m_ApplyRootMotion: 0
@@ -10183,6 +10285,14 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!81 &5439148887101985983
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4134483811760698077}
+  m_Enabled: 1
 --- !u!1 &4650731021103788264
 GameObject:
   m_ObjectHideFlags: 0
