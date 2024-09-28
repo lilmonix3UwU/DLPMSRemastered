@@ -27,13 +27,8 @@ public class MapManager : MonoBehaviour
 
         foreach (var tileData in tileDatas)
         {
-            foreach (var tile in tileData.tiles)
-            {
-                dataFromTiles.Add(tile, tileData);
-            }
+            dataFromTiles.Add(tileData.tile, tileData);
         }
-       
-
     }
 
 

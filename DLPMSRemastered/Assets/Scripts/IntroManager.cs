@@ -6,17 +6,10 @@ public class IntroManager : MonoBehaviour
 {
     [SerializeField] private Player plr;
     [SerializeField] private Rigidbody2D plrRb;
-    [SerializeField] private Transform grandma;
-    [SerializeField] private Animator grandmaAnim;
     [SerializeField] private CanvasGroup introUI;
-    [SerializeField] private GameObject interactionBox;
     [SerializeField] private VideoClip cutscene;
     [SerializeField] private GameObject chapterUI;
     [SerializeField] private CameraFollow camScript;
-
-    [SerializeField] private Transform startPos;
-    [SerializeField] private Transform endPos;
-    [SerializeField] private float grandmaWalkTime = 3f;
 
     private bool _doneWalking;
     private bool _hasSkipped;
@@ -50,22 +43,17 @@ public class IntroManager : MonoBehaviour
         if (_input.SkipCutscene() && !_hasSkipped)
         {
             _input.enabled = false;
-            StopAllCoroutines();
+            StopCoroutine(nameof(StartCutscene));
+
             _hasSkipped = true;
             StartCutscene();
-        }
-
-        if (!_interaction.interactionActive && _doneWalking)
-        {
-            //StartCoroutine(GrandmaWalk(endPos.position, startPos.position));
         }
     }
 
     private void StartCutscene()
     {
         StartCoroutine(FadeIntro());
-        StartCoroutine(E());
-        //StartCoroutine(GrandmaWalk(startPos.position, endPos.position));
+        StartCoroutine(ShowChapterUI());
     }
 
     private IEnumerator FadeIntro()
@@ -93,66 +81,22 @@ public class IntroManager : MonoBehaviour
         camScript.enabled = true;
     }
 
-    private IEnumerator E()
+    private IEnumerator ShowChapterUI()
     {
         if (!_hasSkipped)
-            yield return new WaitForSeconds((float)cutscene.length + 0.5f);
+            yield return new WaitForSeconds((float)cutscene.length + 2);
         else
-            yield return new WaitForSeconds(0.5f);
-
-        _input.enabled = true;
-        plr.onlyAnimate = false;
+            yield return new WaitForSeconds(2);
 
         chapterUI.SetActive(true);
 
         yield return new WaitForSeconds(4);
 
-        chapterUI.SetActive(false);
-    }
+        plr.onlyAnimate = false;
+        _input.enabled = true;
 
-    private IEnumerator GrandmaWalk(Vector3 from, Vector3 to)
-    {
-        if (!_hasSkipped)
-            yield return new WaitForSeconds((float)cutscene.length + 0.5f);
-        else
-            yield return new WaitForSeconds(0.5f);
-
-        _doneWalking = false;
-
-        plr.onlyAnimate = true;
-
-        grandmaAnim.SetBool("Walking", true);
-        grandma.rotation = from.x - to.x < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.Euler(0, 0, 0);
-
-        float elapsedTime = 0;
-
-        while (elapsedTime < grandmaWalkTime)
-        {
-            elapsedTime += Time.deltaTime;
-            grandma.position = Vector3.Lerp(from, to, elapsedTime / grandmaWalkTime);
-            yield return null;
-        }
-
-        grandma.position = to;
-
-        grandmaAnim.SetBool("Walking", false);
-
-        if (grandma.position != startPos.position) 
-        {
-            _doneWalking = true;
-            _input.enabled = true;
-        }
-        else
-        {
-            grandma.gameObject.SetActive(false);
-            interactionBox.SetActive(false);
-            plr.onlyAnimate = false;
-
-            chapterUI.SetActive(true);
-
-            yield return new WaitForSeconds(4);
-
-            chapterUI.SetActive(false);
-        }
+        Destroy(chapterUI);
+        Destroy(introUI.gameObject);
+        Destroy(gameObject);
     }
 }

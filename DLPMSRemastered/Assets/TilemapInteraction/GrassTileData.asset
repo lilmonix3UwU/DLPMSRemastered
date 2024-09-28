@@ -12,10 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f43714cc0cef7e346a77cdd55f941d49, type: 3}
   m_Name: GrassTileData
   m_EditorClassIdentifier: 
-  tiles:
-  - {fileID: 11400000, guid: 76ad5146b0b663b4ca6ec133e8e581d9, type: 2}
-  - {fileID: 11400000, guid: 90c6f501b3f388345b52d6fa81dcc3ad, type: 2}
-  - {fileID: 11400000, guid: dc0252fcd8baa8e40819fd197f53123e, type: 2}
+  tile: {fileID: 11400000, guid: ccfdc26f9fcd3475388e0531ab962141, type: 2}
   canBurn: 1
   spreadIntervall: 0.1
   burnTime: 1

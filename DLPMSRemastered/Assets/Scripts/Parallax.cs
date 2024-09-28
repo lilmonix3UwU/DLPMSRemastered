@@ -19,7 +19,8 @@ public class Parallax : MonoBehaviour
 
     void Update()
     {
-        Vector2 newPos = startPos + travel * parallaxFactor;
-        transform.position = new Vector3(newPos.x, newPos.y, startZ);
+        float newX = startPos.x + travel.x * parallaxFactor;
+        float newY = startPos.y + travel.y * parallaxFactor / 10;
+        transform.position = new Vector3(newX, newY, startZ);
     }
 }

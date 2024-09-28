@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 public class TileData : ScriptableObject
 {
 
-    public TileBase[] tiles;
+    public TileBase tile;
 
 
     public bool canBurn;
