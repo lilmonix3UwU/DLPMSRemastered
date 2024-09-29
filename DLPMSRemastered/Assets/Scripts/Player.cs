@@ -11,10 +11,12 @@ public class Player : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController plrAnim;
     [SerializeField] private Transform graphic;
     [SerializeField] private Health health;
-    
-    private InputManager _input;
-    private AudioManager _audio;
-    private GameOverManager _gameOver;
+    [SerializeField] private CameraFollowObject camFollowObj;
+
+    private InputManager _inputMgr;
+    private AudioManager _audioMgr;
+    private GameOverManager _gameOverMgr;
+    private CameraManager _camMgr;
 
     [HideInInspector] public bool onlyAnimate;
     [HideInInspector] public bool gettingPushed;
@@ -30,7 +32,6 @@ public class Player : MonoBehaviour
     private float _move;
 
     [HideInInspector] public int facingDir;
-    [HideInInspector] public bool faceEnemy;
 
     [Header("Jumping")]
     [SerializeField] private float jumpForce = 3f;
@@ -73,7 +74,8 @@ public class Player : MonoBehaviour
     private int _fireTorchAmount = 0;
     private int _iceTorchAmount = 0;
     private int _uniqueTorches = 0;
-    private int _curTorch = 0;
+    
+    [HideInInspector] public int curTorch = 0;
 
     private bool _firstFireTorch = true;
     private bool _firstIceTorch = true;
@@ -95,9 +97,10 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        _input = InputManager.Instance;
-        _audio = AudioManager.Instance;
-        _gameOver = GameOverManager.Instance;
+        _inputMgr = InputManager.Instance;
+        _audioMgr = AudioManager.Instance;
+        _gameOverMgr = GameOverManager.Instance;
+        _camMgr = CameraManager.Instance;
 
         fireTorchText.text = _fireTorchAmount.ToString();
         iceTorchText.text = _iceTorchAmount.ToString();
@@ -119,7 +122,7 @@ public class Player : MonoBehaviour
             _wallSliding = false;
             HandleAnimation();
 
-            _gameOver.GameOver();
+            _gameOverMgr.GameOver();
 
             return;
         }
@@ -139,18 +142,19 @@ public class Player : MonoBehaviour
         HandleJumping();
         HandleWallJump();
         HandleWallSlide();
-        HandleSpriteFlip();
         HandleAnimation();
         HandleAttacking();
         HandleSwitching();
+        HandleCameraEffects();
     }
 
     private void FixedUpdate()
     {
-        if (_attacking || health.dead)
+        if (_attacking || health.dead || Time.timeScale == 0)
             return;
         
         HandleMovement();
+        HandleSpriteFlip();
     }
 
     private void HandleMovement()
@@ -169,7 +173,7 @@ public class Player : MonoBehaviour
             return;
         }
 
-        _move = _input.Move();
+        _move = _inputMgr.Move();
 
         // Acceleration & Deceleration
         if (_move != 0f && _curSpeed < maxSpeed)
@@ -188,12 +192,13 @@ public class Player : MonoBehaviour
         if (onlyAnimate)
             return;
 
-        if (_input.PressJump() && _coyoteTimeCounter > 0f)
+        if (_inputMgr.PressJump() && _coyoteTimeCounter > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpEffect.Play();
+            _audioMgr.Play("Jump");
         }
-        if (_input.ReleaseJump() && rb.velocity.y > 0f)
+        if (_inputMgr.ReleaseJump() && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
 
@@ -201,7 +206,7 @@ public class Player : MonoBehaviour
         }
 
         // Slight boost forward in air when holding jump
-        if (!_grounded && !_walled && rb.velocity.y > -2f && rb.velocity.y < 2f && _input.HoldJump())
+        if (!_grounded && !_walled && rb.velocity.y > -2f && rb.velocity.y < 2f && _inputMgr.HoldJump())
             _curSpeed += accel * Time.deltaTime;
         else
         {
@@ -252,10 +257,11 @@ public class Player : MonoBehaviour
             CancelInvoke(nameof(StopWallJump));
         }
 
-        if (_input.PressJump() && (_wallSliding || _wallJumpCounter > 0f))
+        if (_inputMgr.PressJump() && (_wallSliding || _wallJumpCounter > 0f))
         {
             wallJumpEffect.Play();
-            
+            _audioMgr.Play("Jump");
+
             _wallJumping = true;
             rb.velocity = new Vector2(_wallJumpDir * wallJumpForce.x, wallJumpForce.y);
             _wallJumpCounter = 0f;
@@ -264,11 +270,12 @@ public class Player : MonoBehaviour
             {
                 graphic.rotation = facingDir == -1 ? Quaternion.Euler(0f, 180f, 0f) : Quaternion.Euler(0f, 0f, 0f);
                 facingDir = -facingDir;
+                camFollowObj.CallTurn(facingDir == -1 ? 180f : 0f);
             }
 
             Invoke(nameof(StopWallJump), wallJumpDuration);
         }
-        if (_input.ReleaseJump() && rb.velocity.y > 0f)
+        if (_inputMgr.ReleaseJump() && rb.velocity.y > 0f)
             _wallJumpCounter = 0f;
     }
 
@@ -278,49 +285,18 @@ public class Player : MonoBehaviour
     {
         if (_wallJumping)
             return;
-        
-        bool closeEnoughToEnemy;
 
-        if (ClosestEnemy() != null)
-            closeEnoughToEnemy = Vector2.Distance(transform.position, ClosestEnemy().transform.position) < minDistForFocus;
-        else
-            closeEnoughToEnemy = false;
-
-        if (_input.PressFocus() && closeEnoughToEnemy)
-            faceEnemy = !faceEnemy;
-
-        if (!closeEnoughToEnemy && faceEnemy) 
-            faceEnemy = false;
-        else if (closeEnoughToEnemy && !faceEnemy)
-            faceEnemy = true;
-
-        if (faceEnemy) 
-        {
-            Vector2 dir = (ClosestEnemy().transform.position - transform.position).normalized;
-            
-            if (dir.x < 0f) 
-            {
-                graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
-                facingDir = -1;
-            }
-            else if (dir.x > 0f) 
-            {
-                graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
-                facingDir = 1;
-            }
-
-            return;
-        }
-
-        if (_move < 0f) // Left
+        if (_move < 0f && facingDir != -1) // Left
         {
             graphic.rotation = Quaternion.Euler(0f, 0f, 0f);
             facingDir = -1;
+            camFollowObj.CallTurn(0f);
         }
-        else if (_move > 0f) // Right
+        else if (_move > 0f && facingDir != 1) // Right
         {
             graphic.rotation = Quaternion.Euler(0f, 180f, 0f);
             facingDir = 1;
+            camFollowObj.CallTurn(180f);
         }
     }
 
@@ -332,29 +308,29 @@ public class Player : MonoBehaviour
         anim.SetFloat("TimeInAir", _timeInAir);
         anim.SetBool("WallSliding", _wallSliding);
         if (anim.runtimeAnimatorController == plrTorchAnim) 
-            anim.SetBool("Attack", _input.PressAttack() && _cooldownTimer > attackCooldown && _grounded);
+            anim.SetBool("Attack", _inputMgr.PressAttack() && _cooldownTimer > attackCooldown && _grounded);
     }
 
     private void HandleSwitching()
     {
-        if (_input.PressSlot1() && _fireTorchAmount > 0)
+        if (_inputMgr.PressSlot1() && _fireTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
-            _curTorch = 1;
+            curTorch = 1;
 
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
         }
-        if (_input.PressSlot2() && _iceTorchAmount > 0)
+        if (_inputMgr.PressSlot2() && _iceTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
-            _curTorch = 2;
+            curTorch = 2;
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
         }
 
-        torchAnim.SetInteger("CurrentTorch", _curTorch);
+        torchAnim.SetInteger("CurrentTorch", curTorch);
     }
 
     private void HandleAttacking()
@@ -362,9 +338,9 @@ public class Player : MonoBehaviour
         if (onlyAnimate || !_grounded)
             return;
 
-        if (_input.PressAttack() && _cooldownTimer > attackCooldown)
+        if (_inputMgr.PressAttack() && _cooldownTimer > attackCooldown)
         {
-            switch (_curTorch)
+            switch (curTorch)
             {
                 case 1:
                     if (_fireTorchAmount <= 0) return;
@@ -384,6 +360,19 @@ public class Player : MonoBehaviour
             _cooldownTimer += Time.deltaTime;
     }
 
+    private void HandleCameraEffects() 
+    {
+        if (rb.velocity.y < _camMgr.fallSpeedYDampingChangeThreshold && !_camMgr.LerpingYDamping && !_camMgr.LerpedFromPlayerFalling)
+            _camMgr.LerpYDamping(true);
+
+        if (rb.velocity.y >= 0f && !_camMgr.LerpingYDamping && _camMgr.LerpedFromPlayerFalling) 
+        {
+            _camMgr.LerpedFromPlayerFalling = false;
+
+            _camMgr.LerpYDamping(false);
+        }
+    }
+
     private IEnumerator ShootFireball()
     {
         _attacking = true;
@@ -394,7 +383,7 @@ public class Player : MonoBehaviour
         GameObject fireballGO = Instantiate(fireball, fireballSpawn.position, Quaternion.identity);
 
         // Play sounds
-        _audio.Play("Shoot");
+        _audioMgr.Play("Shoot");
 
         yield return new WaitForSeconds(0.5f);
 
@@ -442,9 +431,9 @@ public class Player : MonoBehaviour
         _attacking = false;
 
         // Play sounds
-        _audio.Play("Ice");
+        _audioMgr.Play("Ice");
         yield return new WaitForSeconds(0.1f);
-        _audio.Play("Ice");
+        _audioMgr.Play("Ice");
 
         yield return new WaitForSeconds(1.9f);
 
@@ -454,17 +443,17 @@ public class Player : MonoBehaviour
 
     private void Footstep()
     {   
-        _audio.Play(RandomFootstepSound());
+        _audioMgr.Play(RandomFootstepSound());
         impactEffect.Play();
     }
 
     private void LandEffect()
     {
-        _audio.Play(RandomLandSound());
+        _audioMgr.Play(RandomLandSound());
         landEffect.Play();
     }
 
-    private void LandSound() => _audio.Play(RandomLandSound());
+    private void LandSound() => _audioMgr.Play(RandomLandSound());
 
     private void SlowDown() => StartCoroutine(SlowDownCoroutine());
 
@@ -537,55 +526,55 @@ public class Player : MonoBehaviour
 
             fireEffect.SetActive(false);
             iceEffect.SetActive(false);
-            _curTorch = 0;
+            curTorch = 0;
         }
-        else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && _curTorch != 2)
+        else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && curTorch != 2)
         {
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
-            _curTorch = 2;
+            curTorch = 2;
         }
-        else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _curTorch != 1)
+        else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && curTorch != 1)
         {
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
-            _curTorch = 1;
+            curTorch = 1;
         }
 
-        torchAnim.SetInteger("CurrentTorch", _curTorch);
+        torchAnim.SetInteger("CurrentTorch", curTorch);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "FireTorch")
         {
-            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && _curTorch != 1)
+            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && curTorch != 1)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 fireEffect.SetActive(true);
-                _curTorch = 1;
-                torchAnim.SetInteger("CurrentTorch", _curTorch);
+                curTorch = 1;
+                torchAnim.SetInteger("CurrentTorch", curTorch);
 
-                if (_firstFireTorch)
+                if (_firstFireTorch) 
                     StartCoroutine(ShowFireTorchUI());
             }
 
             _fireTorchAmount++;
             fireTorchText.text = _fireTorchAmount.ToString();
 
-            _audio.Play("Pick Up");
+            _audioMgr.Play("PickUp");
             Destroy(collision.gameObject);
         }
         if (collision.tag == "IceTorch")
         {
-            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && _curTorch != 2)
+            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && curTorch != 2)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 iceEffect.SetActive(true);
-                _curTorch = 2;
-                torchAnim.SetInteger("CurrentTorch", _curTorch);
+                curTorch = 2;
+                torchAnim.SetInteger("CurrentTorch", curTorch);
 
-                if (_firstIceTorch)
+                if (_firstIceTorch) 
                     StartCoroutine(ShowIceTorchUI());
             }
             else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _firstIceTorch) 
@@ -593,8 +582,8 @@ public class Player : MonoBehaviour
                 fireEffect.SetActive(false);
                 iceEffect.SetActive(true);
 
-                _curTorch = 2;
-                torchAnim.SetInteger("CurrentTorch", _curTorch);
+                curTorch = 2;
+                torchAnim.SetInteger("CurrentTorch", curTorch);
 
                 StartCoroutine(ShowIceTorchUI());
             }
@@ -602,29 +591,9 @@ public class Player : MonoBehaviour
             _iceTorchAmount++;
             iceTorchText.text = _iceTorchAmount.ToString();
 
-            _audio.Play("Pick Up");
+            _audioMgr.Play("PickUp");
             Destroy(collision.gameObject);
         }
-    }
-
-    public GameObject ClosestEnemy() 
-    {
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-        GameObject closestEnemy = null;
-        float closestDist = Mathf.Infinity;
-
-        foreach (GameObject enemy in enemies) 
-        {
-            float distToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
-
-            if (distToEnemy < closestDist) 
-            {
-                closestDist = distToEnemy;
-                closestEnemy = enemy;
-            }
-        }
-
-        return closestEnemy;
     }
 
     private IEnumerator ShowFireTorchUI() 
@@ -633,32 +602,37 @@ public class Player : MonoBehaviour
         onlyAnimate = true;
 
         fireTorchUI.SetActive(true);
+        _audioMgr.Play("Ignite");
+
+        yield return new WaitForSeconds(0.5f);
+
+        _audioMgr.Play("PickUpMusic");
         
-        yield return new WaitForSeconds(6.5f);
+        yield return new WaitForSeconds(6f);
 
         _uniqueTorches++;
         torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
 
         Destroy(fireTorchUI);
         onlyAnimate = false;
-        _input.enabled = true;
 
     }
 
     private IEnumerator ShowIceTorchUI() 
     {
-        _input.enabled = true;
-        _firstFireTorch = false;
+        _firstIceTorch = false;
         onlyAnimate = true;
 
         iceTorchUI.SetActive(true);
 
-        yield return new WaitForSeconds(6.25f);
+        yield return new WaitForSeconds(0.5f);
+
+        _audioMgr.Play("PickUpMusic");
+
+        yield return new WaitForSeconds(6f);
 
         _uniqueTorches++;
         torchAnim.SetInteger("UniqueTorches", _uniqueTorches);
-
-        yield return new WaitForSeconds(0.25f);
 
         Destroy(iceTorchUI);
         onlyAnimate = false;

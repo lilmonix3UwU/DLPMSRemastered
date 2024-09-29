@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7556749027226864085}
   - component: {fileID: 7715165845713584291}
+  - component: {fileID: 5761996664950078519}
   m_Layer: 8
   m_Name: Light 2D (1)
   m_TagString: Untagged
@@ -82,6 +83,27 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!95 &5761996664950078519
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2098907282022290857}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f21e1aca13a9464d190d70a4c0dc285f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3895342790045298134
 GameObject:
   m_ObjectHideFlags: 0
@@ -4926,7 +4948,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 00d9a8397057c47d7bb3b16703286633, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5147,7 +5169,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6853656467408577598}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -6101,17 +6123,8 @@ ParticleSystem:
           inWeight: 0
           outWeight: 0.31579176
         - serializedVersion: 3
-          time: 0.4591541
-          value: 0.78123355
-          inSlope: 0
-          outSlope: 0
-          tangentMode: 0
-          weightedMode: 0
-          inWeight: 0
-          outWeight: 0
-        - serializedVersion: 3
           time: 1
-          value: 1
+          value: 0
           inSlope: 1.0007207
           outSlope: 1.0007207
           tangentMode: 0

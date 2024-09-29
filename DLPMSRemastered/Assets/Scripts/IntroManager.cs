@@ -9,14 +9,12 @@ public class IntroManager : MonoBehaviour
     [SerializeField] private CanvasGroup introUI;
     [SerializeField] private VideoClip cutscene;
     [SerializeField] private GameObject chapterUI;
-    [SerializeField] private CameraFollow camScript;
 
     private bool _doneWalking;
     private bool _hasSkipped;
 
-    private AudioManager _audio;
-    private InputManager _input;
-    private InteractionManager _interaction;
+    private InputManager _inputMgr;
+    private AudioManager _audioMgr;
 
     private void Start()
     {
@@ -26,22 +24,17 @@ public class IntroManager : MonoBehaviour
         plr.enabled = false;
         plrRb.gravityScale = 0;
 
-        _input = InputManager.Instance;
-        _interaction = InteractionManager.Instance;
-
-        _audio = AudioManager.Instance;
-        _audio.Play("Ambience");
-
-        camScript.enabled = false;
+        _inputMgr = InputManager.Instance;
+        _audioMgr = AudioManager.Instance;
 
         StartCutscene();
     }
 
     private void Update()
     {
-        if (_input.SkipCutscene() && !_hasSkipped)
+        if (_inputMgr.SkipCutscene() && !_hasSkipped)
         {
-            _input.enabled = false;
+            _inputMgr.enabled = false;
             StopCoroutine(nameof(StartCutscene));
 
             _hasSkipped = true;
@@ -74,10 +67,6 @@ public class IntroManager : MonoBehaviour
 
         introUI.alpha = 0;
         introUI.gameObject.SetActive(false);
-
-        yield return new WaitForSeconds(0.5f);
-
-        camScript.enabled = true;
     }
 
     private IEnumerator ShowChapterUI()
@@ -89,10 +78,14 @@ public class IntroManager : MonoBehaviour
 
         chapterUI.SetActive(true);
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(0.5f);
+
+        _audioMgr.Play("ChapterMusic");
+
+        yield return new WaitForSeconds(3.5f);
 
         plr.onlyAnimate = false;
-        _input.enabled = true;
+        _inputMgr.enabled = true;
 
         Destroy(chapterUI);
         Destroy(introUI.gameObject);

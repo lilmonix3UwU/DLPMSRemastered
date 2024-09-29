@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Cinemachine;
 
 public class Health : MonoBehaviour
 {
@@ -163,14 +164,12 @@ public class Health : MonoBehaviour
     {
         if (CompareTag("Player") && collision.gameObject.layer == 12)
         {
-            int dmg = 1000;
-
-            _curHealth -= dmg;
+            TakeDamage(100);
             UpdateUI();
 
             _iFrames = iFramesAmount;
 
-            Destroy(Camera.main.GetComponent<CameraFollow>());
+            Destroy(Camera.main.GetComponent<CinemachineBrain>());
         }
         if (CompareTag("Enemy") && collision.gameObject.CompareTag("Attack") && _iFrames <= 0)
         {
@@ -189,7 +188,7 @@ public class Health : MonoBehaviour
         }
         if (CompareTag("Enemy") && collision.gameObject.layer == 12)
         {
-            TakeDamage(1000);
+            TakeDamage(100);
 
             _iFrames = iFramesAmount;
         }

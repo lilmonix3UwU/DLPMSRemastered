@@ -20,14 +20,14 @@ public class FireManager : MonoBehaviour
     [SerializeField]
     private Fire firePrefab;
     [SerializeField]
-    private GameObject player;
+    private Player player;
 
     private List<Vector3Int> activeFires = new List<Vector3Int>();
     private InputManager inputManager;
 
     private void Start()
     {
-        player = FindObjectOfType<Player>().gameObject;
+        player = FindObjectOfType<Player>();
         inputManager = InputManager.Instance;
     }
 
@@ -49,13 +49,13 @@ public class FireManager : MonoBehaviour
         }
 
 
-         void TryToBurnTile(Vector3Int tilePosition)
+        void TryToBurnTile(Vector3Int tilePosition)
         {
             if (activeFires.Contains(tilePosition)) return;
 
             TileData data = mapManager.GetTileData(tilePosition);
 
-            if(data != null && data.canBurn)
+            if(data != null && data.canBurn && player.curTorch == 1)
             {
                 SetTileOnFire(tilePosition, data);
             }
@@ -64,7 +64,7 @@ public class FireManager : MonoBehaviour
 
     }
 
-     public void SetTileOnFire(Vector3Int tilePosition, TileData data)
+    public void SetTileOnFire(Vector3Int tilePosition, TileData data)
     {
         Fire newFire = Instantiate(firePrefab);
         newFire.transform.position = map.GetCellCenterWorld(tilePosition);
@@ -102,7 +102,7 @@ public class FireManager : MonoBehaviour
 
             if (inputManager.PressInteract())
             {
-                if (data != null && data.canBurn)
+                if (data != null && data.canBurn && player.curTorch == 1)
                 {
                     SetTileOnFire(vinePos, data);
                 }                
