@@ -1,0 +1,6938 @@
+fileFormatVersion: 2
+guid: 91d24d4b5f0d0404c87fc1e81e17dd16
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c3f2cbf5a89294384f14ff6b360c4e
+      internalID: -898459836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a36c698b59466240bd13e1be325b1a6
+      internalID: 595497582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b67dbcf51c90645a90a9e103d3f3c3
+      internalID: -512119031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c414eeadabd20845be2af3a965933ad
+      internalID: 1056202854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4bd3fb39ea46a4bb97d096d3242c50
+      internalID: -1013187093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd84e853227447459394b5512076fef
+      internalID: -1819421709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec8780842af683842a5ccdcc9ced3e1f
+      internalID: 20013543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea02e062bc5a5fb4b8086e44a462f723
+      internalID: 257528448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f64f6dd116d681e4a9778e6df0b22607
+      internalID: 256506575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb213d356b68b0941aa6f4a862a09044
+      internalID: -1436413807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769d668339a7a654eaea5e380d04d3b2
+      internalID: 388752318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2b9c2ed6113108418d521acaa46637f
+      internalID: 712562366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08fbff2f9b4e17245885e6fa0254602e
+      internalID: 880416064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3804d9979d1a74db828c116ae81a9b
+      internalID: 148335570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_14
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6971fc29d241ad64aa4ef4ed98546b3c
+      internalID: 877635344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2257e66fc0fe5d848a376d8c836ec34d
+      internalID: 1716497830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_16
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ccae3d21f3cfe14cb8ad2f08bb4faa3
+      internalID: -144295792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d164dba4fa9448a43985b45a52e2ec41
+      internalID: -658612276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_18
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b03648bd1ddac5e498e3a2caac058338
+      internalID: -2066260791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_19
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4fe30cb8830b8499fcc22e954e9fa9
+      internalID: 560673236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_20
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4f01eeb9d378f4e97096938934d332
+      internalID: 1673494675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_21
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16c5a4624f8df6249b9fd6c2b1c2fb44
+      internalID: 708393175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40b69eb93b28e9a478f71a0b26b3572c
+      internalID: 717662030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f1a0cdbf6935e42b10894835c32e9a
+      internalID: 206110520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_24
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fe76b5766b663f4ca329866b8319db8
+      internalID: -539567031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5db62ea33fee84cb5e843cfe49105c
+      internalID: 877499329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823ec9aca93bf8a408cd0df5ed287275
+      internalID: 2071098428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c680ed968abd49449d59d5248926f10
+      internalID: -195709021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_28
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681ced4ae9d33854fab6682028ea9910
+      internalID: 1790291121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_29
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52e54ee7ee1178f4aa091dbeae54832f
+      internalID: -1141609409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_30
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fded29a950f882848be1fc92074e8d04
+      internalID: 676248414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b20af0437275b449a2a70d0da41d33
+      internalID: 1292425878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_32
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a755c8c7942c7c044ac26fc743b56c06
+      internalID: -1368179477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7b47a705322414494b061bbcc4acab
+      internalID: -2126570456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_34
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77ee0cb1702b8f046878f403d549b6ba
+      internalID: 806009999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_35
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ea984ae993c7e34b80f5c2e0b6d9ad7
+      internalID: 533341102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_36
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa74c1eb3d97534da668be1e714ff23
+      internalID: -1351310789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_37
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e559d30f10bda3746b1277db46b9225d
+      internalID: 984041133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9406d54eb83148f47917624ca92e1dc1
+      internalID: -1704400281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_39
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bebbab6489d0ea4982eee8e7cd18057
+      internalID: -1792212411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_40
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8a5b99d9705304b9579cf904385332
+      internalID: 2016318956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_41
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24378f471ee2c654eae65e5d75d17710
+      internalID: 184706762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_42
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dccfdbbd0eb4bea4fa135dd9f31c54e8
+      internalID: 966469805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_43
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088111a1608c3bc42bd3ce6e4019693f
+      internalID: 1539055944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_44
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b315d82ab29ee99469943fad9165d73c
+      internalID: -57952845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a1cc1a01f1b2340bd150ad2a180cbf
+      internalID: 711052444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_46
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4954e9519d273e458c739c4c68815d7
+      internalID: 1810209103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bbb955e28686d74191b3af151ca1ae5
+      internalID: 814503489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_48
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef02c9b03bb3dfb47b0f43c6a1be51a5
+      internalID: -2109998028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_49
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef04d45d6f53e24aa30783f78289cb5
+      internalID: 2123101206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21104d20dd91fe4f80554ce8840bd00
+      internalID: -513835963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d6e94e02c49bf243bbe59dfcb369a32
+      internalID: 582606900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773fa531773502f4aa7a158bdc69ea97
+      internalID: 1221310947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d6e15a6b8f66a42bc0e98cdb152ce8
+      internalID: -1082354379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_54
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce5c5ab5aac91549b068d3b90880041
+      internalID: -790912873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_55
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76a88e675d0386d48b73bcc6244d573c
+      internalID: 1893786388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_56
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e48b2e56448ef4f94ae08d6bc86b1d
+      internalID: 812906285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf439f7715948cf4b95a463e8bd4a2c9
+      internalID: -466699631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_58
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23bae31d0798bd2428012f2448b1d8e6
+      internalID: -241220108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_59
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff65664483ed8a45bdc1ca13d4bbc05
+      internalID: 341791056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_60
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd68f21e3f784e4d8fd6b1556a3623f
+      internalID: 1312334908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa30327d1f107342837627d732fe816
+      internalID: 2135794083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_62
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 917da57ca3891c541b09bb770bcd8194
+      internalID: -747167638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_63
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea836078fc3d60844a1f2251f8eceab8
+      internalID: 425191906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_64
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 903cc6ceeed48ed4cafc16f4c56f82d2
+      internalID: -2034988789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_65
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c722574effe9a45acdb69b606b096a
+      internalID: 33937371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9046bada0111c02459c2b08675c2d67d
+      internalID: -1193564557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_67
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04977b0c43743b4d8eb8c0bde695b7c
+      internalID: -1410754978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_68
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fe155651b2ae14f89a8d01592d046e
+      internalID: -406356283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7f75c9be3c5d94a9a6d3774a3344f5
+      internalID: 2130589105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_70
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38825c79db2a964fa7f73ea10113487
+      internalID: -1359281176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_71
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d276c2f91d55cc54c8b07a87c0a31ce2
+      internalID: -1809036760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e802722bbb86645b7ac59645e565d3
+      internalID: 1216397055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_73
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47260a79e6238040aa486dc5269d813
+      internalID: 464232447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_74
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2757287cc7a788f4193035d0a1edf231
+      internalID: -2054955143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_75
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e2430944c36cf4b9eb48595d334ee4
+      internalID: -118850185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_76
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4d271fa5311234fbfd8ea36af946b6
+      internalID: 1669036484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_77
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b07bc785dc56ac4e987bad29655c500
+      internalID: -1935723619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_78
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690e759f8f2a27f46a8da084b41eabc8
+      internalID: -1499616349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_79
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4335d37d589aae249b9b62c474178ab2
+      internalID: -1461607229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_80
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297d37fe4bf416f4e8d7ee4d8c902097
+      internalID: -1154191136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723552eadd549c94d93532acab7386c5
+      internalID: -2017410195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_82
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5255b3600ff697a46af1111c1d6a0b07
+      internalID: -175414674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_83
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45122ada65e999c4f9a6463024174946
+      internalID: 1390480947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_84
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808cc57f1f9c060458aa6f91e521f09e
+      internalID: -691062882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_85
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2edb501d6274044b10b01d168f64da
+      internalID: -1591505076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_86
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a35be3760dea34ead8da214186fead
+      internalID: -514754530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_87
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba84f9f6c1dd1f844b71566c12424435
+      internalID: -224523034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_88
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966c9490135d98841a6904e2ec7ac6d1
+      internalID: -858230273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_89
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b8c63d3b14a3643b36f6122e699916
+      internalID: -691589551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_90
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d57b522a92986429e75226c6e40646
+      internalID: -421307204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51fad3272d68ff44fa8d9076d26a8ade
+      internalID: -1601291899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_92
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cf615d15c80604697b58b96f3ea02e
+      internalID: 1616300955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 293fbe42b6b8b3544a6143feac1c06a6
+      internalID: -8160929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_94
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ca8fcdf660a354e9115b68e7fe8989
+      internalID: 1523685249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_95
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed0293c098934e1488a3576af6f71959
+      internalID: -855341856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5b637a77de9fa4b833a0fe025d34a7
+      internalID: 1271522314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_97
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 358b586bc5a8e764a8e93e9f446feeee
+      internalID: -1466286747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_98
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89835825eb66fe4c848a15e7709b742
+      internalID: -186298014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_99
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7479a008fcbfa3740adca30879092bda
+      internalID: 1131794051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_100
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d2f6006c75f2045b5366b7700ad865
+      internalID: 1829031202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_101
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1659ebee38d324598c1c44754b803c
+      internalID: 315970805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_102
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c1981b955f1974eaae3320e4d5ddb4
+      internalID: -199415313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_103
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8889397daecac304d8acce5b8ddf5bed
+      internalID: -1141074701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_104
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39e36ca793afd8e48b04ae4134349bee
+      internalID: 1874189877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_105
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990eaf3b37dbcbc4b94a8e8c17381a97
+      internalID: 142292752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_106
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c766961f088637044be2beee5462115c
+      internalID: -1791353459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_107
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666a965f7b2466840b7743a80cb67261
+      internalID: 1206359089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_108
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6592b9b4098e9cb42823f405250c705c
+      internalID: 628078902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_109
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41c8e357c157d1488de38d835146fcb
+      internalID: 231812642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_110
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5622ff78f4c92034c932cd8ba263aaf1
+      internalID: -2109075416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_111
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68473b386ccc4084bb98f80c742cbfa5
+      internalID: 672892784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_112
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc9726547e030d42ad36007ea1d29da
+      internalID: -925004272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_113
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa3aa0c9832d854ca1e19dffaa4d13d
+      internalID: 1870639590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_114
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac40e262fe38dd4492491cd84608ce8
+      internalID: -1395869529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a12dab3cee1283345b42866ca6a925ba
+      internalID: 1624114191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_116
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4076fb153d84a6b42855b95b4cc61b8a
+      internalID: -1599457247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_117
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3c325734699b542bb9c272521ceecf
+      internalID: -1890311536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_118
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac3898652b9d904194df0296c2128bc
+      internalID: -569742423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228c926d3f977a547842b49fffff5ff5
+      internalID: 1636920821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_120
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb82580914a56294e9291101c037bf77
+      internalID: -803044115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_121
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f0b2603352576d45ab9086b16d395b7
+      internalID: -1997076238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_122
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2546ec6c14dba32478e3e7943a624ce8
+      internalID: 1910375659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_123
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8f4802874e2eb4bb574ae141aaf53f
+      internalID: -601611632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_124
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc0dc2599c1afc4999d75e9571518cc
+      internalID: 245808954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_125
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d95060e2f0dcaf4c937e38b973224b6
+      internalID: 1946253926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_126
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2131fdae1bb16f8468b6d42fb6d29755
+      internalID: -146739410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_127
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b344bf08822c248b326784ace76d4a
+      internalID: -1676916584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_128
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba71c00b60b2f747bc514baeea91430
+      internalID: -1086463246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_129
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d632c7705b8e3094784c4830711019fc
+      internalID: -1773099752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_130
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba60caea2622a52428fc4838fc09bae0
+      internalID: -1841989728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_131
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5852105d6aa4969429e0fbb3e87a0c8b
+      internalID: -1608688485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_132
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea95018f93330d84196f08d853fe28b3
+      internalID: -1643590209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_133
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9261c6427b841e54886b5647a6163bc3
+      internalID: 1979958752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_134
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5db40b5b65b9f4db709b1c3146afca
+      internalID: -233194898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_135
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a27bfdfdb427364a9ad6e5a79e7e9b5
+      internalID: -326303010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_136
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d08849bbbe16754e9446102092576f5
+      internalID: 1529283993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_137
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f727bd95b0ca543b0e8c1af6ec133d
+      internalID: -125346378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a61f7354078ed4a8fd27193b0e99c8
+      internalID: 880171366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_139
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a1f425a6b4497f4588270be301eaaf6
+      internalID: 1560253183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_140
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7c51fc4e1b0d0408887a3195d58ce0
+      internalID: -692743954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_141
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af7158a272a309d4f9ed0395b4e02a9e
+      internalID: -432143491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_142
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6201fc21404c8154db86ab04198432b7
+      internalID: -2106969150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5d538a6902ff84791de249a54f5f3e
+      internalID: -28357415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_144
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e2c30d6d246554e924c21e8747d5bc
+      internalID: -1566000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_145
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f86751e6657a44da2f26cb34f5739a
+      internalID: 909437888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_146
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa4b217d572cc14abae31d1a4eac776
+      internalID: -1133540571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_147
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9235cd9ceebe6e745bc44a95ec061576
+      internalID: 1753558604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_148
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217801753577a4747bbfd28cebe10fb8
+      internalID: 1708691860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_149
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdc63a8fe19e0a47ad022ca529c3984
+      internalID: 1764109911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_150
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da6ac52928ff444cac63174abde5f9c
+      internalID: 1993658776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_151
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ef596256992244ba429eea62cb089e
+      internalID: 115799612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_152
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e55fa50aa14fc747ba3cc24effaf7a0
+      internalID: -1413058550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_153
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347acd7125d87b6459fd9fcfbf8e7a60
+      internalID: -1394433233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_154
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2811075986157243a9600fee5383518
+      internalID: 1980633524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_155
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed849eac30f248489072e6f1614b807
+      internalID: -2014942803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_156
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a62874d145d95e47a264821dd27b388
+      internalID: 103304863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_157
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cea3fcc3e2bd9a45a50183db457dd51
+      internalID: -1144803287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_158
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941c9bdc14c661e479e20be6debb978e
+      internalID: 1878962874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_159
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd7217cae8f6bdd4a886075388cdbf3e
+      internalID: -434803485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_160
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f9e6677c0115c4483079502af53e8e
+      internalID: 746536496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_161
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de6e49b218ef3f4388c481155205ece
+      internalID: 639588027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_162
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e07d77ace1c93647875185325d39261
+      internalID: 421392653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_163
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b71c381bc905bd4cb269212b1584025
+      internalID: 2108674093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_164
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 039fada9164dd52498f81294aa8e5335
+      internalID: -1554903442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_165
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 082ce2f9bb0252a4886afb34a80773b8
+      internalID: 1332029569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_166
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09c7959599cd574298f6efdb66f3a09
+      internalID: 544496954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53c0e6c97662e0499d2fe542be95a93
+      internalID: -1499158324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_168
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd666a5057f137e46b5c6125d4b0b298
+      internalID: -1343211511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_169
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eef1385e419e5a4ebabc6544be109a8
+      internalID: -1341253146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_170
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2874ae35f05145e48928210bfde1101c
+      internalID: -174924630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_171
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335395d038fa7fb47955839f5656baaa
+      internalID: -113511662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_172
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3274a3a266056414780e5b7653cb06ad
+      internalID: 1973689239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_173
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42579a3b110e1348b57bef91171b8ac
+      internalID: -766676515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_174
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb050064b4597a439f53bc7a73d9ad7
+      internalID: -617802922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_175
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22fd26cab06279489ebdec7f60ecee8
+      internalID: -1496231828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_176
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefe66872e861d447a34ef7a632eb534
+      internalID: 1822746708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_177
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3e45bb2a6b2da34290da93c3eee1255
+      internalID: 1363308612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_178
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2c9ef90b14e7c4b9fbfb53cde303fc
+      internalID: -415402369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_179
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0497900b9394d4ea72bb0c3b3ad040
+      internalID: 877341248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_180
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243eae856370c954f968c0278349d998
+      internalID: 2072491839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_181
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2516db6e70ad447479c9d4dc32c14e9e
+      internalID: -1614202651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_182
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fcfb3aba21332444bfa38da3b7f4d56
+      internalID: 363805242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_183
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff1b050907e20e44a378c2092a3af8f
+      internalID: 314963784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_184
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81c7ef76ff8b4446a922722b89ef95e
+      internalID: 1142763263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_185
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a1ffb13740103478f77dc7ec44b7f5
+      internalID: -256842479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_186
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32d1bd91251b6c49bb0a0311184aa01
+      internalID: 1978808871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_187
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e793e2521442dcb47bc2ca2f4acfeb94
+      internalID: 1260739832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_188
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6295e0435c96e4294e4d2beb684e7e
+      internalID: 246250748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_189
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9694af47c3590aa47aa6edaa7e895c43
+      internalID: 1423053997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_190
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239c4152470bb4c4db33270e7b1dac12
+      internalID: -2123858776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_191
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15fd701540531544b9540659636757f
+      internalID: -176320441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_192
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00316f2a34530574a89fbfd3e5da55b6
+      internalID: -157799337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_193
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b460b85d997c49c49a5f57634c034ab3
+      internalID: 800517455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_194
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d18867d94e3024789501be8ae80634
+      internalID: -313635239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_195
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7634fe7351da1874fb800b5c1a90b879
+      internalID: 881053556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_196
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a464a366263693439acc032db54ec62
+      internalID: 1091945912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_197
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8297d9e194875e4c9c8e98cb705ba80
+      internalID: -1227385708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_198
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785dfc9369ca934fa176fba141f260f
+      internalID: -141462792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_199
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0444562bb420947b82d70a90b6dbf4
+      internalID: -1843666615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_200
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecaea8412b92824caad6d258489b3b2
+      internalID: -405598496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_201
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c42cef7c252c0d45bf3592698858e5b
+      internalID: 873932101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_202
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9935f3b8c2e744a9e85eecfac63ac3
+      internalID: -1046105675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_203
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e43dc54e1370944ba67df9fac912381
+      internalID: 226296926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_204
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b83a5ff263a6f4f8baf71608735bd5
+      internalID: 1418155559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_205
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af1c0ef420b02ae4a832cce63539de45
+      internalID: -1159050655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_206
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0f073c82311da41a952e8875b8cc52
+      internalID: 652969565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_207
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a2b12c2cdc5994793304aa9b1c1f59
+      internalID: 348789686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_208
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfffc5dda1097044db6154485c85341f
+      internalID: -1358178071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_209
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f670d63422ed2499a537c9ee666564
+      internalID: 683761196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_210
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2212f62a7811fa74f9d4a96a751747b1
+      internalID: -35094247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_211
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 278d140ae814eda479d0bbc11a14030e
+      internalID: -6375770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_212
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a19d325d9ae56469aa78e1be633593
+      internalID: 1888314184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_213
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6cfca60cb716c24895a4fd5115e1b55
+      internalID: 170960233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_214
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb2a21682ac58148a61cefc0f8dbb21
+      internalID: 1003446117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_215
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd8c2430926ce2f4f91480da8ccad187
+      internalID: -447516827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_216
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ed291a2e4bf43418454f6a976e1c49
+      internalID: -195900312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_217
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e5ed0b32fedea42919a802bbfb7582
+      internalID: -1722661884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_218
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a463ccb6b1fa948a2748400aebb3dd
+      internalID: 420201880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_219
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b469ece551223ad418e9417d6de68244
+      internalID: -727789407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_220
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c1394326ec9964c957c4edf083e5b9
+      internalID: 1148765566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_221
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0d2d53c314c234994278f1bbdbba1a
+      internalID: 1175744059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_222
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffec665d231f8144580a472ea8dda3b9
+      internalID: 299552290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_223
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c627ff6e16cd59246a79483e19a311f8
+      internalID: -1298581566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_224
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a27dc38120f5e443a5f31fd02984162
+      internalID: 376490077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_225
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ec6687eef5caaa47bb1615595a715dd
+      internalID: -1939970841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_226
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cac2074934a1d742ae206241c08bcd4
+      internalID: 1769641364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_227
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d699fd4c33e553d4882d78886656cfcc
+      internalID: 1204713812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_228
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac66b3290a3621e4fa2a64b4e04dd871
+      internalID: -136221089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_229
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a5123a87283e148a4592d5a4131334
+      internalID: -1596673767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_230
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c0e1b9e9941784a9029fdc76cf593b
+      internalID: -771472871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_231
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d31414880b9c3741813b999ce1fec4b
+      internalID: -2094412525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_232
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2173f27ad77b54b4d8d6c579f22496bd
+      internalID: -1734991551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_233
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fc193cacdf9a9345a52c24eb115bd7b
+      internalID: 523645958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_234
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2fdfbc6c28999746aa77267c568f856
+      internalID: 1202220989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_235
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1623ad00d8cf70347825c62e2019493d
+      internalID: -55564743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_236
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f501ab3f79104489494d0c19b26f06
+      internalID: -1834699183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_237
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34b7e2addc47fa489cea5d05bf49677
+      internalID: 915792643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_238
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c0606ad600095f4c98200d043172b8c
+      internalID: 1245901743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_239
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9059ab9d221c24e859970ac3a22063
+      internalID: 1174865915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_240
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4d77d2885186a498f20c8541d72abf
+      internalID: -415979921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_241
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e509e40d478a042b502e09750222b4
+      internalID: -1952071299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_242
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eeb8bd532109084c9d124169425a272
+      internalID: -666573704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_243
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393df48929314604fa503be4d8e87a15
+      internalID: 1679300411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_244
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee39cf0b85397d74d9f8a8917147d6b4
+      internalID: 1037109752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_245
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a29462e86e804b47a59182bb8d068e4
+      internalID: -50259423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_246
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c342dae4f683ae24d8ad9c513263ce11
+      internalID: -1865783903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_247
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de66f6506127684e9097438ed390d7b
+      internalID: -1045427197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_248
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b9c3a548ad96645b6a498290322b0d
+      internalID: -2105291959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_249
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77fc331502711e469f46b2691569c7a
+      internalID: 273817963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_250
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3383a35561157284e887690b4a3aa399
+      internalID: 1977220099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_251
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31aa0ab509b3344d990fc834b37b222
+      internalID: -665482381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_252
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 941221b511e74974991ed2b6b37adbdb
+      internalID: -156380590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_253
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a60705ca73acc74d8ac18158c2413ad
+      internalID: -502966189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_254
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a3f5b14d791c648a0a1d76e498d75b
+      internalID: 1928496924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_255
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c98091aa71e2949a15f4c36c6f2128
+      internalID: -1468368546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_256
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23452571e4b32d4ea9543be1fee4a60
+      internalID: -549520038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_257
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc15fcc164956eb438d7c82d7593e305
+      internalID: -1380281545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_258
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7554b7c3f467b5a4397fa171575c5258
+      internalID: 766105070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_259
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4817a5b9911c149a257efdccc46da8
+      internalID: -80882975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_260
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6910b85abb030dd42ab2756571062d8c
+      internalID: 1693248368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_261
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db81ab1b39bc2f64a85346275c059f3a
+      internalID: -1531850963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_262
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d0becdd07d5dd49a91165dbad9bee4
+      internalID: -1199838936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_263
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85533ff4b00e3dd458c8d3d4ba500e9b
+      internalID: 1678360833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_264
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3b95c81d458f8479b816161c1aaeec
+      internalID: 467161518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_265
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f21f06f766ed743b62c97361ee0bae
+      internalID: -619914617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_266
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0fea1831fa9e554b867145b509292f3
+      internalID: 1963428616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_267
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39e7c7d400292142b7860f3c58cad4a
+      internalID: -368866413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_268
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbff6181474dddc468aa4dea02cdb041
+      internalID: 814744230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_269
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8fa506d8c091f4bb4edaf990acf631
+      internalID: -995599051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_270
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55f350347f08c14cac1038dca51d348
+      internalID: -1511920714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_271
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93af4044b0eb9b54c8e821bdd7f5a783
+      internalID: -908380369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_272
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd744c54308af0f4ea3b8bdad7086747
+      internalID: 416258395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_273
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39aae0ac032aa0a4a85d5a399cb5051a
+      internalID: 1004607380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_274
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b285c176362b6324fa2da3ee5c8d260c
+      internalID: 756264466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_275
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a03138b2ecdf5498522a2ef605d880
+      internalID: 1319733828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_276
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e060f41e360534f879a4100e974749
+      internalID: -1622497985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_277
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9465964ebb02e9a47a52c37c65eac2c6
+      internalID: 445111435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_278
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193983b3f8b8cea43b8eb35a5e4b0a8c
+      internalID: 539222176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_279
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c7c1be0b22e2b49b88a961be67bffb
+      internalID: -2016521548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_280
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3666ffbb9e474a646811942ccbf3a203
+      internalID: -1399318676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_281
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cd5446fb30fa540bbec7b98ec6ef2e
+      internalID: -1562999428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_282
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb6c5dcab44e39e41aaa05d03a21491a
+      internalID: -2089777594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_283
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00edc57a10e5b3448a9013ad9972d32
+      internalID: 71254111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_284
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa2b75e2dc05a546b2a4b9fcd3e7bfb
+      internalID: -1588648025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_285
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a14630a77283bb4995d04cdfde924fd
+      internalID: 1618370713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_286
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2eedfbe710b4e44b88d05fff7468d5
+      internalID: -1441323785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_287
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafa775392a3fe849b011a094058a2be
+      internalID: 1967160833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_288
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4193445e070d72545b1a88e70d17e19c
+      internalID: -801854899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_289
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fddfbc2b1e1b7e74ca3ee69712db93c1
+      internalID: -99526449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_290
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb542ee373a0fa4e91b7478ad7eb5a0
+      internalID: 1134805610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_291
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 372c12d38fa25784cb288f2d6df3415d
+      internalID: 1938944773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_292
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5bfeffd791a3d43a424fd9c0ce9914
+      internalID: 1456804288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_293
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7164c70bef26a2d4a8d239772ba36304
+      internalID: -997031251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_294
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ade55fbf27ed048ac768aca1d28e86
+      internalID: 330929714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_295
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5be5e5e43402864b9c33563bcfa6dd9
+      internalID: -1232227014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_296
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b65fa7e1397294aaadff586cbade4c
+      internalID: -712454373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_297
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6638c9a025ce54ead75d9782865e4d
+      internalID: 1667054751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_298
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d284c2c94e36c6b4b8c37c80e1a49453
+      internalID: -401093820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_299
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dad477fc3663894880b95a15d981f2c
+      internalID: 823213198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_300
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571b1083718fc6f47a2fe577314648c6
+      internalID: -210773402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_301
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61dd97654c6274d85e207d46e24585
+      internalID: 396458111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_302
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b8b034acfb47c4d8b7644e312f6b9b
+      internalID: 229293418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_303
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1384ba55a9b8acd49b93f4ffe1218fdb
+      internalID: -2136921340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_304
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c088c55a4c92004185a36c84c4d215b
+      internalID: -567938343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_305
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e441f131d64d86f4f9ec579ef910b947
+      internalID: 202270303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_306
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63517fb421fef1149b34565941ecb6af
+      internalID: -274114603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_307
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9b9ab9906bd7c49934ea9f0cfae069
+      internalID: 384031307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tilemap_virk_Tilemap_pc_DIM_308
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abbffaf3506836e4cbec964d2406ce55
+      internalID: -897102839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Tilemap_virk_Tilemap_pc_DIM_0: -898459836
+      Tilemap_virk_Tilemap_pc_DIM_1: 595497582
+      Tilemap_virk_Tilemap_pc_DIM_10: 388752318
+      Tilemap_virk_Tilemap_pc_DIM_100: 1829031202
+      Tilemap_virk_Tilemap_pc_DIM_101: 315970805
+      Tilemap_virk_Tilemap_pc_DIM_102: -199415313
+      Tilemap_virk_Tilemap_pc_DIM_103: -1141074701
+      Tilemap_virk_Tilemap_pc_DIM_104: 1874189877
+      Tilemap_virk_Tilemap_pc_DIM_105: 142292752
+      Tilemap_virk_Tilemap_pc_DIM_106: -1791353459
+      Tilemap_virk_Tilemap_pc_DIM_107: 1206359089
+      Tilemap_virk_Tilemap_pc_DIM_108: 628078902
+      Tilemap_virk_Tilemap_pc_DIM_109: 231812642
+      Tilemap_virk_Tilemap_pc_DIM_11: 712562366
+      Tilemap_virk_Tilemap_pc_DIM_110: -2109075416
+      Tilemap_virk_Tilemap_pc_DIM_111: 672892784
+      Tilemap_virk_Tilemap_pc_DIM_112: -925004272
+      Tilemap_virk_Tilemap_pc_DIM_113: 1870639590
+      Tilemap_virk_Tilemap_pc_DIM_114: -1395869529
+      Tilemap_virk_Tilemap_pc_DIM_115: 1624114191
+      Tilemap_virk_Tilemap_pc_DIM_116: -1599457247
+      Tilemap_virk_Tilemap_pc_DIM_117: -1890311536
+      Tilemap_virk_Tilemap_pc_DIM_118: -569742423
+      Tilemap_virk_Tilemap_pc_DIM_119: 1636920821
+      Tilemap_virk_Tilemap_pc_DIM_12: 880416064
+      Tilemap_virk_Tilemap_pc_DIM_120: -803044115
+      Tilemap_virk_Tilemap_pc_DIM_121: -1997076238
+      Tilemap_virk_Tilemap_pc_DIM_122: 1910375659
+      Tilemap_virk_Tilemap_pc_DIM_123: -601611632
+      Tilemap_virk_Tilemap_pc_DIM_124: 245808954
+      Tilemap_virk_Tilemap_pc_DIM_125: 1946253926
+      Tilemap_virk_Tilemap_pc_DIM_126: -146739410
+      Tilemap_virk_Tilemap_pc_DIM_127: -1676916584
+      Tilemap_virk_Tilemap_pc_DIM_128: -1086463246
+      Tilemap_virk_Tilemap_pc_DIM_129: -1773099752
+      Tilemap_virk_Tilemap_pc_DIM_13: 148335570
+      Tilemap_virk_Tilemap_pc_DIM_130: -1841989728
+      Tilemap_virk_Tilemap_pc_DIM_131: -1608688485
+      Tilemap_virk_Tilemap_pc_DIM_132: -1643590209
+      Tilemap_virk_Tilemap_pc_DIM_133: 1979958752
+      Tilemap_virk_Tilemap_pc_DIM_134: -233194898
+      Tilemap_virk_Tilemap_pc_DIM_135: -326303010
+      Tilemap_virk_Tilemap_pc_DIM_136: 1529283993
+      Tilemap_virk_Tilemap_pc_DIM_137: -125346378
+      Tilemap_virk_Tilemap_pc_DIM_138: 880171366
+      Tilemap_virk_Tilemap_pc_DIM_139: 1560253183
+      Tilemap_virk_Tilemap_pc_DIM_14: 877635344
+      Tilemap_virk_Tilemap_pc_DIM_140: -692743954
+      Tilemap_virk_Tilemap_pc_DIM_141: -432143491
+      Tilemap_virk_Tilemap_pc_DIM_142: -2106969150
+      Tilemap_virk_Tilemap_pc_DIM_143: -28357415
+      Tilemap_virk_Tilemap_pc_DIM_144: -1566000
+      Tilemap_virk_Tilemap_pc_DIM_145: 909437888
+      Tilemap_virk_Tilemap_pc_DIM_146: -1133540571
+      Tilemap_virk_Tilemap_pc_DIM_147: 1753558604
+      Tilemap_virk_Tilemap_pc_DIM_148: 1708691860
+      Tilemap_virk_Tilemap_pc_DIM_149: 1764109911
+      Tilemap_virk_Tilemap_pc_DIM_15: 1716497830
+      Tilemap_virk_Tilemap_pc_DIM_150: 1993658776
+      Tilemap_virk_Tilemap_pc_DIM_151: 115799612
+      Tilemap_virk_Tilemap_pc_DIM_152: -1413058550
+      Tilemap_virk_Tilemap_pc_DIM_153: -1394433233
+      Tilemap_virk_Tilemap_pc_DIM_154: 1980633524
+      Tilemap_virk_Tilemap_pc_DIM_155: -2014942803
+      Tilemap_virk_Tilemap_pc_DIM_156: 103304863
+      Tilemap_virk_Tilemap_pc_DIM_157: -1144803287
+      Tilemap_virk_Tilemap_pc_DIM_158: 1878962874
+      Tilemap_virk_Tilemap_pc_DIM_159: -434803485
+      Tilemap_virk_Tilemap_pc_DIM_16: -144295792
+      Tilemap_virk_Tilemap_pc_DIM_160: 746536496
+      Tilemap_virk_Tilemap_pc_DIM_161: 639588027
+      Tilemap_virk_Tilemap_pc_DIM_162: 421392653
+      Tilemap_virk_Tilemap_pc_DIM_163: 2108674093
+      Tilemap_virk_Tilemap_pc_DIM_164: -1554903442
+      Tilemap_virk_Tilemap_pc_DIM_165: 1332029569
+      Tilemap_virk_Tilemap_pc_DIM_166: 544496954
+      Tilemap_virk_Tilemap_pc_DIM_167: -1499158324
+      Tilemap_virk_Tilemap_pc_DIM_168: -1343211511
+      Tilemap_virk_Tilemap_pc_DIM_169: -1341253146
+      Tilemap_virk_Tilemap_pc_DIM_17: -658612276
+      Tilemap_virk_Tilemap_pc_DIM_170: -174924630
+      Tilemap_virk_Tilemap_pc_DIM_171: -113511662
+      Tilemap_virk_Tilemap_pc_DIM_172: 1973689239
+      Tilemap_virk_Tilemap_pc_DIM_173: -766676515
+      Tilemap_virk_Tilemap_pc_DIM_174: -617802922
+      Tilemap_virk_Tilemap_pc_DIM_175: -1496231828
+      Tilemap_virk_Tilemap_pc_DIM_176: 1822746708
+      Tilemap_virk_Tilemap_pc_DIM_177: 1363308612
+      Tilemap_virk_Tilemap_pc_DIM_178: -415402369
+      Tilemap_virk_Tilemap_pc_DIM_179: 877341248
+      Tilemap_virk_Tilemap_pc_DIM_18: -2066260791
+      Tilemap_virk_Tilemap_pc_DIM_180: 2072491839
+      Tilemap_virk_Tilemap_pc_DIM_181: -1614202651
+      Tilemap_virk_Tilemap_pc_DIM_182: 363805242
+      Tilemap_virk_Tilemap_pc_DIM_183: 314963784
+      Tilemap_virk_Tilemap_pc_DIM_184: 1142763263
+      Tilemap_virk_Tilemap_pc_DIM_185: -256842479
+      Tilemap_virk_Tilemap_pc_DIM_186: 1978808871
+      Tilemap_virk_Tilemap_pc_DIM_187: 1260739832
+      Tilemap_virk_Tilemap_pc_DIM_188: 246250748
+      Tilemap_virk_Tilemap_pc_DIM_189: 1423053997
+      Tilemap_virk_Tilemap_pc_DIM_19: 560673236
+      Tilemap_virk_Tilemap_pc_DIM_190: -2123858776
+      Tilemap_virk_Tilemap_pc_DIM_191: -176320441
+      Tilemap_virk_Tilemap_pc_DIM_192: -157799337
+      Tilemap_virk_Tilemap_pc_DIM_193: 800517455
+      Tilemap_virk_Tilemap_pc_DIM_194: -313635239
+      Tilemap_virk_Tilemap_pc_DIM_195: 881053556
+      Tilemap_virk_Tilemap_pc_DIM_196: 1091945912
+      Tilemap_virk_Tilemap_pc_DIM_197: -1227385708
+      Tilemap_virk_Tilemap_pc_DIM_198: -141462792
+      Tilemap_virk_Tilemap_pc_DIM_199: -1843666615
+      Tilemap_virk_Tilemap_pc_DIM_2: -512119031
+      Tilemap_virk_Tilemap_pc_DIM_20: 1673494675
+      Tilemap_virk_Tilemap_pc_DIM_200: -405598496
+      Tilemap_virk_Tilemap_pc_DIM_201: 873932101
+      Tilemap_virk_Tilemap_pc_DIM_202: -1046105675
+      Tilemap_virk_Tilemap_pc_DIM_203: 226296926
+      Tilemap_virk_Tilemap_pc_DIM_204: 1418155559
+      Tilemap_virk_Tilemap_pc_DIM_205: -1159050655
+      Tilemap_virk_Tilemap_pc_DIM_206: 652969565
+      Tilemap_virk_Tilemap_pc_DIM_207: 348789686
+      Tilemap_virk_Tilemap_pc_DIM_208: -1358178071
+      Tilemap_virk_Tilemap_pc_DIM_209: 683761196
+      Tilemap_virk_Tilemap_pc_DIM_21: 708393175
+      Tilemap_virk_Tilemap_pc_DIM_210: -35094247
+      Tilemap_virk_Tilemap_pc_DIM_211: -6375770
+      Tilemap_virk_Tilemap_pc_DIM_212: 1888314184
+      Tilemap_virk_Tilemap_pc_DIM_213: 170960233
+      Tilemap_virk_Tilemap_pc_DIM_214: 1003446117
+      Tilemap_virk_Tilemap_pc_DIM_215: -447516827
+      Tilemap_virk_Tilemap_pc_DIM_216: -195900312
+      Tilemap_virk_Tilemap_pc_DIM_217: -1722661884
+      Tilemap_virk_Tilemap_pc_DIM_218: 420201880
+      Tilemap_virk_Tilemap_pc_DIM_219: -727789407
+      Tilemap_virk_Tilemap_pc_DIM_22: 717662030
+      Tilemap_virk_Tilemap_pc_DIM_220: 1148765566
+      Tilemap_virk_Tilemap_pc_DIM_221: 1175744059
+      Tilemap_virk_Tilemap_pc_DIM_222: 299552290
+      Tilemap_virk_Tilemap_pc_DIM_223: -1298581566
+      Tilemap_virk_Tilemap_pc_DIM_224: 376490077
+      Tilemap_virk_Tilemap_pc_DIM_225: -1939970841
+      Tilemap_virk_Tilemap_pc_DIM_226: 1769641364
+      Tilemap_virk_Tilemap_pc_DIM_227: 1204713812
+      Tilemap_virk_Tilemap_pc_DIM_228: -136221089
+      Tilemap_virk_Tilemap_pc_DIM_229: -1596673767
+      Tilemap_virk_Tilemap_pc_DIM_23: 206110520
+      Tilemap_virk_Tilemap_pc_DIM_230: -771472871
+      Tilemap_virk_Tilemap_pc_DIM_231: -2094412525
+      Tilemap_virk_Tilemap_pc_DIM_232: -1734991551
+      Tilemap_virk_Tilemap_pc_DIM_233: 523645958
+      Tilemap_virk_Tilemap_pc_DIM_234: 1202220989
+      Tilemap_virk_Tilemap_pc_DIM_235: -55564743
+      Tilemap_virk_Tilemap_pc_DIM_236: -1834699183
+      Tilemap_virk_Tilemap_pc_DIM_237: 915792643
+      Tilemap_virk_Tilemap_pc_DIM_238: 1245901743
+      Tilemap_virk_Tilemap_pc_DIM_239: 1174865915
+      Tilemap_virk_Tilemap_pc_DIM_24: -539567031
+      Tilemap_virk_Tilemap_pc_DIM_240: -415979921
+      Tilemap_virk_Tilemap_pc_DIM_241: -1952071299
+      Tilemap_virk_Tilemap_pc_DIM_242: -666573704
+      Tilemap_virk_Tilemap_pc_DIM_243: 1679300411
+      Tilemap_virk_Tilemap_pc_DIM_244: 1037109752
+      Tilemap_virk_Tilemap_pc_DIM_245: -50259423
+      Tilemap_virk_Tilemap_pc_DIM_246: -1865783903
+      Tilemap_virk_Tilemap_pc_DIM_247: -1045427197
+      Tilemap_virk_Tilemap_pc_DIM_248: -2105291959
+      Tilemap_virk_Tilemap_pc_DIM_249: 273817963
+      Tilemap_virk_Tilemap_pc_DIM_25: 877499329
+      Tilemap_virk_Tilemap_pc_DIM_250: 1977220099
+      Tilemap_virk_Tilemap_pc_DIM_251: -665482381
+      Tilemap_virk_Tilemap_pc_DIM_252: -156380590
+      Tilemap_virk_Tilemap_pc_DIM_253: -502966189
+      Tilemap_virk_Tilemap_pc_DIM_254: 1928496924
+      Tilemap_virk_Tilemap_pc_DIM_255: -1468368546
+      Tilemap_virk_Tilemap_pc_DIM_256: -549520038
+      Tilemap_virk_Tilemap_pc_DIM_257: -1380281545
+      Tilemap_virk_Tilemap_pc_DIM_258: 766105070
+      Tilemap_virk_Tilemap_pc_DIM_259: -80882975
+      Tilemap_virk_Tilemap_pc_DIM_26: 2071098428
+      Tilemap_virk_Tilemap_pc_DIM_260: 1693248368
+      Tilemap_virk_Tilemap_pc_DIM_261: -1531850963
+      Tilemap_virk_Tilemap_pc_DIM_262: -1199838936
+      Tilemap_virk_Tilemap_pc_DIM_263: 1678360833
+      Tilemap_virk_Tilemap_pc_DIM_264: 467161518
+      Tilemap_virk_Tilemap_pc_DIM_265: -619914617
+      Tilemap_virk_Tilemap_pc_DIM_266: 1963428616
+      Tilemap_virk_Tilemap_pc_DIM_267: -368866413
+      Tilemap_virk_Tilemap_pc_DIM_268: 814744230
+      Tilemap_virk_Tilemap_pc_DIM_269: -995599051
+      Tilemap_virk_Tilemap_pc_DIM_27: -195709021
+      Tilemap_virk_Tilemap_pc_DIM_270: -1511920714
+      Tilemap_virk_Tilemap_pc_DIM_271: -908380369
+      Tilemap_virk_Tilemap_pc_DIM_272: 416258395
+      Tilemap_virk_Tilemap_pc_DIM_273: 1004607380
+      Tilemap_virk_Tilemap_pc_DIM_274: 756264466
+      Tilemap_virk_Tilemap_pc_DIM_275: 1319733828
+      Tilemap_virk_Tilemap_pc_DIM_276: -1622497985
+      Tilemap_virk_Tilemap_pc_DIM_277: 445111435
+      Tilemap_virk_Tilemap_pc_DIM_278: 539222176
+      Tilemap_virk_Tilemap_pc_DIM_279: -2016521548
+      Tilemap_virk_Tilemap_pc_DIM_28: 1790291121
+      Tilemap_virk_Tilemap_pc_DIM_280: -1399318676
+      Tilemap_virk_Tilemap_pc_DIM_281: -1562999428
+      Tilemap_virk_Tilemap_pc_DIM_282: -2089777594
+      Tilemap_virk_Tilemap_pc_DIM_283: 71254111
+      Tilemap_virk_Tilemap_pc_DIM_284: -1588648025
+      Tilemap_virk_Tilemap_pc_DIM_285: 1618370713
+      Tilemap_virk_Tilemap_pc_DIM_286: -1441323785
+      Tilemap_virk_Tilemap_pc_DIM_287: 1967160833
+      Tilemap_virk_Tilemap_pc_DIM_288: -801854899
+      Tilemap_virk_Tilemap_pc_DIM_289: -99526449
+      Tilemap_virk_Tilemap_pc_DIM_29: -1141609409
+      Tilemap_virk_Tilemap_pc_DIM_290: 1134805610
+      Tilemap_virk_Tilemap_pc_DIM_291: 1938944773
+      Tilemap_virk_Tilemap_pc_DIM_292: 1456804288
+      Tilemap_virk_Tilemap_pc_DIM_293: -997031251
+      Tilemap_virk_Tilemap_pc_DIM_294: 330929714
+      Tilemap_virk_Tilemap_pc_DIM_295: -1232227014
+      Tilemap_virk_Tilemap_pc_DIM_296: -712454373
+      Tilemap_virk_Tilemap_pc_DIM_297: 1667054751
+      Tilemap_virk_Tilemap_pc_DIM_298: -401093820
+      Tilemap_virk_Tilemap_pc_DIM_299: 823213198
+      Tilemap_virk_Tilemap_pc_DIM_3: 1056202854
+      Tilemap_virk_Tilemap_pc_DIM_30: 676248414
+      Tilemap_virk_Tilemap_pc_DIM_300: -210773402
+      Tilemap_virk_Tilemap_pc_DIM_301: 396458111
+      Tilemap_virk_Tilemap_pc_DIM_302: 229293418
+      Tilemap_virk_Tilemap_pc_DIM_303: -2136921340
+      Tilemap_virk_Tilemap_pc_DIM_304: -567938343
+      Tilemap_virk_Tilemap_pc_DIM_305: 202270303
+      Tilemap_virk_Tilemap_pc_DIM_306: -274114603
+      Tilemap_virk_Tilemap_pc_DIM_307: 384031307
+      Tilemap_virk_Tilemap_pc_DIM_308: -897102839
+      Tilemap_virk_Tilemap_pc_DIM_31: 1292425878
+      Tilemap_virk_Tilemap_pc_DIM_32: -1368179477
+      Tilemap_virk_Tilemap_pc_DIM_33: -2126570456
+      Tilemap_virk_Tilemap_pc_DIM_34: 806009999
+      Tilemap_virk_Tilemap_pc_DIM_35: 533341102
+      Tilemap_virk_Tilemap_pc_DIM_36: -1351310789
+      Tilemap_virk_Tilemap_pc_DIM_37: 984041133
+      Tilemap_virk_Tilemap_pc_DIM_38: -1704400281
+      Tilemap_virk_Tilemap_pc_DIM_39: -1792212411
+      Tilemap_virk_Tilemap_pc_DIM_4: -1013187093
+      Tilemap_virk_Tilemap_pc_DIM_40: 2016318956
+      Tilemap_virk_Tilemap_pc_DIM_41: 184706762
+      Tilemap_virk_Tilemap_pc_DIM_42: 966469805
+      Tilemap_virk_Tilemap_pc_DIM_43: 1539055944
+      Tilemap_virk_Tilemap_pc_DIM_44: -57952845
+      Tilemap_virk_Tilemap_pc_DIM_45: 711052444
+      Tilemap_virk_Tilemap_pc_DIM_46: 1810209103
+      Tilemap_virk_Tilemap_pc_DIM_47: 814503489
+      Tilemap_virk_Tilemap_pc_DIM_48: -2109998028
+      Tilemap_virk_Tilemap_pc_DIM_49: 2123101206
+      Tilemap_virk_Tilemap_pc_DIM_5: -1819421709
+      Tilemap_virk_Tilemap_pc_DIM_50: -513835963
+      Tilemap_virk_Tilemap_pc_DIM_51: 582606900
+      Tilemap_virk_Tilemap_pc_DIM_52: 1221310947
+      Tilemap_virk_Tilemap_pc_DIM_53: -1082354379
+      Tilemap_virk_Tilemap_pc_DIM_54: -790912873
+      Tilemap_virk_Tilemap_pc_DIM_55: 1893786388
+      Tilemap_virk_Tilemap_pc_DIM_56: 812906285
+      Tilemap_virk_Tilemap_pc_DIM_57: -466699631
+      Tilemap_virk_Tilemap_pc_DIM_58: -241220108
+      Tilemap_virk_Tilemap_pc_DIM_59: 341791056
+      Tilemap_virk_Tilemap_pc_DIM_6: 20013543
+      Tilemap_virk_Tilemap_pc_DIM_60: 1312334908
+      Tilemap_virk_Tilemap_pc_DIM_61: 2135794083
+      Tilemap_virk_Tilemap_pc_DIM_62: -747167638
+      Tilemap_virk_Tilemap_pc_DIM_63: 425191906
+      Tilemap_virk_Tilemap_pc_DIM_64: -2034988789
+      Tilemap_virk_Tilemap_pc_DIM_65: 33937371
+      Tilemap_virk_Tilemap_pc_DIM_66: -1193564557
+      Tilemap_virk_Tilemap_pc_DIM_67: -1410754978
+      Tilemap_virk_Tilemap_pc_DIM_68: -406356283
+      Tilemap_virk_Tilemap_pc_DIM_69: 2130589105
+      Tilemap_virk_Tilemap_pc_DIM_7: 257528448
+      Tilemap_virk_Tilemap_pc_DIM_70: -1359281176
+      Tilemap_virk_Tilemap_pc_DIM_71: -1809036760
+      Tilemap_virk_Tilemap_pc_DIM_72: 1216397055
+      Tilemap_virk_Tilemap_pc_DIM_73: 464232447
+      Tilemap_virk_Tilemap_pc_DIM_74: -2054955143
+      Tilemap_virk_Tilemap_pc_DIM_75: -118850185
+      Tilemap_virk_Tilemap_pc_DIM_76: 1669036484
+      Tilemap_virk_Tilemap_pc_DIM_77: -1935723619
+      Tilemap_virk_Tilemap_pc_DIM_78: -1499616349
+      Tilemap_virk_Tilemap_pc_DIM_79: -1461607229
+      Tilemap_virk_Tilemap_pc_DIM_8: 256506575
+      Tilemap_virk_Tilemap_pc_DIM_80: -1154191136
+      Tilemap_virk_Tilemap_pc_DIM_81: -2017410195
+      Tilemap_virk_Tilemap_pc_DIM_82: -175414674
+      Tilemap_virk_Tilemap_pc_DIM_83: 1390480947
+      Tilemap_virk_Tilemap_pc_DIM_84: -691062882
+      Tilemap_virk_Tilemap_pc_DIM_85: -1591505076
+      Tilemap_virk_Tilemap_pc_DIM_86: -514754530
+      Tilemap_virk_Tilemap_pc_DIM_87: -224523034
+      Tilemap_virk_Tilemap_pc_DIM_88: -858230273
+      Tilemap_virk_Tilemap_pc_DIM_89: -691589551
+      Tilemap_virk_Tilemap_pc_DIM_9: -1436413807
+      Tilemap_virk_Tilemap_pc_DIM_90: -421307204
+      Tilemap_virk_Tilemap_pc_DIM_91: -1601291899
+      Tilemap_virk_Tilemap_pc_DIM_92: 1616300955
+      Tilemap_virk_Tilemap_pc_DIM_93: -8160929
+      Tilemap_virk_Tilemap_pc_DIM_94: 1523685249
+      Tilemap_virk_Tilemap_pc_DIM_95: -855341856
+      Tilemap_virk_Tilemap_pc_DIM_96: 1271522314
+      Tilemap_virk_Tilemap_pc_DIM_97: -1466286747
+      Tilemap_virk_Tilemap_pc_DIM_98: -186298014
+      Tilemap_virk_Tilemap_pc_DIM_99: 1131794051
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
