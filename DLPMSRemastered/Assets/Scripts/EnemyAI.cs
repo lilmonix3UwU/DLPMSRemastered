@@ -34,6 +34,7 @@ public class EnemyAI : MonoBehaviour
     public bool frozen;
 
 
+    public int damage = 20;
     [SerializeField] private float deathFadeTime = 5f;    
     [SerializeField] private float colorChangeTime = 0.5f;
     [SerializeField] private float freezed;

@@ -153,7 +153,7 @@ public class Health : MonoBehaviour
             if (_iFrames > 0)
                 return;
 
-            TakeDamage(20);
+            TakeDamage(collision.gameObject.GetComponent<EnemyAI>().damage);
             UpdateUI();
 
             _iFrames = iFramesAmount;
