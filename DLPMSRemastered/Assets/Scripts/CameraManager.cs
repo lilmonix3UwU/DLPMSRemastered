@@ -37,6 +37,8 @@ public class CameraManager : MonoBehaviour
             }    
         }
 
+        print(_framingTransposer.m_YDamping);
+
         _normYPanAmount = _framingTransposer.m_YDamping;
 
         _startingTrackedObjectOffset = _framingTransposer.m_TrackedObjectOffset;
