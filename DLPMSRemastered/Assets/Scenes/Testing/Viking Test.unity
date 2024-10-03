@@ -8764,8 +8764,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map: {fileID: 3177606}
-  tileDatas:
-  - {fileID: 11400000, guid: 893b952a371a91443b206356e9c5ee6b, type: 2}
+  vineTileDatas: []
+  checkpointTileDatas: []
 --- !u!1 &221852485
 GameObject:
   m_ObjectHideFlags: 0
@@ -33319,6 +33319,7 @@ MonoBehaviour:
   map: {fileID: 0}
   mapManager: {fileID: 1214013350}
   firePrefab: {fileID: 6184875360532256171, guid: afaf388940071ff4ebc47ddfff31d445, type: 3}
+  checkpointFire: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &897398542
 GameObject:
@@ -50548,8 +50549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   map: {fileID: 0}
-  tileDatas:
-  - {fileID: 11400000, guid: 893b952a371a91443b206356e9c5ee6b, type: 2}
+  vineTileDatas: []
+  checkpointTileDatas: []
 --- !u!1 &1218277558
 GameObject:
   m_ObjectHideFlags: 0
@@ -73788,6 +73789,7 @@ MonoBehaviour:
   map: {fileID: 3177606}
   mapManager: {fileID: 214249196}
   firePrefab: {fileID: 6184875360532256171, guid: afaf388940071ff4ebc47ddfff31d445, type: 3}
+  checkpointFire: {fileID: 0}
   player: {fileID: 0}
 --- !u!1 &2000948891
 GameObject:
