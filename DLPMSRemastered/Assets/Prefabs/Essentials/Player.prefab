@@ -5009,7 +5009,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 5de8a1ea8f9624044919143bfbfb8c34, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.2
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10200,16 +10200,15 @@ MonoBehaviour:
   plrAnim: {fileID: 9100000, guid: 5959ff21dcce54da794ee4cfb3fa5b9a, type: 2}
   graphic: {fileID: 3440838635482550988}
   health: {fileID: 6831851025990256074}
+  camFollowObj: {fileID: 0}
   onlyAnimate: 0
   gettingPushed: 0
   maxSpeed: 8
-  accel: 0.5
-  accelMult: 1.2
+  accel: 50
   decel: 0.1
   slowDownSpeed: 1
   revertTime: 0.5
   facingDir: 0
-  faceEnemy: 0
   jumpForce: 22
   fallMultiplier: 6
   coyoteTime: 0.2
@@ -10231,6 +10230,7 @@ MonoBehaviour:
   attackCooldown: 2
   fireballSpeed: 8
   minDistForFocus: 12
+  curTorch: 0
   impactEffect: {fileID: 7177841670370232270}
   landEffect: {fileID: 8339004466973745262}
   jumpEffect: {fileID: 5457722582870378597}
