@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f43714cc0cef7e346a77cdd55f941d49, type: 3}
+  m_Name: VineTileData
+  m_EditorClassIdentifier: 
+  tile: {fileID: 11400000, guid: ccfdc26f9fcd3475388e0531ab962141, type: 2}
+  canBurn: 1
+  spreadIntervall: 0.1
+  burnTime: 1

@@ -15,17 +15,27 @@ public class IntroManager : MonoBehaviour
 
     private InputManager _inputMgr;
     private AudioManager _audioMgr;
+    private GameManager _gameMgr;
 
     private void Start()
     {
+        _inputMgr = InputManager.Instance;
+        _audioMgr = AudioManager.Instance;
+        _gameMgr = GameManager.Instance;
+
+        if (_gameMgr.skipIntro)
+        {
+            Destroy(gameObject);
+            Destroy(introUI.gameObject);
+            Destroy(chapterUI);
+            return;
+        }
+
         chapterUI.SetActive(false);
         introUI.gameObject.SetActive(true);
 
         plr.enabled = false;
         plrRb.gravityScale = 0;
-
-        _inputMgr = InputManager.Instance;
-        _audioMgr = AudioManager.Instance;
 
         StartCutscene();
     }

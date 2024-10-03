@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
     private AudioManager _audioMgr;
     private GameOverManager _gameOverMgr;
     private CameraManager _camMgr;
+    private GameManager _gameMgr;
 
     [HideInInspector] public bool onlyAnimate;
     [HideInInspector] public bool gettingPushed;
@@ -70,10 +71,10 @@ public class Player : MonoBehaviour
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;
 
-    private int _fireTorchAmount = 0;
-    private int _iceTorchAmount = 0;
     private int _uniqueTorches = 0;
-    
+
+    [HideInInspector] public int fireTorchAmount = 0;
+    [HideInInspector] public int iceTorchAmount = 0;
     [HideInInspector] public int curTorch = 0;
 
     private bool _firstFireTorch = true;
@@ -100,9 +101,15 @@ public class Player : MonoBehaviour
         _audioMgr = AudioManager.Instance;
         _gameOverMgr = GameOverManager.Instance;
         _camMgr = CameraManager.Instance;
+        _gameMgr = GameManager.Instance;
 
-        fireTorchText.text = _fireTorchAmount.ToString();
-        iceTorchText.text = _iceTorchAmount.ToString();
+        transform.position = _gameMgr.lastCheckpointPos;
+        fireTorchAmount = _gameMgr.fireTorchAmount;
+        iceTorchAmount = _gameMgr.iceTorchAmount;
+        curTorch = _gameMgr.curTorch;
+
+        fireTorchText.text = fireTorchAmount.ToString();
+        iceTorchText.text = iceTorchAmount.ToString();
 
         fireTorchUI.SetActive(false);
         iceTorchUI.SetActive(false);
@@ -312,7 +319,7 @@ public class Player : MonoBehaviour
 
     private void HandleSwitching()
     {
-        if (_inputMgr.PressSlot1() && _fireTorchAmount > 0)
+        if (_inputMgr.PressSlot1() && fireTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
             curTorch = 1;
@@ -320,7 +327,7 @@ public class Player : MonoBehaviour
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
         }
-        if (_inputMgr.PressSlot2() && _iceTorchAmount > 0)
+        if (_inputMgr.PressSlot2() && iceTorchAmount > 0)
         {
             anim.runtimeAnimatorController = plrTorchAnim;
             curTorch = 2;
@@ -342,13 +349,13 @@ public class Player : MonoBehaviour
             switch (curTorch)
             {
                 case 1:
-                    if (_fireTorchAmount <= 0) return;
+                    if (fireTorchAmount <= 0) return;
                     _cooldownTimer = 0f;
 
                     StartCoroutine(ShootFireball());
                     break;
                 case 2:
-                    if (_iceTorchAmount <= 0) return;
+                    if (iceTorchAmount <= 0) return;
                     _cooldownTimer = 0f;
 
                     StartCoroutine(ShootIce());
@@ -388,8 +395,8 @@ public class Player : MonoBehaviour
 
         int curFacingDir = facingDir;
 
-        _fireTorchAmount--;
-        fireTorchText.text = _fireTorchAmount.ToString();
+        fireTorchAmount--;
+        fireTorchText.text = fireTorchAmount.ToString();
 
         HandleTorchEffects();
 
@@ -422,8 +429,8 @@ public class Player : MonoBehaviour
         // Spawn ice
         GameObject iceGO = Instantiate(ice, iceSpawn.position, graphic.rotation);
 
-        _iceTorchAmount--;
-        iceTorchText.text = _iceTorchAmount.ToString();
+        iceTorchAmount--;
+        iceTorchText.text = iceTorchAmount.ToString();
 
         HandleTorchEffects();
 
@@ -519,7 +526,7 @@ public class Player : MonoBehaviour
 
     private void HandleTorchEffects()
     {
-        if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0)
+        if (fireTorchAmount <= 0 && iceTorchAmount <= 0)
         {
             anim.runtimeAnimatorController = plrAnim;
 
@@ -527,13 +534,13 @@ public class Player : MonoBehaviour
             iceEffect.SetActive(false);
             curTorch = 0;
         }
-        else if (_fireTorchAmount <= 0 && _iceTorchAmount > 0 && curTorch != 2)
+        else if (fireTorchAmount <= 0 && iceTorchAmount > 0 && curTorch != 2)
         {
             fireEffect.SetActive(false);
             iceEffect.SetActive(true);
             curTorch = 2;
         }
-        else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && curTorch != 1)
+        else if (fireTorchAmount > 0 && iceTorchAmount <= 0 && curTorch != 1)
         {
             fireEffect.SetActive(true);
             iceEffect.SetActive(false);
@@ -547,7 +554,7 @@ public class Player : MonoBehaviour
     {
         if (collision.tag == "FireTorch")
         {
-            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && curTorch != 1)
+            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && curTorch != 1)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 fireEffect.SetActive(true);
@@ -558,15 +565,15 @@ public class Player : MonoBehaviour
                     StartCoroutine(ShowFireTorchUI());
             }
 
-            _fireTorchAmount++;
-            fireTorchText.text = _fireTorchAmount.ToString();
+            fireTorchAmount++;
+            fireTorchText.text = fireTorchAmount.ToString();
 
             _audioMgr.Play("PickUp");
             Destroy(collision.gameObject);
         }
         if (collision.tag == "IceTorch")
         {
-            if (_fireTorchAmount <= 0 && _iceTorchAmount <= 0 && curTorch != 2)
+            if (fireTorchAmount <= 0 && iceTorchAmount <= 0 && curTorch != 2)
             {
                 anim.runtimeAnimatorController = plrTorchAnim;
                 iceEffect.SetActive(true);
@@ -576,7 +583,7 @@ public class Player : MonoBehaviour
                 if (_firstIceTorch) 
                     StartCoroutine(ShowIceTorchUI());
             }
-            else if (_fireTorchAmount > 0 && _iceTorchAmount <= 0 && _firstIceTorch) 
+            else if (fireTorchAmount > 0 && iceTorchAmount <= 0 && _firstIceTorch) 
             {
                 fireEffect.SetActive(false);
                 iceEffect.SetActive(true);
@@ -587,8 +594,8 @@ public class Player : MonoBehaviour
                 StartCoroutine(ShowIceTorchUI());
             }
 
-            _iceTorchAmount++;
-            iceTorchText.text = _iceTorchAmount.ToString();
+            iceTorchAmount++;
+            iceTorchText.text = iceTorchAmount.ToString();
 
             _audioMgr.Play("PickUp");
             Destroy(collision.gameObject);

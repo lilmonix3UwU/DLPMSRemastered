@@ -29,13 +29,15 @@ public class Health : MonoBehaviour
 
     [Header("UI (Optional)")]
     [SerializeField] private Image healthSlider;
-    [SerializeField] private TMP_Text dmgText;
+    private TMP_Text _dmgText;
 
     private AudioManager _audio;
 
     private void Start()
     {
         _audio = AudioManager.Instance;
+
+        _dmgText = GameObject.Find("DamageText").GetComponent<TMP_Text>();
 
         _curHealth = maxHealth;
         UpdateUI();
@@ -210,7 +212,7 @@ public class Health : MonoBehaviour
 
     private void TakeDamage(int dmg)
     {
-        dmgText.text = dmg.ToString();
+        _dmgText.text = dmg.ToString();
 
         _curHealth -= dmg;
 

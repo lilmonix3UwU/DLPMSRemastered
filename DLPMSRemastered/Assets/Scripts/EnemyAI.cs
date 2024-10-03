@@ -59,7 +59,7 @@ public class EnemyAI : MonoBehaviour
         animator = GetComponent<Animator>();
         animator.SetBool("isGrounded", true);
 
-        mainTarget = FindFirstObjectByType<Player>().gameObject.transform;
+        mainTarget = GameObject.Find("PlayerGroundCheck").transform;
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
         wanderDirection = 1;

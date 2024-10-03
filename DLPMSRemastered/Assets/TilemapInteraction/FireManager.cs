@@ -14,18 +14,15 @@ public class FireManager : MonoBehaviour
     private Fire firePrefab;
 
     [SerializeField]
-    private GameObject checkpointFire;
-
-    [SerializeField]
     private Player player;
 
     private List<Vector3Int> activeFires = new List<Vector3Int>();
-    private InputManager inputManager;
+    private InputManager _inputMgr;
 
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        inputManager = InputManager.Instance;
+        _inputMgr = InputManager.Instance;
     }
 
 
@@ -50,40 +47,29 @@ public class FireManager : MonoBehaviour
         {
             if (activeFires.Contains(tilePos)) return;
 
-            VineTileData data = mapManager.GetVineTileData(tilePos);
+            VineTileData vineTileData = mapManager.GetVineTileData(tilePos);
 
-            if(data != null && data.canBurn && player.curTorch == 1)
+            if(vineTileData != null && vineTileData.canBurn && player.curTorch == 1)
             {
-                SetVineOnFire(tilePos, data);
+                SetVineOnFire(tilePos, vineTileData);
             }
 
         }
 
     }
 
-    public void SetVineOnFire(Vector3Int tilePos, VineTileData data)
+    public void SetVineOnFire(Vector3Int tilePos, VineTileData vineTileData)
     {
         Fire newFire = Instantiate(firePrefab);
         newFire.transform.position = map.GetCellCenterWorld(tilePos);
-        newFire.StartBurning(tilePos, data, this);
+        newFire.StartBurning(tilePos, vineTileData, this);
 
         activeFires.Add(tilePos);
 
     }
-
-    public void SetCheckpointOnFire(Vector3Int tilePos, CheckpointTileData data)
-    {
-        Vector3 offset = new Vector3(0, 2, 0);
-
-        Instantiate(checkpointFire, map.GetCellCenterWorld(tilePos) + offset, Quaternion.identity);
-
-        
-    }
-
     private void Update()
     {
         Vector2 playerDirection = transform.right;
-        int vineMask = LayerMask.GetMask("vine");
         
         if (player.GetComponent<Player>().facingDir < 0)
         {
@@ -95,17 +81,19 @@ public class FireManager : MonoBehaviour
         }
 
 
-        RaycastHit2D hit = Physics2D.Raycast(player.transform.position, playerDirection, 2, vineMask);
-        if (hit)
-        {
-            Vector3Int vinePos = map.WorldToCell(hit.point);
-            VineTileData data = mapManager.GetVineTileData(vinePos);
+        int vineMask = LayerMask.GetMask("vine");
+        RaycastHit2D hitVine = Physics2D.Raycast(player.transform.position, playerDirection, 2, vineMask);
 
-            if (inputManager.PressInteract())
+        if (hitVine)
+        {
+            Vector3Int vinePos = map.WorldToCell(hitVine.point);
+            VineTileData vineTileData = mapManager.GetVineTileData(vinePos);
+
+            if (_inputMgr.PressInteract())
             {
-                if (data != null && data.canBurn && player.curTorch == 1)
+                if (vineTileData != null && vineTileData.canBurn && player.curTorch == 1)
                 {
-                    SetVineOnFire(vinePos, data);
+                    SetVineOnFire(vinePos, vineTileData);
                 }                
             }
         }
