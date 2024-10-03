@@ -66,7 +66,6 @@ public class Player : MonoBehaviour
     [SerializeField] private Transform iceSpawn;
     [SerializeField] private float attackCooldown = 5f;
     [SerializeField] private float fireballSpeed = 50f;
-    [SerializeField] private float minDistForFocus = 10f;
 
     private float _cooldownTimer = Mathf.Infinity;
     private bool _attacking;

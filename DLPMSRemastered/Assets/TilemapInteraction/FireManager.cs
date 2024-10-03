@@ -1,16 +1,9 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
-using static UnityEngine.RuleTile.TilingRuleOutput;
-
 
 public class FireManager : MonoBehaviour
 {
-
-
     [SerializeField]
     private Tilemap map;
 
@@ -19,6 +12,10 @@ public class FireManager : MonoBehaviour
 
     [SerializeField]
     private Fire firePrefab;
+
+    [SerializeField]
+    private GameObject checkpointFire;
+
     [SerializeField]
     private Player player;
 
@@ -49,44 +46,48 @@ public class FireManager : MonoBehaviour
         }
 
 
-        void TryToBurnTile(Vector3Int tilePosition)
+        void TryToBurnTile(Vector3Int tilePos)
         {
-            if (activeFires.Contains(tilePosition)) return;
+            if (activeFires.Contains(tilePos)) return;
 
-            TileData data = mapManager.GetTileData(tilePosition);
+            VineTileData data = mapManager.GetVineTileData(tilePos);
 
             if(data != null && data.canBurn && player.curTorch == 1)
             {
-                SetTileOnFire(tilePosition, data);
+                SetVineOnFire(tilePos, data);
             }
 
         }
 
     }
 
-    public void SetTileOnFire(Vector3Int tilePosition, TileData data)
+    public void SetVineOnFire(Vector3Int tilePos, VineTileData data)
     {
         Fire newFire = Instantiate(firePrefab);
-        newFire.transform.position = map.GetCellCenterWorld(tilePosition);
-        newFire.StartBurning(tilePosition, data, this);
+        newFire.transform.position = map.GetCellCenterWorld(tilePos);
+        newFire.StartBurning(tilePos, data, this);
 
-        activeFires.Add(tilePosition);
+        activeFires.Add(tilePos);
 
     }
 
+    public void SetCheckpointOnFire(Vector3Int tilePos, CheckpointTileData data)
+    {
+        Vector3 offset = new Vector3(0, 2, 0);
 
+        Instantiate(checkpointFire, map.GetCellCenterWorld(tilePos) + offset, Quaternion.identity);
 
+        
+    }
 
     private void Update()
     {
         Vector2 playerDirection = transform.right;
-        Vector3 forward = player.transform.TransformDirection(Vector3.right) * 10;
-        Debug.DrawRay(player.transform.position, forward, Color.red);
         int vineMask = LayerMask.GetMask("vine");
+        
         if (player.GetComponent<Player>().facingDir < 0)
         {
             playerDirection = Vector2.left;
-            
         }
         else if (player.GetComponent<Player>().facingDir > 0)
         {
@@ -98,17 +99,15 @@ public class FireManager : MonoBehaviour
         if (hit)
         {
             Vector3Int vinePos = map.WorldToCell(hit.point);
-            TileData data = mapManager.GetTileData(vinePos);
+            VineTileData data = mapManager.GetVineTileData(vinePos);
 
             if (inputManager.PressInteract())
             {
                 if (data != null && data.canBurn && player.curTorch == 1)
                 {
-                    SetTileOnFire(vinePos, data);
+                    SetVineOnFire(vinePos, data);
                 }                
             }
         }
     }
-
-
 }

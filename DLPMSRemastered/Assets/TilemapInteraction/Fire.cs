@@ -7,7 +7,7 @@ public class Fire : MonoBehaviour
 
     private Vector3Int position;
 
-    private TileData data;
+    private VineTileData data;
 
     private FireManager fireManager;
 
@@ -17,7 +17,7 @@ public class Fire : MonoBehaviour
 
 
 
-    public void StartBurning(Vector3Int position, TileData data, FireManager fm)
+    public void StartBurning(Vector3Int position, VineTileData data, FireManager fm)
     {
         this.position = position;
         this.data = data;

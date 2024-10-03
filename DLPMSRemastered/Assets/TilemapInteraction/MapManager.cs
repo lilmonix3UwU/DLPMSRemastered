@@ -1,50 +1,52 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
 public class MapManager : MonoBehaviour
 {
-    [SerializeField]
-    private Tilemap map;
+    [SerializeField] private Tilemap map;
+    [SerializeField] private List<VineTileData> vineTileDatas;
+    [SerializeField] private List<CheckpointTileData> checkpointTileDatas;
 
-
-
-    [SerializeField]
-    private List<TileData> tileDatas;
-
-
-
-    private Dictionary<TileBase, TileData> dataFromTiles;
-
-
-
-
+    private Dictionary<TileBase, VineTileData> dataFromVineTiles;
+    private Dictionary<TileBase, CheckpointTileData> dataFromCheckpointTiles;
 
     private void Awake()
     {
-        dataFromTiles = new Dictionary<TileBase, TileData>();
+        dataFromVineTiles = new Dictionary<TileBase, VineTileData>();
 
-        foreach (var tileData in tileDatas)
+        foreach (VineTileData vineTileData in vineTileDatas)
         {
-            dataFromTiles.Add(tileData.tile, tileData);
+            dataFromVineTiles.Add(vineTileData.tile, vineTileData);
+        }
+
+        dataFromCheckpointTiles = new Dictionary<TileBase, CheckpointTileData>();
+
+        foreach (CheckpointTileData checkpointTileData in checkpointTileDatas)
+        {
+            dataFromCheckpointTiles.Add(checkpointTileData.tile, checkpointTileData);
         }
     }
 
-    public TileData GetTileData(Vector3Int tilePosition)
+    public VineTileData GetVineTileData(Vector3Int tilePos)
     {
-        TileBase tile = map.GetTile(tilePosition);
+        TileBase tile = map.GetTile(tilePos);
 
         if (tile == null)
             return null;
         else
-            return dataFromTiles[tile];
+            return dataFromVineTiles[tile];
 
 
     }
 
+    public CheckpointTileData GetCheckpointTileData(Vector3Int tilePos)
+    {
+        TileBase tile = map.GetTile(tilePos);
 
-  
-
-
+        if (tile == null)
+            return null;
+        else
+            return dataFromCheckpointTiles[tile];
+    }
 }
