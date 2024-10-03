@@ -9,7 +9,7 @@ using Unity.VisualScripting.ReorderableList;
 public class EnemyAI : MonoBehaviour
 {
     [Header("Pathfinding")]
-    public Transform mainTarget;
+    private Transform mainTarget;
     public float activationDistance;
     public float pathUpdateSeconds;
 
@@ -58,6 +58,8 @@ public class EnemyAI : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         animator.SetBool("isGrounded", true);
+
+        mainTarget = FindFirstObjectByType<Player>().gameObject.transform;
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
         wanderDirection = 1;
