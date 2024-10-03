@@ -75,7 +75,7 @@ public class CameraManager : MonoBehaviour
         LerpingYDamping = false;
     }
 
-    public void PanCameraOnContact(float panDist, float panTime, PanDirection panDir, bool panToStartingPos)
+    /*public void PanCameraOnContact(float panDist, float panTime, PanDirection panDir, bool panToStartingPos)
     {
         StartCoroutine(PanCamera(panDist, panTime, panDir, panToStartingPos));
     }
@@ -127,5 +127,5 @@ public class CameraManager : MonoBehaviour
 
             yield return null;
         }
-    }
+    }*/
 }
