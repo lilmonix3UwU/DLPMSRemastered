@@ -7,7 +7,9 @@ public class GameManager : MonoBehaviour
     public int fireTorchAmount;
     public int iceTorchAmount;
     public int curTorch;
+    public int uniqueTorches;
     public bool skipIntro;
+    public bool firstCheckpoint;
 
     private void Awake() 
     {
