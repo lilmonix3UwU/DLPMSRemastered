@@ -1,38 +1,68 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Video;
 
 public class IntroManager : MonoBehaviour
 {
     [SerializeField] private Player plr;
     [SerializeField] private Rigidbody2D plrRb;
     [SerializeField] private CanvasGroup introUI;
+    [SerializeField] private VideoClip cutscene;
+    [SerializeField] private GameObject chapterUI;
 
-    private AudioManager _audio;
-    private InputManager _input;
+    private bool _doneWalking;
+    private bool _hasSkipped;
+
+    private InputManager _inputMgr;
+    private AudioManager _audioMgr;
+    private GameManager _gameMgr;
 
     private void Start()
     {
+        _inputMgr = InputManager.Instance;
+        _audioMgr = AudioManager.Instance;
+        _gameMgr = GameManager.Instance;
+
+        if (_gameMgr.skipIntro)
+        {
+            Destroy(gameObject);
+            Destroy(introUI.gameObject);
+            Destroy(chapterUI);
+            return;
+        }
+
+        chapterUI.SetActive(false);
         introUI.gameObject.SetActive(true);
 
         plr.enabled = false;
         plrRb.gravityScale = 0;
 
-        _input = InputManager.Instance;
-        _input.enabled = false;
-
-        _audio = AudioManager.Instance;
-        _audio.Play("Music");
-
-        Invoke("HideIntro", 22.5f);
+        StartCutscene();
     }
 
-    private void HideIntro()
+    private void Update()
+    {
+        if (_inputMgr.SkipCutscene() && !_hasSkipped)
+        {
+            _inputMgr.enabled = false;
+            StopCoroutine(nameof(StartCutscene));
+
+            _hasSkipped = true;
+            StartCutscene();
+        }
+    }
+
+    private void StartCutscene()
     {
         StartCoroutine(FadeIntro());
+        StartCoroutine(ShowChapterUI());
     }
 
     private IEnumerator FadeIntro()
     {
+        if (!_hasSkipped)
+            yield return new WaitForSeconds((float)cutscene.length);
+
         plr.enabled = true;
         plrRb.gravityScale = 4;
 
@@ -47,9 +77,28 @@ public class IntroManager : MonoBehaviour
 
         introUI.alpha = 0;
         introUI.gameObject.SetActive(false);
+    }
 
-        yield return new WaitForSeconds(5);
+    private IEnumerator ShowChapterUI()
+    {
+        if (!_hasSkipped)
+            yield return new WaitForSeconds((float)cutscene.length + 2);
+        else
+            yield return new WaitForSeconds(2);
 
-        _input.enabled = true;
+        chapterUI.SetActive(true);
+
+        yield return new WaitForSeconds(0.5f);
+
+        _audioMgr.Play("ChapterMusic");
+
+        yield return new WaitForSeconds(3.5f);
+
+        plr.onlyAnimate = false;
+        _inputMgr.enabled = true;
+
+        Destroy(chapterUI);
+        Destroy(introUI.gameObject);
+        Destroy(gameObject);
     }
 }

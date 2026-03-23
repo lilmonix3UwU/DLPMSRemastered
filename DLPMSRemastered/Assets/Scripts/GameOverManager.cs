@@ -9,7 +9,7 @@ public class GameOverManager : MonoBehaviour
     [SerializeField] private TMP_Text gameOverText;
     [SerializeField] private TMP_Text retryText;
 
-    [SerializeField] private float fadeInTime = 1f;
+    [HideInInspector] private float fadeInTime = 1f;
 
     [HideInInspector] public bool gameIsOver;
 
@@ -18,26 +18,23 @@ public class GameOverManager : MonoBehaviour
 
     public static GameOverManager Instance;
 
-    private void Awake()
-    {
-        Instance = this;
-    }
+    private AudioManager _audioMgr;
+
+    private void Awake() => Instance = this;
 
     private void Start()
     {
+        _audioMgr = AudioManager.Instance;
+
         gameOverMenu.gameObject.SetActive(false);
     }
 
     public void GameOver()
     {
         if (!_fading)
-        {
             StartCoroutine(FadeIn());
-        }
         if (_canDissolve)
-        {
             StartCoroutine(TextDissolve());
-        }
     }
 
     private IEnumerator FadeIn()
@@ -51,6 +48,8 @@ public class GameOverManager : MonoBehaviour
         gameOverText.gameObject.SetActive(false);
 
         _canDissolve = true;
+
+        _audioMgr.Play("GameOver");
 
         float timeElapsed = 0f;
 

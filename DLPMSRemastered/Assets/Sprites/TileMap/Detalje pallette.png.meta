@@ -1,0 +1,6938 @@
+fileFormatVersion: 2
+guid: 79a8f8f050f94a14f87bcb571b3129b0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 3
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Detalje pallette_0
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf88c97814dd0443b544eee4190ee34
+      internalID: -641171873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_1
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04e51ad492d0de64381adabb6ac61914
+      internalID: 893492472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9ab355ebeec2c4ca8fec239ee789aa
+      internalID: 470522830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_3
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e1e2644b7241c43b7e1ec4adfa4de7
+      internalID: 1534222809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4774d3db907444485f635e537eec2a
+      internalID: -504173305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 423
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbf2fb57d8db4f4fbc220acec30a3cb
+      internalID: -1690742118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_6
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7feeacfe1d0107740843f10ae3f49d8f
+      internalID: 1760989780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_7
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550c0fbc91305ff49b101e4eb13c9440
+      internalID: -370235194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_8
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a33c5ed1ca839af4f8b87401f4800d84
+      internalID: -1433164934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2d9a1aa23d17b42bfc408dbf8eb33b
+      internalID: 1969001313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_10
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 952a6a435fb558a4b946fb9b1415a3c8
+      internalID: 668189038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_11
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b0239e3358981549ad81c99e8dd9944
+      internalID: -1618964269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a796f1693f670469a67986018d24cf
+      internalID: -1132429069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_13
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 268963b15378fa04fa70b6e287f6586e
+      internalID: -953692220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_14
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4cae754704e51c47a3a99b5da124f7a
+      internalID: 1391267957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7363e27dd641d834d8d3a59f2b0c88bd
+      internalID: -1897766603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_16
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00124e03a110b0d428addd327deeb85b
+      internalID: 1737164359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_17
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aa32a79e21b54f4ab6b95915a3d7399
+      internalID: -17881338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_18
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3ac1f7dc6541943bdd9a236a2a7674
+      internalID: 840768255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_19
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2efbe9b6ab5e6448e403ea67ccf220
+      internalID: 1066328599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_20
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edd62f026f2d09439e4503786e9099b
+      internalID: 1757893089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_21
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d412c0f1f38464babbb1b7dca9cf1c
+      internalID: 1708463777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 391
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0678dc828438f99449813243cc5b973e
+      internalID: -1804314976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040870a36afe2554f907363bc96d1708
+      internalID: -622580383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_24
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3724384f3e8c4d942929dfdd62ea23e6
+      internalID: 1915154712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_25
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49c88b1d4a6bc84e91d51aec528fa41
+      internalID: 1369127269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_26
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fe5c94d6b2dd94f8a07f633d1436b2
+      internalID: 181593152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_27
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a973ca4e19e23c147afa34bd91506641
+      internalID: -1252427431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_28
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e215b1e2a144a348968249f5b2f29f2
+      internalID: 171698054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_29
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6432a783ff94b46b5c62441f6c485c
+      internalID: 320863953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_30
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0800e2909cbb485408e5d0090e129374
+      internalID: 313802065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be19f7a7c5af39140bb7fffe0d26605c
+      internalID: -962193109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_32
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf57042abf8d924489fed9066e84808d
+      internalID: 609483473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_33
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00dba0c1ce977704d8fa8c7e27511187
+      internalID: -2107360177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_34
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae055073fa88ff4e964b9809926d6c7
+      internalID: 1749021162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_35
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453968ef92b6b9148904ae320fde6c2f
+      internalID: -1851655635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_36
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e51e82a29f4025418e2d0280e731f97
+      internalID: 383642339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_37
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e672130db5e0c3741821b4ab14a4540d
+      internalID: 769248521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e72898a28c1c74da4a28bb7fcd01f8
+      internalID: -545944640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_39
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c6532cc7abfc747b09076a54b95aa0
+      internalID: 50418980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_40
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d70d8a6a0b7b24ca7c41e7c9918a11
+      internalID: 684427264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_41
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b94d839450d14a47886ad0b99fef852
+      internalID: -759956014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_42
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd59ced6bec9739408f00c467ab4f788
+      internalID: -1258470221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_43
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 359
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce8fd8a7c1c92140849dd06f772044e
+      internalID: -550623666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_44
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 821ee7eca6defac4a90ed2b456e672e9
+      internalID: -853345403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49cc1b74aaf814547a9c7f9097583407
+      internalID: 1365892292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_46
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88162e39f9695a54aba100ffcb9b23fa
+      internalID: 1566379841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_47
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 517db7fa41dce45488d16839ed8d9881
+      internalID: 1488641131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_48
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41282c37a755b4d46a1199b6223008ea
+      internalID: 804388066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_49
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c557571c6e7c2154bba8813fa64dfeaf
+      internalID: -790712369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9cc39afa5ea774991c56bd4a9496e6
+      internalID: -639026489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a970e86c23c46d64b913b6ec5a1748e4
+      internalID: 1735311258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_52
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7ab453ebe74b1743bd867a82564ef08
+      internalID: -1099390228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_53
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb2f55f112c6f0545b951577c94ebb8e
+      internalID: -1915797941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_54
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c8163dc75645764eb45c59a2e415764
+      internalID: -1618807656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_55
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67283d434f62cd64c864ca8b53330459
+      internalID: -1210034301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_56
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5adea200696865241a534aeaf013e030
+      internalID: 393040173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_57
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78096e0957224f645a270dca1a04b99c
+      internalID: -197516170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_58
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc3f421df7732a743b36957f47866a9a
+      internalID: 470492944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_59
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e12eb45eb0747649abcda9666e0d6f4
+      internalID: 2097352634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_60
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce3b37610d2194c8a045bdf75c9ae8
+      internalID: 1865219405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942c8cd66880c9d48aa7f9c16f850ec2
+      internalID: -1886750907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_62
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac39b4b38dfe804d9ab2f0e2a3912de
+      internalID: -1699861903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_63
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48beb4f3f74138544944dfb98b7dbed3
+      internalID: -2141108825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_64
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24abf45351029c14195a9ff3d0dc64d8
+      internalID: 187378663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_65
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 327
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc0f411d15be5b458cd5ddf56b52059
+      internalID: -1018812038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_66
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbc1f76b4fae0c4ab6d3098eaabd55a
+      internalID: -490993616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_67
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1123edab23aff744dbe456bd7e000f1a
+      internalID: -29556255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_68
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997f776913d4b3942a6039236e28b7fe
+      internalID: 1772282984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330d72fe09f4a5f40afee73ec0888d94
+      internalID: 2067362611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_70
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75bf82272ee0a844b66405b7b5dd43c
+      internalID: 1948029654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_71
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5470849ca4c524aa3d0dec2f30d2d8
+      internalID: -360068975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_72
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e950762203154468d7ec4a9d886271
+      internalID: 1840332915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_73
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1694dc573e344e4c8890d6f111b4c53
+      internalID: -750397268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_74
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd56bf14a31dcd4ca7a31289624856f
+      internalID: 1190612795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_75
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085629c70b4d05645a5eb18a66628112
+      internalID: 1006524471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_76
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf6a1f6d66186b4bb024ed4d377f9e5
+      internalID: -1654822937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_77
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3de0f8d44ed06d742894b6d75065e299
+      internalID: -1497995084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_78
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4ea728f9dea14408674936a3544340
+      internalID: -472112670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_79
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4b1447fa0a4e149ab7742f3e68d956
+      internalID: -1386186788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_80
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3977d6e9351ccfd4e84e08e21ee863e6
+      internalID: 1648041459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2ad46df766f024599d9eb7d137921d
+      internalID: 1825061777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_82
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cefa412eba46d40887f0f1634906e7
+      internalID: 1301858255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_83
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc90e71db27086a41baabb8382336f9c
+      internalID: 1546766541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_84
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaac02d6879da7a47aa1e8356e4c2593
+      internalID: 1191621719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_85
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098071644498c8b448147b66ec93f7fe
+      internalID: -873286834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_86
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b39e001e0cc8e840af783595a64393d
+      internalID: 1200117074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_87
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51650f13493a564a8a05754529b20dd
+      internalID: -1725664080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_88
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fc83d78bf37a044887ab79eddbf508
+      internalID: -1909179625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_89
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 295
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f721d2d885e18ab46bff6c45ece2185d
+      internalID: 491007149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_90
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7b595fa9ad3c14ea3dac5d8b96dce3
+      internalID: -1618242256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_91
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ec77eb6a44148419917461d6747927
+      internalID: 1195087283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_92
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e77cb9a0c4a909438497b34cd4bab2c
+      internalID: 1519101735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_93
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6480019ac2c497e4199baacc3fd6a918
+      internalID: -389749408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_94
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5064f1b27ee99d340a23e6752ed7798e
+      internalID: -1010856933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_95
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be528bd6229a3e41b1aa1cb25c18c18
+      internalID: 524475706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_96
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1048728c1b93158448d44e11e6f276b2
+      internalID: -919085116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_97
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7823f226f9b19b459d483e9ab93ab98
+      internalID: 1922463175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_98
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8a7407157b8b64ab21206d8cb7f4a4
+      internalID: 1330298919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_99
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61667f3e789027f4e9de72ff79c8bc79
+      internalID: -2028669403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_100
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d3f870557cd8464b8d0b0c206337d1a
+      internalID: 1054070860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_101
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0935c059915c84b82bcf1bb39fe281
+      internalID: 103516626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_102
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d26f1154335ad47b64a3869c01eb00
+      internalID: 783920506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_103
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff9a60869fe903c479b23bc251d6e5b2
+      internalID: -1843191630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_104
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6343c67357629c44a8e0183b60d9c6b7
+      internalID: -836181414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_105
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8fd7c5ff9fb654c9dfca8c6305901d
+      internalID: 470874124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_106
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dfe6c190a2211643a2b69d0526ac92e
+      internalID: -1499090206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_107
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a375176720040c542803bf4b5e979854
+      internalID: 417535204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_108
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b707adbe8038ef459951f139e91d922
+      internalID: 1365628961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_109
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2644e1af8789fe0478153eb111630882
+      internalID: 1826266759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_110
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804a868936797ad46b7a64b614505b25
+      internalID: -1220210945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_111
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7cd7481b532b9f46b891a468870e39a
+      internalID: 1086034095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_112
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 924002a4a2a7bea4db5072907edcb0d6
+      internalID: -1861099594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_113
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee0291bd0eb94a4ba95ae87d2783086
+      internalID: -570610222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_114
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 263
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aeef885f2b783f4f8be15065660d80c
+      internalID: -31332740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_115
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e80a84b7d6f3d4098ed04e1764ae71
+      internalID: -613758829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_116
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6481902898d1da24caaaff99d2e3d8c4
+      internalID: 816790500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_117
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56da6d10c622b8648a43c2f55e9dcfbc
+      internalID: -1745489562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_118
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2df7d9ca0488544391a38d98773fbc6
+      internalID: -1460931117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194cd2a050e475e478c8b701f6d50351
+      internalID: 49133459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_120
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f402f6dd8859a3418903b94a4678919
+      internalID: -912098310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_121
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8214735483948a4e9a2a1c0387d491c
+      internalID: -510120350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_122
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0379f5cac90bb42967835e15d915d4
+      internalID: -899775777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_123
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b43309760301cd245a15224a5f7418e5
+      internalID: 1542342760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_124
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0caaca8d245b65a408f0d7d0727f0699
+      internalID: 1044272225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_125
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa0ee1932deeee44adbab9c55b6a1f1
+      internalID: -1915252375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_126
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f5178c6b514534c80d321329c2ad0f
+      internalID: 1233072122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_127
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4076c691a9c2b9145bd19a2a4d3fc1db
+      internalID: 690783543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_128
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c0fe9c2b9f52c4c81692610c67a35b
+      internalID: 2078187854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_129
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e082b6c09390c3479b3913f0b061609
+      internalID: 665326259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_130
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24d4e612934f3d49ad877de29382c2a
+      internalID: -1118981621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_131
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d739c1b661ddff34296fb33e585efde1
+      internalID: 470355212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_132
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b268e58311b934cb3914c4c8fab029
+      internalID: -1807018984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_133
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3efdf55b9689324694033054bc14a84
+      internalID: 252983117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_134
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e1cbe28da816d4ba2076bd4e850ff5
+      internalID: 677198322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_135
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a5239c271450e429fdaa8981badd42
+      internalID: 254700129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_136
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786d20e01d297c241a512fc12df92401
+      internalID: -2005353802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_137
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59a9a0e20a49b8547a28a9cf74592732
+      internalID: 2119578348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_138
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 231
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69769c5c3fccb8c40a25a59d9bc7b21c
+      internalID: 425596996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_139
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb6f246e216be143a20698fb90e53d2
+      internalID: -2145028991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_140
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fcbea244871da24aa2c9801f112174b
+      internalID: -1970939160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_141
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31902862357fb284287345136ef11885
+      internalID: 986888441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_142
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0886d24aba4f74540a3b5996e920fc7b
+      internalID: -818274907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_143
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61050f9433500f849b882be5cae48244
+      internalID: -186033392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_144
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174dcec24ebeb1b4083faf9a9108cb94
+      internalID: -73570055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_145
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3bb0451538a1341a74c9dfcf7c3fa2
+      internalID: 756253557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_146
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e886d55b54a9a3648a211d48c8c9319b
+      internalID: -1034065630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_147
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c75b665a273c1408e5a09e694d606c
+      internalID: -2035231958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_148
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06633ede0acc7c34c9206238935d2a24
+      internalID: -969351700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_149
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8254c57101588d418b59badd7bfce75
+      internalID: 1743640068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_150
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e833f0c9292011e4f99eafbee4bf7810
+      internalID: -1504948648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_151
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6815a3bc105dab54da0d061bf7560ee1
+      internalID: 126028970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_152
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace16d32bd339344c9dc640afe3a1b3c
+      internalID: -85384291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_153
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7069054a51063544c9b2e391c779922e
+      internalID: -644211511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_154
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72191be6cf1e09f4891ccafb2fb266b0
+      internalID: 229085738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_155
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fca67c7f481e545b67b3a6fe6faf20
+      internalID: 1249049120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_156
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a2919062212c64eaa9f8d63d54ed17
+      internalID: -2139565366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_157
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ff57ce47603224d8e7b5c43a790621
+      internalID: -568304668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_158
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2692158805c9b87488ec65b08e5a26ea
+      internalID: -1787548592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_159
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a5e6017f8e107418ae1502aaf5f2b2
+      internalID: 723724289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_160
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2cc0454523da640a3348fb722e73ff
+      internalID: -1984157428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_161
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379d56d9b7b848a4f8282510d9a01cbe
+      internalID: -1842641336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_162
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22ed0482d0c0f344930906f2a94e534
+      internalID: -778395787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_163
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 199
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b9f10f9435c8948895d674882fb419
+      internalID: 1966397871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_164
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11930c5e8aac5a408ca76c871c38218
+      internalID: 583062763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_165
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90cff447919e0604884ae057443008ac
+      internalID: 410845031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_166
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305e50bdeaabf6f4f963a3bafb94bd32
+      internalID: 839698832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_167
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdc8649e4e467f4ea9ba037da931e12
+      internalID: 1786856339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_168
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931b0c471ef0d2347a8434d07ed28fc0
+      internalID: -184691954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_169
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7ec71e79e73804e961fbbb2295fdd2
+      internalID: 1259862948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_170
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e742d06e834df342a042100bbc2a3d5
+      internalID: 280036498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_171
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f679a174e4d1e448549a7680e446c1
+      internalID: 147718481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_172
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a289cc091866a49b696b59f1a04f41
+      internalID: -1146255696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_173
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36adaaccf7241b54cb50a92f082b5784
+      internalID: -324059609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_174
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95413b9fc2078054bb4efc2e1084012a
+      internalID: 472094415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_175
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e33a049c24569b4585f375e356641b5
+      internalID: 2040582567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_176
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae925e2c2e57ee4db2ab8d30823c576
+      internalID: -392022465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_177
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b15a30ac63a93843896ea05290382db
+      internalID: 2086167206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_178
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fe13c4372bb1a4f996d6c12728b086
+      internalID: 65728501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_179
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2fe985fc0bb2f24f8325d6b4629843f
+      internalID: -555394004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_180
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c133b3fdd4e584daf4088e138f77c1
+      internalID: -1759217443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_181
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a4ffea14dab5c74f99b3feb3e157f7c
+      internalID: -1862965683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_182
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd7163fe17981d44a53b42434d032b2
+      internalID: 342872961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_183
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c5994089decd7469acf2fefe368749
+      internalID: -561871042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_184
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98805446261598c4eb0d6d63810f26d5
+      internalID: -1102169533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_185
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b49648a7f2f22144480b02e94ffb5eb8
+      internalID: -1183911568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_186
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2611efb2d9f544590b3e436079d2ca
+      internalID: -92254305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_187
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4e82808bc9875499391c5634a42b30
+      internalID: -1944660800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_188
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc97774d408e2934d9e664202d146683
+      internalID: -1709419781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_189
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eddbb49c88aa1d148875f6121ab64e19
+      internalID: -1046720320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_190
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1759b721aac1b964d900f4d92e0ea337
+      internalID: -1860150404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_191
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e96b8c5080784f4680c8717d617c2c1
+      internalID: -705797190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_192
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1bcc1d07348ffb4b8051cc55e5ab81a
+      internalID: 1125453638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_193
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df713fbb76d6244da212445ad60ef09
+      internalID: 812868004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_194
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8ceb0c319790645b2e8b183dcb00b7
+      internalID: 185056976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_195
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1572a74567e0354baafbdff471067e3
+      internalID: 677500622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_196
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0d502de0355b74c9ca0877d25a9198
+      internalID: -1104840081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_197
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a706bebe69f7c274492c2c8786dc7f52
+      internalID: 1958984923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_198
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800132b9c2c08414584269c7d8c120b2
+      internalID: -1266365090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_199
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52d8b24baed4c7b4ba0df7ab2f85624d
+      internalID: -1983101628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_200
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8223546ea9c09458300ef987081f2f
+      internalID: -449111954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_201
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc1c9e10e01bf542b67ef3ec7b19e45
+      internalID: 1800625548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_202
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6564cac3d1295549b0a79c6272cc616
+      internalID: 607359645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_203
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c99b63853de3146bec42ab0f14848a
+      internalID: 835214217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_204
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab378f04eae488449b1f48a985eb6200
+      internalID: 1498407815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_205
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8e85b09f35bc84da6183cc4bcb2a2a
+      internalID: 1251290947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_206
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06f1cef13307de47be61980be7d89b8
+      internalID: -627609627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_207
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8220fc5af34116a479c0847a5481d587
+      internalID: 1176282562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_208
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c98468474665aa4b93aa6011272c5dd
+      internalID: -195423540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_209
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f208a571c9adb74ea025ff17e185bc4
+      internalID: -1642931207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_210
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c41125e1afca44aa1e89602a65f1c1
+      internalID: 1979946220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_211
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: affbbf6e8bae67d40b06b7d57e40dd93
+      internalID: -1182229657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_212
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182b6e994346d5348a2b4932332af241
+      internalID: -2053756017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_213
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 135
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8eaea2b85460e4aa0e21ced4917f85
+      internalID: -1272447292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_214
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cae1893748907649b4225e013171701
+      internalID: -1516019727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_215
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6224393646cc73641a6a3adb36afb6bf
+      internalID: 931282990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_216
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b39f276cf12ba7418561477acf16069
+      internalID: -1373787510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_217
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf84fc5ace2cda489bf242cb69620aa
+      internalID: -1185979395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_218
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8617c575e33f34cbea465ccce286b9
+      internalID: 1541168325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_219
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e509d901738436447a1171832afbcf2a
+      internalID: -575637921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_220
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eea610a1a9dc342b8a5f84cdbb58a6
+      internalID: -1988717326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_221
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8759885ff02e9c34cb512d391503845d
+      internalID: 119584008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_222
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd0a44b3e97a204d9cf094885320d88
+      internalID: 299755155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_223
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3646eff7b4b96714293d1ae7d4f70cc5
+      internalID: -1833847215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_224
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ae7b5b397e3444ea1386b1d9ae6e9d
+      internalID: 1825408076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_225
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8480b3baca9c9a1468c02954d83b0db7
+      internalID: 1855639899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_226
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cab997a907d5f942a3331ac9b933a6a
+      internalID: 1621466232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_227
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860e7967caa084947b031ad56e867401
+      internalID: 379639819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_228
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d108732ca7f5343911cdf025fc0c8c
+      internalID: -720916960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_229
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf3eb99f5e755849bb89993655c6ce8
+      internalID: 627724663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_230
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0af2a08f8f7b0043b8d3347a9195113
+      internalID: 1566855998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_231
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dad62dd137842141be942621e368ed8
+      internalID: -1180095270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_232
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1486f19101bfa45a52723324d8091e
+      internalID: -1368125674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_233
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e216046f8b3ee0c499ccf1bb698cb894
+      internalID: 847214853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_234
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953aabeebb46c1e44a6576c8bfef7c72
+      internalID: -1359371013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_235
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8828bdfd19e609d468b7185baaa0a57e
+      internalID: 250022129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_236
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bd576eeadf1c74ca846a3bef3b27ef
+      internalID: -1030041330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_237
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdb9311c81df8642964a6ca364c4a14
+      internalID: -1276731035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_238
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 103
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dd97ef00c785340a9f75687dc949e9
+      internalID: 1423256449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_239
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9002ab60732b7e4483d97733206a4fa
+      internalID: 1298238370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_240
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03e90da7134eecd4fa0cd92da80a4df6
+      internalID: -910500447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_241
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5aeb18e9adb84448abae0d71dab8831
+      internalID: -1183049086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_242
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a8e150992fe742857bc5587a6f54b
+      internalID: -1455221931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_243
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21043ca61e8b9d54ab20a1080c566473
+      internalID: -1563403386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_244
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261997a5661f75340ada17129ddfa082
+      internalID: 1958924721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_245
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df06310272dd45b40aa37f038d0cf1ca
+      internalID: -53440304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_246
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a399629dd693f744ca2998f979467441
+      internalID: -899028821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_247
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c5f351e367b2524988a05fd559cd22c
+      internalID: -54360707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_248
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b181036d0b8dee24c851f10ac7166ddd
+      internalID: -1856611881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_249
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dc538baa1beed46a0bbb1ce70ee72c
+      internalID: -1217167316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_250
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a3abdbffe26e6428b29fe7ac45a768
+      internalID: 509086206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_251
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0768c66818ed18148801eb563208f75b
+      internalID: -1542191955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_252
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4139bcc6c1447409eb55c6276ab40a
+      internalID: -1733160221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_253
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae912df00b8fe404993ec691758a1990
+      internalID: -177753669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_254
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ecf905598c790498b389dfb1d19fc1
+      internalID: -146712113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_255
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97182cb68317774787981275ab7d670
+      internalID: 1591255608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_256
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd176ec6ac0ae645bfe355cd84bc44a
+      internalID: 550288371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_257
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d68d2616aded1f54583df317413b71ec
+      internalID: -2127781864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_258
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8ba1d6a9811c64d88a35a44ca5b0a9
+      internalID: -1570291165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_259
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de7478a7eeb7784b9b168fea944f1aa
+      internalID: 321673731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_260
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db35da1057f20404e830fee9dfb541c4
+      internalID: 336172823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_261
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb366ee441e115428c65a3f2914474d
+      internalID: 110814364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_262
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 71
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa753644a8c2dd0499f3f6f73f3c4565
+      internalID: 2138519831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_263
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad601e18fc20754394b3a4cc5ff5574
+      internalID: 775747086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_264
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2a31bd59c341042ad921d63140b911
+      internalID: 130303576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_265
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834816ae5a02a644d9195c35aefb24f9
+      internalID: 159587868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_266
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b400ac38f97984e98eec92714899d3
+      internalID: 1226278573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_267
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57640bacaa42c44fab44d09ddd5ac58
+      internalID: -1132441038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_268
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e2518146c146d45874c0559d867d40
+      internalID: -1120660006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_269
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51cb0a559ffa75479f48671c104bad5
+      internalID: 1086874750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_270
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ffa3864a3851a41820e9b19f01208e
+      internalID: -535857445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_271
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1008e0f60369a24bbb9fd5257859397
+      internalID: 582360425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_272
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e6c861dfed09b43bc76b57aeb60824
+      internalID: -1713276106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_273
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609960fa0d6cc8e4cb0016d733306d79
+      internalID: -1546799606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_274
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96733cef0eb8a0d4a9aaf756ff9d1397
+      internalID: 1841378611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_275
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc71afad76ea7b4408358644b4350346
+      internalID: 1756383836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_276
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7dc298b1d97304a99ed2ea47e0cae5
+      internalID: -2129612725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_277
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 525c3d1ef385e5d48925636db4449676
+      internalID: -717159647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_278
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dff92e5ab8e8a4b97c9f9aae82e7f8
+      internalID: 1237649690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_279
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca795053073b444ea5de7e226ecf4e5
+      internalID: 537440478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_280
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdf48480e901bd4dafcda99fd4c9656
+      internalID: 412303224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_281
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac78018c7cdb6c841a7dbe967832c5a9
+      internalID: 1953317160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_282
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f34f4e7e656ca4baec75f5a383f4bb
+      internalID: 1952989034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_283
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464b0ec17c6b41341910c0d38064a480
+      internalID: -635155609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_284
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ee05c4d44bd0044824b49e3d80da97
+      internalID: -10437461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_285
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46449f267f8c054190e8fda7100e05b
+      internalID: -470805838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_286
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 39
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6314590915f9aa04282d6adb9968ab57
+      internalID: -451084475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_287
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17951b2a1a068f41bc778bceca7839c
+      internalID: 571006133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_288
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9610d471c6ded4448d236090880351d
+      internalID: -840447493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_289
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1639e90e5cdfca2478db5e4e65f324f1
+      internalID: 242290887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_290
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a4842920c3d7647a34f95f998c8fe2
+      internalID: -901808762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_291
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4f48897650a3f46a67f148a96de8e5
+      internalID: 1534624803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_292
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ea45719535e3e48a290ec65923b333
+      internalID: 41612397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_293
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cf0c8b23c871247b0c9bcb3be7e2d0
+      internalID: 681610118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_294
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c34e112a86ad342af00d6ce57a7877
+      internalID: -126126479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_295
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e531155667fcd1e47b296963fb17b90e
+      internalID: 586719184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_296
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685ff267f45f5b84bb11e4850058a535
+      internalID: -516493311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_297
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0944225b9b3018f43ab2fca610b547d4
+      internalID: -1889564234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_298
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9482401ba68806743bee994e7d9762ac
+      internalID: -228868701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_299
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec501a12a7dbcd4680374e50e545f8f
+      internalID: 890167605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_300
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d75aa9d9c8968b469d550bcd44537c3
+      internalID: 2061049500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_301
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4661c6334c63640b195f19985182b6
+      internalID: 2076462193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_302
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eec11112e28c3c4d937ebfb87ad5dec
+      internalID: 834141598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_303
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208c4ae776f15d44a8bf685d89db171f
+      internalID: 560007421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_304
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd929a31fe30c9f4ca887d4f856c64fe
+      internalID: 520300305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_305
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b630c765a76724a85898a1dd5b9732
+      internalID: 919830972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_306
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47196afee0ba6b4cbc237a305ef8d7c
+      internalID: -453698478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_307
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ae11fd4f8c09f641baee527b6198dcc
+      internalID: -346618317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Detalje pallette_308
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 7
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c39bb82e229b0488c4829132faf9b9
+      internalID: 759650175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Detalje pallette_0: -641171873
+      Detalje pallette_1: 893492472
+      Detalje pallette_10: 668189038
+      Detalje pallette_100: 1054070860
+      Detalje pallette_101: 103516626
+      Detalje pallette_102: 783920506
+      Detalje pallette_103: -1843191630
+      Detalje pallette_104: -836181414
+      Detalje pallette_105: 470874124
+      Detalje pallette_106: -1499090206
+      Detalje pallette_107: 417535204
+      Detalje pallette_108: 1365628961
+      Detalje pallette_109: 1826266759
+      Detalje pallette_11: -1618964269
+      Detalje pallette_110: -1220210945
+      Detalje pallette_111: 1086034095
+      Detalje pallette_112: -1861099594
+      Detalje pallette_113: -570610222
+      Detalje pallette_114: -31332740
+      Detalje pallette_115: -613758829
+      Detalje pallette_116: 816790500
+      Detalje pallette_117: -1745489562
+      Detalje pallette_118: -1460931117
+      Detalje pallette_119: 49133459
+      Detalje pallette_12: -1132429069
+      Detalje pallette_120: -912098310
+      Detalje pallette_121: -510120350
+      Detalje pallette_122: -899775777
+      Detalje pallette_123: 1542342760
+      Detalje pallette_124: 1044272225
+      Detalje pallette_125: -1915252375
+      Detalje pallette_126: 1233072122
+      Detalje pallette_127: 690783543
+      Detalje pallette_128: 2078187854
+      Detalje pallette_129: 665326259
+      Detalje pallette_13: -953692220
+      Detalje pallette_130: -1118981621
+      Detalje pallette_131: 470355212
+      Detalje pallette_132: -1807018984
+      Detalje pallette_133: 252983117
+      Detalje pallette_134: 677198322
+      Detalje pallette_135: 254700129
+      Detalje pallette_136: -2005353802
+      Detalje pallette_137: 2119578348
+      Detalje pallette_138: 425596996
+      Detalje pallette_139: -2145028991
+      Detalje pallette_14: 1391267957
+      Detalje pallette_140: -1970939160
+      Detalje pallette_141: 986888441
+      Detalje pallette_142: -818274907
+      Detalje pallette_143: -186033392
+      Detalje pallette_144: -73570055
+      Detalje pallette_145: 756253557
+      Detalje pallette_146: -1034065630
+      Detalje pallette_147: -2035231958
+      Detalje pallette_148: -969351700
+      Detalje pallette_149: 1743640068
+      Detalje pallette_15: -1897766603
+      Detalje pallette_150: -1504948648
+      Detalje pallette_151: 126028970
+      Detalje pallette_152: -85384291
+      Detalje pallette_153: -644211511
+      Detalje pallette_154: 229085738
+      Detalje pallette_155: 1249049120
+      Detalje pallette_156: -2139565366
+      Detalje pallette_157: -568304668
+      Detalje pallette_158: -1787548592
+      Detalje pallette_159: 723724289
+      Detalje pallette_16: 1737164359
+      Detalje pallette_160: -1984157428
+      Detalje pallette_161: -1842641336
+      Detalje pallette_162: -778395787
+      Detalje pallette_163: 1966397871
+      Detalje pallette_164: 583062763
+      Detalje pallette_165: 410845031
+      Detalje pallette_166: 839698832
+      Detalje pallette_167: 1786856339
+      Detalje pallette_168: -184691954
+      Detalje pallette_169: 1259862948
+      Detalje pallette_17: -17881338
+      Detalje pallette_170: 280036498
+      Detalje pallette_171: 147718481
+      Detalje pallette_172: -1146255696
+      Detalje pallette_173: -324059609
+      Detalje pallette_174: 472094415
+      Detalje pallette_175: 2040582567
+      Detalje pallette_176: -392022465
+      Detalje pallette_177: 2086167206
+      Detalje pallette_178: 65728501
+      Detalje pallette_179: -555394004
+      Detalje pallette_18: 840768255
+      Detalje pallette_180: -1759217443
+      Detalje pallette_181: -1862965683
+      Detalje pallette_182: 342872961
+      Detalje pallette_183: -561871042
+      Detalje pallette_184: -1102169533
+      Detalje pallette_185: -1183911568
+      Detalje pallette_186: -92254305
+      Detalje pallette_187: -1944660800
+      Detalje pallette_188: -1709419781
+      Detalje pallette_189: -1046720320
+      Detalje pallette_19: 1066328599
+      Detalje pallette_190: -1860150404
+      Detalje pallette_191: -705797190
+      Detalje pallette_192: 1125453638
+      Detalje pallette_193: 812868004
+      Detalje pallette_194: 185056976
+      Detalje pallette_195: 677500622
+      Detalje pallette_196: -1104840081
+      Detalje pallette_197: 1958984923
+      Detalje pallette_198: -1266365090
+      Detalje pallette_199: -1983101628
+      Detalje pallette_2: 470522830
+      Detalje pallette_20: 1757893089
+      Detalje pallette_200: -449111954
+      Detalje pallette_201: 1800625548
+      Detalje pallette_202: 607359645
+      Detalje pallette_203: 835214217
+      Detalje pallette_204: 1498407815
+      Detalje pallette_205: 1251290947
+      Detalje pallette_206: -627609627
+      Detalje pallette_207: 1176282562
+      Detalje pallette_208: -195423540
+      Detalje pallette_209: -1642931207
+      Detalje pallette_21: 1708463777
+      Detalje pallette_210: 1979946220
+      Detalje pallette_211: -1182229657
+      Detalje pallette_212: -2053756017
+      Detalje pallette_213: -1272447292
+      Detalje pallette_214: -1516019727
+      Detalje pallette_215: 931282990
+      Detalje pallette_216: -1373787510
+      Detalje pallette_217: -1185979395
+      Detalje pallette_218: 1541168325
+      Detalje pallette_219: -575637921
+      Detalje pallette_22: -1804314976
+      Detalje pallette_220: -1988717326
+      Detalje pallette_221: 119584008
+      Detalje pallette_222: 299755155
+      Detalje pallette_223: -1833847215
+      Detalje pallette_224: 1825408076
+      Detalje pallette_225: 1855639899
+      Detalje pallette_226: 1621466232
+      Detalje pallette_227: 379639819
+      Detalje pallette_228: -720916960
+      Detalje pallette_229: 627724663
+      Detalje pallette_23: -622580383
+      Detalje pallette_230: 1566855998
+      Detalje pallette_231: -1180095270
+      Detalje pallette_232: -1368125674
+      Detalje pallette_233: 847214853
+      Detalje pallette_234: -1359371013
+      Detalje pallette_235: 250022129
+      Detalje pallette_236: -1030041330
+      Detalje pallette_237: -1276731035
+      Detalje pallette_238: 1423256449
+      Detalje pallette_239: 1298238370
+      Detalje pallette_24: 1915154712
+      Detalje pallette_240: -910500447
+      Detalje pallette_241: -1183049086
+      Detalje pallette_242: -1455221931
+      Detalje pallette_243: -1563403386
+      Detalje pallette_244: 1958924721
+      Detalje pallette_245: -53440304
+      Detalje pallette_246: -899028821
+      Detalje pallette_247: -54360707
+      Detalje pallette_248: -1856611881
+      Detalje pallette_249: -1217167316
+      Detalje pallette_25: 1369127269
+      Detalje pallette_250: 509086206
+      Detalje pallette_251: -1542191955
+      Detalje pallette_252: -1733160221
+      Detalje pallette_253: -177753669
+      Detalje pallette_254: -146712113
+      Detalje pallette_255: 1591255608
+      Detalje pallette_256: 550288371
+      Detalje pallette_257: -2127781864
+      Detalje pallette_258: -1570291165
+      Detalje pallette_259: 321673731
+      Detalje pallette_26: 181593152
+      Detalje pallette_260: 336172823
+      Detalje pallette_261: 110814364
+      Detalje pallette_262: 2138519831
+      Detalje pallette_263: 775747086
+      Detalje pallette_264: 130303576
+      Detalje pallette_265: 159587868
+      Detalje pallette_266: 1226278573
+      Detalje pallette_267: -1132441038
+      Detalje pallette_268: -1120660006
+      Detalje pallette_269: 1086874750
+      Detalje pallette_27: -1252427431
+      Detalje pallette_270: -535857445
+      Detalje pallette_271: 582360425
+      Detalje pallette_272: -1713276106
+      Detalje pallette_273: -1546799606
+      Detalje pallette_274: 1841378611
+      Detalje pallette_275: 1756383836
+      Detalje pallette_276: -2129612725
+      Detalje pallette_277: -717159647
+      Detalje pallette_278: 1237649690
+      Detalje pallette_279: 537440478
+      Detalje pallette_28: 171698054
+      Detalje pallette_280: 412303224
+      Detalje pallette_281: 1953317160
+      Detalje pallette_282: 1952989034
+      Detalje pallette_283: -635155609
+      Detalje pallette_284: -10437461
+      Detalje pallette_285: -470805838
+      Detalje pallette_286: -451084475
+      Detalje pallette_287: 571006133
+      Detalje pallette_288: -840447493
+      Detalje pallette_289: 242290887
+      Detalje pallette_29: 320863953
+      Detalje pallette_290: -901808762
+      Detalje pallette_291: 1534624803
+      Detalje pallette_292: 41612397
+      Detalje pallette_293: 681610118
+      Detalje pallette_294: -126126479
+      Detalje pallette_295: 586719184
+      Detalje pallette_296: -516493311
+      Detalje pallette_297: -1889564234
+      Detalje pallette_298: -228868701
+      Detalje pallette_299: 890167605
+      Detalje pallette_3: 1534222809
+      Detalje pallette_30: 313802065
+      Detalje pallette_300: 2061049500
+      Detalje pallette_301: 2076462193
+      Detalje pallette_302: 834141598
+      Detalje pallette_303: 560007421
+      Detalje pallette_304: 520300305
+      Detalje pallette_305: 919830972
+      Detalje pallette_306: -453698478
+      Detalje pallette_307: -346618317
+      Detalje pallette_308: 759650175
+      Detalje pallette_31: -962193109
+      Detalje pallette_32: 609483473
+      Detalje pallette_33: -2107360177
+      Detalje pallette_34: 1749021162
+      Detalje pallette_35: -1851655635
+      Detalje pallette_36: 383642339
+      Detalje pallette_37: 769248521
+      Detalje pallette_38: -545944640
+      Detalje pallette_39: 50418980
+      Detalje pallette_4: -504173305
+      Detalje pallette_40: 684427264
+      Detalje pallette_41: -759956014
+      Detalje pallette_42: -1258470221
+      Detalje pallette_43: -550623666
+      Detalje pallette_44: -853345403
+      Detalje pallette_45: 1365892292
+      Detalje pallette_46: 1566379841
+      Detalje pallette_47: 1488641131
+      Detalje pallette_48: 804388066
+      Detalje pallette_49: -790712369
+      Detalje pallette_5: -1690742118
+      Detalje pallette_50: -639026489
+      Detalje pallette_51: 1735311258
+      Detalje pallette_52: -1099390228
+      Detalje pallette_53: -1915797941
+      Detalje pallette_54: -1618807656
+      Detalje pallette_55: -1210034301
+      Detalje pallette_56: 393040173
+      Detalje pallette_57: -197516170
+      Detalje pallette_58: 470492944
+      Detalje pallette_59: 2097352634
+      Detalje pallette_6: 1760989780
+      Detalje pallette_60: 1865219405
+      Detalje pallette_61: -1886750907
+      Detalje pallette_62: -1699861903
+      Detalje pallette_63: -2141108825
+      Detalje pallette_64: 187378663
+      Detalje pallette_65: -1018812038
+      Detalje pallette_66: -490993616
+      Detalje pallette_67: -29556255
+      Detalje pallette_68: 1772282984
+      Detalje pallette_69: 2067362611
+      Detalje pallette_7: -370235194
+      Detalje pallette_70: 1948029654
+      Detalje pallette_71: -360068975
+      Detalje pallette_72: 1840332915
+      Detalje pallette_73: -750397268
+      Detalje pallette_74: 1190612795
+      Detalje pallette_75: 1006524471
+      Detalje pallette_76: -1654822937
+      Detalje pallette_77: -1497995084
+      Detalje pallette_78: -472112670
+      Detalje pallette_79: -1386186788
+      Detalje pallette_8: -1433164934
+      Detalje pallette_80: 1648041459
+      Detalje pallette_81: 1825061777
+      Detalje pallette_82: 1301858255
+      Detalje pallette_83: 1546766541
+      Detalje pallette_84: 1191621719
+      Detalje pallette_85: -873286834
+      Detalje pallette_86: 1200117074
+      Detalje pallette_87: -1725664080
+      Detalje pallette_88: -1909179625
+      Detalje pallette_89: 491007149
+      Detalje pallette_9: 1969001313
+      Detalje pallette_90: -1618242256
+      Detalje pallette_91: 1195087283
+      Detalje pallette_92: 1519101735
+      Detalje pallette_93: -389749408
+      Detalje pallette_94: -1010856933
+      Detalje pallette_95: 524475706
+      Detalje pallette_96: -919085116
+      Detalje pallette_97: 1922463175
+      Detalje pallette_98: 1330298919
+      Detalje pallette_99: -2028669403
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

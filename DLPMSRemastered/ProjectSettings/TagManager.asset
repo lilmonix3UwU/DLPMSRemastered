@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - WanderBarrier
   - Attack
+  - FireTorch
+  - IceTorch
+  - Fireball
+  - Vine
   layers:
   - Default
   - TransparentFX
@@ -16,15 +20,15 @@ TagManager:
   - Water
   - UI
   - Platform
-  - Wall
+  - Dead
   - Player
   - Enemy
   - Ice
   - FIre
   - KillBox
-  - 
-  - 
-  - 
+  - vine
+  - VirtualCam
+  - Checkpoint
   - 
   - 
   - 
